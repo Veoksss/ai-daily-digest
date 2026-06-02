@@ -108,12 +108,16 @@ def send_email(
     Returns:
         是否发送成功
     """
-    smtp_host = os.environ.get("SMTP_HOST", "smtp.qq.com")
-    smtp_port = int(os.environ.get("SMTP_PORT", "587"))
-    smtp_user = os.environ.get("SMTP_USER", "")
-    smtp_pass = os.environ.get("SMTP_PASS", "")
-    to_email = to_email or os.environ.get("SMTP_TO", "")
-    from_name = os.environ.get("SMTP_FROM_NAME", "AI Daily Digest")
+    smtp_host = os.environ.get("SMTP_HOST") or "smtp.qq.com"
+    smtp_port_str = os.environ.get("SMTP_PORT") or "587"
+    try:
+        smtp_port = int(smtp_port_str)
+    except (ValueError, TypeError):
+        smtp_port = 587
+    smtp_user = os.environ.get("SMTP_USER") or ""
+    smtp_pass = os.environ.get("SMTP_PASS") or ""
+    to_email = to_email or os.environ.get("SMTP_TO") or ""
+    from_name = os.environ.get("SMTP_FROM_NAME") or "AI Daily Digest"
 
     if not smtp_user or not smtp_pass or not to_email:
         print("[mailer] SMTP 配置不完整，跳过邮件发送")
