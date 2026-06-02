@@ -53,7 +53,12 @@ async def main():
             all_articles.extend(result)
 
     if not all_articles:
-        print("\n⚠️  没有抓取到任何文章，退出。")
+        print("\n⚠️  没有抓取到任何文章，生成空页面。")
+        from src.generator import OUTPUT_DIR
+        import os as _os
+        _os.makedirs(OUTPUT_DIR, exist_ok=True)
+        with open(_os.path.join(OUTPUT_DIR, "index.html"), "w", encoding="utf-8") as f:
+            f.write("<html><body><h2>今日无 AI 资讯</h2><p>请稍后再来</p></body></html>")
         return
 
     # 2. 去重过滤
@@ -62,7 +67,12 @@ async def main():
     print(f"  ✅ 保留 {len(clean)} 篇")
 
     if not clean:
-        print("⚠️  过滤后无文章，退出。")
+        print("⚠️  过滤后无文章，生成空页面。")
+        from src.generator import OUTPUT_DIR
+        import os as _os
+        _os.makedirs(OUTPUT_DIR, exist_ok=True)
+        with open(_os.path.join(OUTPUT_DIR, "index.html"), "w", encoding="utf-8") as f:
+            f.write("<html><body><h2>今日无 AI 资讯</h2><p>请稍后再来</p></body></html>")
         return
 
     # 3. DeepSeek 摘要分类
@@ -74,8 +84,16 @@ async def main():
             a.tags = ["Other / 其他"]
             a.score = 2
     else:
-        await summarize_all(clean)
-        print(f"  ✅ 摘要完成")
+        try:
+            await summarize_all(clean)
+            print(f"  ✅ 摘要完成")
+        except Exception as e:
+            print(f"  ⚠️  DeepSeek API 调用失败: {e}")
+            print(f"  ⚠️  降级为原文摘要")
+            for a in clean:
+                a.cn_summary = a.summary[:200]
+                a.tags = ["Other / 其他"]
+                a.score = 2
 
     # 4. 生成 HTML
     print(f"\n📄 [4/5] 生成 HTML...")
