@@ -90,6 +90,16 @@
             margin-top: 8px; padding-top: 8px;
             border-top: 1px solid #f0f0f0;
         }
+        .plain-explanation {
+            font-size: 13px; color: #6b5b3a;
+            margin-top: 8px; padding: 10px 14px;
+            background: #fffdf5; border-left: 3px solid #f0c040;
+            border-radius: 0 8px 8px 0; line-height: 1.6;
+        }
+        .plain-label {
+            font-size: 11px; font-weight: 700; color: #b8860b;
+            margin-right: 4px;
+        }
         footer {
             text-align: center; padding: 30px;
             color: #aaa; font-size: 12px;
@@ -140,6 +150,12 @@
                 {% endfor %}
             </div>
             <div class="cn-summary">{{ article.cn_summary }}</div>
+            {% if article.plain_explanation and article.plain_explanation != '（暂无通俗解读）' %}
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                {{ article.plain_explanation }}
+            </div>
+            {% endif %}
         </div>
         {% endfor %}
         {% else %}

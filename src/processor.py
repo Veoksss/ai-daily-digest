@@ -24,9 +24,16 @@ AI_KEYWORDS = [
     "multimodal", "agent", "embedding", "vector database",
     "text-to-image", "text-to-video", "speech recognition", "tts",
     "foundation model", "frontier model",
+    # Agent / 智能体 相关
+    "ai agent", "intelligent agent", "autonomous agent", "agentic",
+    "multi-agent", "agent framework", "tool use", "function calling",
+    "agent workflow", "agent orchestration", "agent swarm",
+    "computer use", "browser agent", "coding agent",
+    "agent evaluation", "agent benchmark",
     # 中文关键词（以防 RSS 源有中文标题）
     "人工智能", "大模型", "机器学习", "深度学习", "自然语言",
     "计算机视觉", "自动驾驶", "智能体", "人形机器人",
+    "agent", "代理", "自主决策", "多智能体",
 ]
 
 

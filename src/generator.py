@@ -61,6 +61,7 @@ def generate_html(articles: list[Article], output_dir: str = OUTPUT_DIR) -> str:
             "cn_summary": a.cn_summary,
             "tags": a.tags,
             "score": a.score,
+            "plain_explanation": a.plain_explanation,
         })
 
     html = template.render(

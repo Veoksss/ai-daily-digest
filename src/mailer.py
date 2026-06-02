@@ -44,6 +44,9 @@ def _build_email_html(articles: list[Article], date_str: str) -> str:
                 <div style="margin-top:6px;font-size:13px;color:#555;">
                     {a.cn_summary}
                 </div>
+                <div style="margin-top:6px;font-size:12px;color:#6b5b3a;padding:8px 12px;background:#fffdf5;border-left:3px solid #f0c040;border-radius:0 6px 6px 0;">
+                    💡 {a.plain_explanation}
+                </div>
             </td>
         </tr>
         """)

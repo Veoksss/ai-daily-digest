@@ -24,6 +24,7 @@ VALID_TAGS = [
     "CV / 计算机视觉",
     "NLP / 自然语言处理",
     "Robotics / 机器人",
+    "Agent / 智能体",
     "Product / 产品与商业",
     "Policy / 政策与伦理",
     "Research / 学术前沿",
@@ -54,6 +55,11 @@ TAG_ALIASES = {
     "论文": "Research / 学术前沿",
     "其他": "Other / 其他",
     "other": "Other / 其他",
+    "agent": "Agent / 智能体",
+    "智能体": "Agent / 智能体",
+    "代理": "Agent / 智能体",
+    "自主代理": "Agent / 智能体",
+    "多智能体": "Agent / 智能体",
 }
 
 SYSTEM_PROMPT = """你是一个 AI 技术日报的编辑。我给你一批英文文章（标题+摘要），请为每篇文章生成：
@@ -61,17 +67,20 @@ SYSTEM_PROMPT = """你是一个 AI 技术日报的编辑。我给你一批英文
 1. **cn_summary**: 2-3 句中文摘要，抓住核心观点或技术突破
 2. **tags**: 1-2 个分类标签，从以下中选择：
    LLM / 大语言模型, CV / 计算机视觉, NLP / 自然语言处理,
-   Robotics / 机器人, Product / 产品与商业, Policy / 政策与伦理,
-   Research / 学术前沿, Other / 其他
+   Robotics / 机器人, Agent / 智能体, Product / 产品与商业,
+   Policy / 政策与伦理, Research / 学术前沿, Other / 其他
 3. **score**: 重要性打分 1-5
    - 5: 重大突破（GPT-5 发布、AlphaFold 级别成果）
    - 4: 重要进展（大厂核心产品更新、SOTA 刷新）
    - 3: 值得关注（新模型/工具发布、行业趋势）
    - 2: 一般信息（融资动态、常规报道）
    - 1: 边缘相关
+4. **plain_explanation**: 用大白话解释这篇文章说了什么（2-3句），让完全不懂 AI 的人也能看懂。
+   要包含：这篇文章的核心意思是什么？对普通人有什么影响？未来可能往哪里发展？
+   语气像朋友聊天，不要术语堆砌。
 
 严格输出 JSON 数组，不要任何其他文字。格式：
-[{"id": "源ID", "cn_summary": "...", "tags": ["...", "..."], "score": N}, ...]
+[{"id": "源ID", "cn_summary": "...", "tags": ["...", "..."], "score": N, "plain_explanation": "..."}, ...]
 
 保留原文的 id 字段一一对应。"""
 
@@ -128,7 +137,7 @@ async def summarize_batch(
             {"role": "user", "content": prompt},
         ],
         temperature=0.3,
-        max_tokens=4096,
+        max_tokens=8192,
     )
 
     content = resp.choices[0].message.content or "[]"
@@ -150,6 +159,7 @@ async def summarize_batch(
             a.cn_summary = a.summary[:200]
             a.tags = ["Other / 其他"]
             a.score = 2
+            a.plain_explanation = "（AI 摘要暂时不可用，请查看原文）"
         return articles
 
     # 按 id 回填
@@ -184,6 +194,7 @@ async def summarize_batch(
             a.score = int(score)
         else:
             a.score = 2
+        a.plain_explanation = r.get("plain_explanation", "") or "（暂无通俗解读）"
 
     return articles
 

@@ -21,3 +21,4 @@ class Article:
     cn_summary: str = ""
     tags: list[str] = field(default_factory=list)
     score: int = 0  # 1-5 重要性
+    plain_explanation: str = ""  # 通俗解读：用大白话解释含义、未来走向、发展潜力

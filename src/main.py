@@ -83,9 +83,10 @@ async def main():
             a.cn_summary = a.summary[:200]
             a.tags = ["Other / 其他"]
             a.score = 2
+            a.plain_explanation = "（未配置 API Key，无通俗解读）"
     else:
         try:
-            await summarize_all(clean)
+            await summarize_all(clean, batch_size=10)
             print(f"  ✅ 摘要完成")
         except Exception as e:
             print(f"  ⚠️  DeepSeek API 调用失败: {e}")
@@ -94,6 +95,7 @@ async def main():
                 a.cn_summary = a.summary[:200]
                 a.tags = ["Other / 其他"]
                 a.score = 2
+                a.plain_explanation = "（AI 服务暂时不可用，无通俗解读）"
 
     # 4. 生成 HTML
     print(f"\n📄 [4/5] 生成 HTML...")
