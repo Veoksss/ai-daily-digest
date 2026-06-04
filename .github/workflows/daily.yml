@@ -4,6 +4,7 @@ on:
   schedule:
     # 北京时间每天早上 8:15 (UTC 0:15)，避开整点调度拥堵
     - cron: "15 0 * * *"
+  repository_dispatch:  # 允许外部服务通过 webhook 触发
   workflow_dispatch:  # 允许手动触发
 
 # 同时需要 GitHub Pages 部署权限
