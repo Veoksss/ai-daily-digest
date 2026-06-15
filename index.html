@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Daily Digest — 2026-06-14</title>
+    <title>AI Daily Digest — 2026-06-15</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -112,10 +112,10 @@
 <body>
     <header>
         <h1>🤖 AI Daily Digest</h1>
-        <p>2026-06-14</p>
+        <p>2026-06-15</p>
         <div class="stats">
             <div class="stat">
-                <div class="num">44</div>
+                <div class="num">45</div>
                 <div class="label">📄 文章总数</div>
             </div>
             <div class="stat">
@@ -123,7 +123,7 @@
                 <div class="label">📡 数据源</div>
             </div>
             <div class="stat">
-                <div class="num">3.3</div>
+                <div class="num">3.2</div>
                 <div class="label">⭐ 平均得分</div>
             </div>
         </div>
@@ -155,200 +155,32 @@
         </div>
 
         
-        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2606.13106" target="_blank" rel="noopener">Demystifying Hidden-State Recurrence: Switchable Latent Reasoning with On-Policy Reinforcement Learning</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">LLM / 大语言模型</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">提出SWITCH框架，通过添加显式的入口和出口标记，使隐藏状态推理与标准在线强化学习兼容，并支持因果分析。该方法解决了现有潜在思维链难以优化和解释的问题。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是怎么让AI在思考时更高效。以前AI推理时要么写一堆文字，要么在内部偷偷算，但很难优化。现在他们发明了一个开关，让AI可以切换到内部思考模式，算完再切回来，这样既快又好理解，未来可能让AI更聪明地处理复杂问题。
-            </div>
-            
-        </div>
-        
         <div class="article" data-tags="Robotics / 机器人,Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2606.08039" target="_blank" rel="noopener">MuJoCo-Drones-Gym: A GPU-Accelerated Multi-Drone Simulator for Control and Reinforcement Learning</a></h2>
+            <h2><a href="https://huggingface.co/papers/2606.14409" target="_blank" rel="noopener">Hy-Embodied-0.5-VLA: From Vision-Language-Action Models to a Real-World Robot Learning Stack</a></h2>
             <div class="meta">
                 <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★☆☆</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★★★☆</span>
                 
                 <span class="tag">Robotics / 机器人</span>
                 
                 <span class="tag">Research / 学术前沿</span>
                 
             </div>
-            <div class="cn-summary">发布MuJoCo-Drones-Gym，一个基于MuJoCo物理引擎的GPU加速多无人机仿真环境，支持任意数量的Crazyflie 2.x无人机，并兼容Gymnasium接口。该工具旨在解决现有仿真器在物理保真度、多智能体支持和训练吞吐量之间的权衡。</div>
+            <div class="cn-summary">Hy-Embodied-0.5-VLA 是一个完整的机器人学习系统，涵盖了从数据收集、模型设计、预训练、微调、强化学习到实际部署的全流程。该系统旨在通过端到端的方式提升机器人在真实世界中的操作能力。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                这篇文章介绍了一个新的无人机模拟器，可以同时模拟很多架无人机在电脑里飞行。它跑得很快，因为用了显卡加速，而且物理效果很真实。这对研究无人机编队和自动控制的人很有用，以后无人机送货或表演可能就靠这种技术训练。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Agent / 智能体,LLM / 大语言模型">
-            <h2><a href="https://huggingface.co/papers/2606.13681" target="_blank" rel="noopener">EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">Agent / 智能体</span>
-                
-                <span class="tag">LLM / 大语言模型</span>
-                
-            </div>
-            <div class="cn-summary">提出EvoArena基准测试和EvoMem记忆范式，用于评估和提升LLM智能体在动态环境中的适应能力。实验表明当前智能体在环境变化时表现不佳，而EvoMem通过记录记忆演化历史帮助智能体推理。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章发现现在的AI助手在环境变化时容易掉链子，比如软件更新了它还不知道。他们做了一个测试集和一种新记忆方法，让AI能记住变化过程并适应。以后你的AI助手会更聪明，不会因为系统升级就犯傻。
+                这篇文章介绍了一个叫 HyVLA-0.5 的机器人学习系统，它就像一本完整的机器人训练手册，从怎么收集数据、怎么训练模型，到怎么让机器人在真实世界里干活都包括了。对普通人来说，这意味着未来机器人能更快学会做家务或工厂里的活，变得更聪明实用。
             </div>
             
         </div>
         
         <div class="article" data-tags="CV / 计算机视觉,Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2606.08788" target="_blank" rel="noopener">MaskAlign: Token-Subset Representation Alignment for Efficient Diffusion Training</a></h2>
+            <h2><a href="https://huggingface.co/papers/2606.13872" target="_blank" rel="noopener">Avatar V: Scaling Video-Reference Avatar Video Generation</a></h2>
             <div class="meta">
                 <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">提出MaskAlign方法，从token级别分析扩散模型训练中的表示对齐问题，发现全token对齐会导致某些token主导梯度。通过选择性对齐，在保持生成质量的同时加速训练。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章研究怎么让AI画图更快更好。他们发现以前让AI学习时，有些像素点太抢风头，导致训练效率低。现在他们只挑重要的像素点来学习，就像老师只批改关键错误一样，这样AI学得更快，画出来的图质量不变。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Agent / 智能体,NLP / 自然语言处理">
-            <h2><a href="https://huggingface.co/papers/2606.13120" target="_blank" rel="noopener">EvoBrowseComp: Benchmarking Search Agents on Evolving Knowledge</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">Agent / 智能体</span>
-                
-                <span class="tag">NLP / 自然语言处理</span>
-                
-            </div>
-            <div class="cn-summary">发布EvoBrowseComp基准，包含400个英文和400个中文的实时网络问题，用于评估搜索智能体在动态知识环境中的表现。该基准通过实时网页遍历生成问题，避免静态基准的污染问题。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章做了一个新的考试题集来测试AI的搜索能力。以前的题目都是固定的，AI可能背过答案。现在他们从实时网页上出题，比如问今天的最新新闻，这样AI必须真去搜索才能答对。以后AI搜索会更靠谱，不会靠死记硬背蒙混过关。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="CV / 计算机视觉,LLM / 大语言模型">
-            <h2><a href="https://huggingface.co/papers/2606.08063" target="_blank" rel="noopener">Robust-U1: Can MLLMs Self-Recover Corrupted Visual Content for Robust Understanding?</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-                <span class="tag">LLM / 大语言模型</span>
-                
-            </div>
-            <div class="cn-summary">提出Robust-U1框架，赋予多模态大模型自我恢复受损视觉内容的能力。通过监督微调、强化学习和双奖励机制，模型能够重建被污染的图像区域，提升在真实世界中的鲁棒性。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章让AI学会自己修复模糊或损坏的图片。比如你拍了一张照片很模糊，AI能自己脑补出清晰的样子。他们用了一种训练方法，让AI既看像素对不对，又看整体像不像。以后你的手机相册可能自带这种修复功能。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2606.09304" target="_blank" rel="noopener">SG-OPD: Sign-Gated On-Policy Distillation via Sign-Consistency Gating and Phased Teacher Sampling</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">LLM / 大语言模型</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">提出SG-OPD方法，通过符号一致性门控和分阶段教师采样，解决在线蒸馏中师生轨迹不对齐和教师偏好不可靠的问题。该方法使用二元验证器作为信任信号，提升蒸馏效果。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章教AI怎么向更聪明的老师学习。以前学生AI自己乱走，老师教的可能不适用。现在他们加了一个检查员，只在老师和学生想法一致时才学习，不一致就跳过。这样AI学得更准，就像学生只做自己会做的题，不会的等老师示范。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="CV / 计算机视觉,Agent / 智能体">
-            <h2><a href="https://huggingface.co/papers/2606.09290" target="_blank" rel="noopener">Visual Para-Thinker++: A Single-Policy Multi-Agent Framework for Visual Reasoning</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-                <span class="tag">Agent / 智能体</span>
-                
-            </div>
-            <div class="cn-summary">提出Visual Para-Thinker++，一个单策略多智能体框架，通过角色分工（主、工人、总结）实现并行视觉推理。共享策略通过多智能体能力注入和角色解耦优化训练，提升推理准确性。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章让一个AI模型同时扮演多个角色来解题。比如看一张图，一个AI负责找物体，另一个负责找关系，最后一个汇总答案。这样分工合作比单打独斗更准确，就像团队做项目一样。以后AI看复杂图片会更靠谱。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2606.13392" target="_blank" rel="noopener">MiniMax Sparse Attention</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★★★</span>
-                
-                <span class="tag">LLM / 大语言模型</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">提出MiniMax稀疏注意力机制，通过轻量级索引分支为每个GQA组独立选择Top-k键值块，实现块级稀疏注意力。该方法在保持性能的同时大幅降低超长上下文的计算成本。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章解决了一个大问题：AI处理超长文本（比如整本书）时计算量太大。他们发明了一种新方法，让AI只关注最重要的部分，就像你看书时只扫关键段落。这样AI可以处理百万字级别的文本，未来AI助手能记住你所有的聊天记录。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="CV / 计算机视觉,Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2606.12575" target="_blank" rel="noopener">High-Fidelity Two-Step Image Generation via Teacher-Aligned End-to-End Distillation</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
+                <span>2026-06-15 18:13 UT</span>
                 <span class="score">★★★★☆</span>
                 
                 <span class="tag">CV / 计算机视觉</span>
@@ -356,600 +188,739 @@
                 <span class="tag">Research / 学术前沿</span>
                 
             </div>
-            <div class="cn-summary">提出Z-Image Turbo++，通过分布对齐对抗学习和步解耦参数化，将8步扩散模型蒸馏为2步高质量图像生成模型。该方法在保持高保真度的同时大幅减少推理步骤。</div>
+            <div class="cn-summary">Avatar V 提出了一种基于视频参考的虚拟人生成框架，通过直接处理参考视频的完整 token 序列，而非单张图片，来生成更逼真、更具行为特征的虚拟人视频，包括说话节奏、手势和表情。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                这篇文章让AI画图变得飞快。以前AI要算8步才能画一张好图，现在只要2步，速度提升4倍。他们用了老师AI生成的图来训练，而不是用真实照片，这样学生AI学得更快。以后你用AI画图可能秒出图，不用等半天。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="CV / 计算机视觉">
-            <h2><a href="https://huggingface.co/papers/2606.11096" target="_blank" rel="noopener">IDEAL: In-DEpth ALignment Makes A Discrete Representation AutoEncoder</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-            </div>
-            <div class="cn-summary">本文提出IDEAL框架，通过深度融合浅层和深层视觉特征，解决了离散表示自编码器在图像生成中重建质量不佳的问题。该方法利用浅层特征保留的丰富局部细节来补充深层特征的高层语义，从而显著提升重建效果。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是怎么让AI画图更清晰。以前AI画图时，有些细节会丢失，因为只用了深层特征（像看整体轮廓）。现在他们发现，浅层特征（像看局部纹理）也很重要，于是把两者结合起来，就像画画时既看整体构图又注意细节，这样画出来的图就更逼真了。未来可能让AI生成的照片质量更高，甚至能用于电影特效。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Other / 其他">
-            <h2><a href="https://huggingface.co/papers/2606.12282" target="_blank" rel="noopener">PianoKontext: Expressive Performance Rendering from Deadpan Context</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">Other / 其他</span>
-                
-            </div>
-            <div class="cn-summary">PianoKontext是一个基于流匹配的钢琴音乐表现力渲染模型，能从平淡的MIDI乐谱生成富有表现力的演奏音频。它利用动态时间规整在潜在空间对齐乐谱与演奏数据，实现了对演奏节奏和情感的有效学习。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章介绍了一个AI，能把简单的乐谱变成有感情的钢琴演奏。就像你给AI一份乐谱，它就能弹得像真人一样有快有慢、有强有弱。这对音乐爱好者来说很酷，未来可能让AI帮你自动生成伴奏或创作音乐。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="CV / 计算机视觉">
-            <h2><a href="https://huggingface.co/papers/2606.09446" target="_blank" rel="noopener">Leveraging Morphology for Historical Script Metrological Analysis</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-            </div>
-            <div class="cn-summary">本文提出一种基于形态学分析的深度学习方法，用于历史手稿的计量分析。通过从行级转录中学习字符原型，该方法能够自动提取可扩展、有意义的古文字测量数据，为历史文献研究提供新工具。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是用AI来研究古代手稿。以前专家要手动测量每个字的大小和形状，很费时间。现在AI可以自动从手稿图片中识别出字符原型，并分析它们的变形和位置，就像给每个字做体检。这对历史学家来说是个好帮手，未来可能帮我们解读更多古老文字。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2606.10896" target="_blank" rel="noopener">Flash-GMM: A Memory-Efficient Kernel for Scalable Soft Clustering</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">Flash-GMM是一个高效的内存优化内核，用于在单GPU上大规模计算高斯混合模型。它通过避免存储完整的责任矩阵，实现了20倍加速，并支持比之前大100倍的数据集训练，在近似最近邻搜索中性能显著优于k-means。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章介绍了一个让AI聚类（把相似的东西分在一起）更快、更省内存的新方法。以前处理海量数据时，电脑内存会爆掉，现在这个新方法就像给数据做了个“瘦身”，只用很少的内存就能处理超大数据。这对搜索引擎和推荐系统很有用，未来可能让AI更快地找到你想要的信息。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Agent / 智能体">
-            <h2><a href="https://huggingface.co/papers/2606.11662" target="_blank" rel="noopener">TreeSeeker: Tree-Structured Trial, Error, and Return in Deep Search</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">Agent / 智能体</span>
-                
-            </div>
-            <div class="cn-summary">TreeSeeker是一个用于深度搜索的推理框架，通过树状分支和回溯机制，让AI在回答复杂问题时能更智能地探索和验证信息。它平衡了探索与利用，避免在无效方向上浪费资源，提高了搜索效率。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是怎么让AI像侦探一样搜索信息。以前AI搜索时，要么一条路走到黑，要么到处乱撞。现在这个新方法让AI先列出几个可能的方向，然后像走迷宫一样，走不通就回头，直到找到最可靠的答案。这对智能助手和问答系统很有用，未来可能让AI回答复杂问题更准确。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="LLM / 大语言模型">
-            <h2><a href="https://huggingface.co/papers/2606.12243" target="_blank" rel="noopener">VIA-SD: Verification via Intra-Model Routing for Speculative Decoding</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">LLM / 大语言模型</span>
-                
-            </div>
-            <div class="cn-summary">Speculative decoding (SD) addresses the high inference costs of LLMs by having lightweight drafters generate candidates for large verifiers to validate in parallel. Existing draft-verify methods use b</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是怎么让AI聊天机器人更快地回答问题。以前AI生成回答时，每一步都要调用大模型，很慢。现在他们想了个办法：让一个小模型先猜，如果猜对了就直接用，猜错了再用大模型纠正。就像老师先让课代表批改作业，拿不准的再交给老师，这样效率就高了。未来可能让AI助手响应更快。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="CV / 计算机视觉">
-            <h2><a href="https://huggingface.co/papers/2606.13289" target="_blank" rel="noopener">HYDRA-X: Native Unified Multimodal Models with Holistic Visual Tokenizers</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-            </div>
-            <div class="cn-summary">HYDRA-X是首个统一图像和视频标记化的多模态模型，通过创新的时空注意力机制和层次化时间压缩，在单一视觉Transformer中实现了高效的视觉表示学习。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章介绍了一个能同时处理图片和视频的AI模型。以前处理图片和视频要用不同的模型，现在这个模型用一个“大脑”就能搞定。它学会了看静止的图片和动态的视频，就像人眼一样。这对视频编辑、自动驾驶等领域很有用，未来可能让AI更好地理解视频内容。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="CV / 计算机视觉">
-            <h2><a href="https://huggingface.co/papers/2606.12303" target="_blank" rel="noopener">From 2D Grids to 1D Tokens: Reforming Shared Representations for Multimodal Image Fusion</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-            </div>
-            <div class="cn-summary">本文提出一种新的多模态图像融合方法，通过引入一维令牌接口作为全局载体，同时保留二维空间路径用于局部结构恢复，实现了局部细节与全局外观的平衡。选择性令牌编辑机制进一步提升了融合质量。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是怎么把不同相机拍的照片（比如红外和可见光）合成一张更好的图。以前的方法要么只关注局部细节，要么只关注整体颜色。现在他们用了一种新方法，就像把照片的“整体风格”和“局部细节”分开处理，再合在一起。未来可能让手机拍照合成效果更好。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Robotics / 机器人">
-            <h2><a href="https://huggingface.co/papers/2606.08103" target="_blank" rel="noopener">Revisiting Articulated Parts Perception in Robot Manipulation</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">Robotics / 机器人</span>
-                
-            </div>
-            <div class="cn-summary">本文提出几何主结构（GPS）作为关节部件的新表示方法，通过抽象部件几何结构来平衡可扩展性和质量。该方法无需大量人工标注，能有效提升机器人对可活动部件的感知和操作能力。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是怎么让机器人更好地理解带关节的物体，比如门把手、抽屉。以前机器人要认识这些部件，需要人工标注很多数据。现在他们提出了一种新方法，让机器人自己学会识别物体的“关节”结构，就像教它认识“能转动的东西”。这对家庭服务机器人很有用，未来可能让机器人更灵活地开门、拿东西。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="CV / 计算机视觉">
-            <h2><a href="https://huggingface.co/papers/2606.06113" target="_blank" rel="noopener">Where, What, Why, and Importance: Structured Defect Grounding for Text-to-Image Feedback</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-            </div>
-            <div class="cn-summary">本文提出结构化缺陷定位（SDG）方法，将文本到图像生成中的缺陷诊断建模为结构化集合预测。通过为每个缺陷生成位置、类型、原因和重要性信息，该方法提供了比传统热图更精细的反馈。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是怎么让AI画图时自己找出画得不好的地方。以前AI只能告诉你“这里画错了”，但说不清错在哪。现在这个新方法能像医生一样，指出“这里颜色不对，因为阴影画错了，而且这个问题很重要”。这对AI绘画工具很有用，未来可能让AI自我改进，画得越来越好。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="LLM / 大语言模型,NLP / 自然语言处理">
-            <h2><a href="https://huggingface.co/papers/2606.13572" target="_blank" rel="noopener">ArogyaSutra: A Multi-Agent Framework for Multimodal Medical Reasoning in Indic Languages</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">LLM / 大语言模型</span>
-                
-                <span class="tag">NLP / 自然语言处理</span>
-                
-            </div>
-            <div class="cn-summary">本文提出了ArogyaSutra，一个用于印度语言多模态医疗推理的多智能体框架。该框架旨在解决现有英语中心化多模态大模型在低资源语言和医疗场景中的局限性，通过构建大规模多语言多模态医疗问答数据集ArogyaBodha来支持复杂医疗查询。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是为了让AI能更好地帮助印度农村地区的人看病，他们开发了一个新系统。这个系统能听懂印度本地语言，还能看懂医学图片，就像有个懂多种语言的医生助手。未来，这种技术可能会让更多不会英语的人也能享受到AI医疗帮助。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2606.12488" target="_blank" rel="noopener">A Stationary (and Therefore Compatible) Representation is All You Need</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">本文证明了通过d-Simplex固定分类器学习的平稳表示在形式定义上意味着兼容性，为后续研究奠定了基础。研究还指出，使用交叉熵损失的d-Simplex固定分类器在学习兼容性时可能无法完全捕捉模型更新之间的高阶依赖关系。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章研究的是如何让AI模型在更新后，之前学到的特征还能继续使用。他们发现一种叫d-Simplex的方法可以让模型更新后保持稳定，就像升级手机系统后旧应用还能用一样。不过这个方法还有改进空间，未来可能让AI升级更顺畅。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="LLM / 大语言模型,Agent / 智能体">
-            <h2><a href="https://huggingface.co/papers/2606.12451" target="_blank" rel="noopener">ToolSense: A Diagnostic Framework for Auditing Parametric Tool Knowledge in LLMs</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">LLM / 大语言模型</span>
-                
-                <span class="tag">Agent / 智能体</span>
-                
-            </div>
-            <div class="cn-summary">Large language models deployed as agents over large tool catalogs face a critical tool-retrieval bottleneck. As embedding-based retrieval approaches rely on compact encoders that may under-capture spe</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章介绍了一个新工具，用来检查AI是否真的理解它使用的各种工具。就像检查一个助手是否真的知道每个工具怎么用，而不仅仅是记住名字。未来这能帮助AI更可靠地调用工具，比如让智能助手更准确地帮你订机票或查天气。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2606.11409" target="_blank" rel="noopener">Risk Under Pressure: Compute-Aware Evaluation of Adversarial Robustness in Language Models</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">LLM / 大语言模型</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">Adversarial robustness evaluations of large language models (LLMs) typically report attack success rate (ASR) under fixed query budgets, implicitly treating all attacks as equally costly. In practice,</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章提出了一个新方法来评估AI模型的安全性。以前只看攻击是否成功，现在还要看攻击需要多少计算资源，就像评估一个锁是否安全，不仅要看能不能撬开，还要看撬开需要多少力气。未来这能帮助设计更安全的AI系统。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="LLM / 大语言模型,Agent / 智能体">
-            <h2><a href="https://huggingface.co/papers/2606.07867" target="_blank" rel="noopener">The Cold-Start Safety Gap in LLM Agents</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">LLM / 大语言模型</span>
-                
-                <span class="tag">Agent / 智能体</span>
-                
-            </div>
-            <div class="cn-summary">Are tool-calling LLM agents equally safe throughout a conversation? We discover they are not: agents are most vulnerable at the very start of a session and become substantially safer after a few regul</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章发现AI助手在刚开始对话时最容易出错或产生不安全行为，就像刚启动的电脑可能有点卡顿。但随着对话进行，它会变得越来越安全。未来设计AI助手时，可能需要特别关注刚开始的对话，比如加个安全预热期。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Agent / 智能体,Product / 产品与商业">
-            <h2><a href="https://huggingface.co/papers/2606.10423" target="_blank" rel="noopener">WebChallenger: A Reliable and Efficient Generalist Web Agent</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">Agent / 智能体</span>
-                
-                <span class="tag">Product / 产品与商业</span>
-                
-            </div>
-            <div class="cn-summary">Autonomous web navigation remains challenging for LLM agents, and the strongest generalist systems rely on proprietary reasoning models whose inference cost is prohibitive for the repetitive tasks whe</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章介绍了一个能自动浏览网页的AI助手，它模仿人类看网页的方式：只关注重要部分、记住网站结构、熟悉常见操作。这样它就能更高效地帮你完成网上任务，比如自动填表或比价，而且不需要很贵的AI模型。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Agent / 智能体,Product / 产品与商业">
-            <h2><a href="https://huggingface.co/papers/2606.13174" target="_blank" rel="noopener">Getting Better at Working With You: Compiling User Corrections into Runtime Enforcement for Coding Agents</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">Agent / 智能体</span>
-                
-                <span class="tag">Product / 产品与商业</span>
-                
-            </div>
-            <div class="cn-summary">Interactive LLM agents are becoming part of daily work, but they do not reliably become easier to work with over time: a correction remembered in one session may still be violated in the next. We stud</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是如何让AI助手记住你的偏好。比如你告诉它不要用某种方式写代码，它下次就会记住并自动避免。这就像教一个新同事做事，他不仅记住你的建议，还会自动检查自己有没有做错。未来AI助手会更懂你的习惯。
+                这篇文章讲的是怎么让虚拟人的视频更逼真，不只是长得像，连说话、做手势、表情都跟真人一样。以前用一张照片生成，现在用一段视频做参考，效果更好。以后我们可能会看到更真实的虚拟主播或数字人，甚至能模仿你的动作说话。
             </div>
             
         </div>
         
         <div class="article" data-tags="Agent / 智能体,Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2606.13594" target="_blank" rel="noopener">See What I See, Know What I Think: Dense Latent Communication Across Heterogeneous Agents</a></h2>
+            <h2><a href="https://huggingface.co/papers/2606.13707" target="_blank" rel="noopener">Orchestra-o1: Omnimodal Agent Orchestration</a></h2>
             <div class="meta">
                 <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">Agent / 智能体</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">Multi-agent systems communicate mostly through text, paying a lossy and expensive decode and re-encode cost. KV-cache communication is a promising alternative, yet most prior work is homogeneous, usin</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章研究的是不同AI模型之间能否直接“心灵感应”式地传递信息，而不需要翻译成文字。就像两个人不用说话就能明白对方看到什么和想什么。未来这可能让不同AI系统更高效地协作，比如自动驾驶汽车之间直接共享路况信息。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2606.12730" target="_blank" rel="noopener">Rethinking Psychometric Evaluation of LLMs: When and Why Self-Reports Predict Behavior</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">LLM / 大语言模型</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">Anticipating LLM behavioral tendencies from low-cost psychometric probes is critical for safe deployment, but only if self-reports (SR) reliably predict behavior. Recent work documented substantial SR</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章研究的是如何更准确地预测AI的行为。以前用性格测试（比如外向性）来预测AI会怎么做，但效果不好。现在发现问AI“你打算怎么做”反而更准，就像问一个人“你明天会去跑步吗”比测他的性格更能预测他是否真的会去。未来这能帮助更好地理解AI的行为模式。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2606.00467" target="_blank" rel="noopener">On the Limits of LLM Adaptability: Impact of Model-Internalized Priors on Annotation Task Performance</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">LLM / 大语言模型</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">Large Language Models (LLMs) are increasingly used for zero-shot annotation and LLM-as-a-judge tasks, yet their reliability hinges on how model-internalized priors interact with user-provided instruct</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章发现AI模型在判断内容时，如果一开始判断错了，后面很难纠正过来。就像一个人先入为主地认为某句话是冒犯的，即使你解释它其实不是，他可能还是坚持原判。未来设计AI时需要更注意如何让模型更灵活地接受新信息。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Product / 产品与商业,NLP / 自然语言处理">
-            <h2><a href="https://www.theverge.com/tech/948890/siri-wont-be-your-ai-girlfriend" target="_blank" rel="noopener">Siri won’t be your AI girlfriend</a></h2>
-            <div class="meta">
-                <span class="source-badge source-theverge">The Verge</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">Product / 产品与商业</span>
-                
-                <span class="tag">NLP / 自然语言处理</span>
-                
-            </div>
-            <div class="cn-summary">苹果公司高管表示，新版Siri将避免像其他聊天机器人那样过度奉承，而是懂得何时保持沉默。这种设计理念旨在提供更自然、更不令人反感的交互体验。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章说苹果的新Siri不会像其他AI那样总说好听话，而是会知道什么时候该闭嘴。对普通人来说，这意味着以后用Siri可能不会那么烦人，它会更懂分寸。未来AI助手可能会更注重自然交流，而不是一味讨好用户。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Agent / 智能体,Product / 产品与商业">
-            <h2><a href="https://www.theverge.com/ai-artificial-intelligence/949005/jeff-bezos-prometheus-artificial-general-engineer" target="_blank" rel="noopener">Jeff Bezos’ AI startup aims to build an ‘artificial general engineer’</a></h2>
-            <div class="meta">
-                <span class="source-badge source-theverge">The Verge</span>
-                <span>2026-06-14 11:10 UT</span>
+                <span>2026-06-15 18:13 UT</span>
                 <span class="score">★★★★☆</span>
                 
                 <span class="tag">Agent / 智能体</span>
                 
-                <span class="tag">Product / 产品与商业</span>
+                <span class="tag">Research / 学术前沿</span>
                 
             </div>
-            <div class="cn-summary">亚马逊创始人杰夫·贝佐斯的新AI初创公司Prometheus，目标是开发“通用人工智能工程师”，用于辅助实体产品的设计。该公司旨在打造AI驱动的工程工具，以革新产品设计流程。</div>
+            <div class="cn-summary">Orchestra-o1 是一个多模态智能体编排框架，能够协调文本、图像、音频和视频等多种输入，实现高效的多智能体协作。它解决了现有框架只能处理少数模态的局限。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                贝佐斯搞了个新公司，想造一个能当工程师的AI，帮人类设计实物产品。对普通人来说，未来买的东西可能都是AI设计的，更高效也可能更创新。这可能会改变制造业，让产品设计更快更便宜。
+                这篇文章介绍了一个叫 Orchestra-o1 的系统，它能让多个 AI 助手一起工作，处理文字、图片、声音和视频。以前每个助手只能干一种活，现在它们可以互相配合。未来你可能会有一个全能 AI 团队，帮你同时处理文档、图片和视频任务。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
+            <h2><a href="https://huggingface.co/papers/2606.14061" target="_blank" rel="noopener">LLM Agents Can See Code Repositories</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">LLM / 大语言模型</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">研究发现，让大语言模型智能体像人类开发者一样“看”代码仓库的视觉结构（如文件夹层级）并不能提升性能，反而会增加成本。纯视觉方式会导致准确率下降和 token 消耗增加。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章说，让 AI 看代码的时候，如果只给它看代码的文件夹结构图，反而会让它变笨，还更费钱。就像让一个程序员只看目录不看代码内容，反而找不到 bug。所以目前 AI 还是更适合直接读代码文字，而不是看视觉布局。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="CV / 计算机视觉,Research / 学术前沿">
+            <h2><a href="https://huggingface.co/papers/2606.14700" target="_blank" rel="noopener">RepFusion: Leveraging Multimodal Priors for Denoising in Representation Space</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">CV / 计算机视觉</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">RepFusion 提出了一种新方法，利用多模态大语言模型作为噪声表示编码器，将文本到图像生成中的去噪过程与预训练的语言模型先验知识结合，提升了生成质量。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章讲了一种新方法，让 AI 在根据文字画图时，能更好地利用语言模型的知识来去噪，画出更清晰的图片。就像你描述一个场景，AI 不仅能听懂，还能画出更符合你想象的画面。未来文字生成图片会更精准。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="CV / 计算机视觉,Research / 学术前沿">
+            <h2><a href="https://huggingface.co/papers/2606.13432" target="_blank" rel="noopener">OmniDirector: General Multi-Shot Camera Cloning without Cross-Paired Data</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">CV / 计算机视觉</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">OmniDirector 提出了一种通用的摄像机运动克隆方法，通过将摄像机参数编码为网格运动视频，实现了多镜头视频生成中的复杂摄像机运动复制，无需配对数据。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章介绍了一个叫 OmniDirector 的工具，它能从参考视频里学会摄像机的运动方式，比如推拉摇移，然后在新视频里复制出来。以后你拍视频时，可以轻松模仿电影里的镜头运动，让视频更专业。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="CV / 计算机视觉,Research / 学术前沿">
+            <h2><a href="https://huggingface.co/papers/2606.00793" target="_blank" rel="noopener">MBench: A Comprehensive Benchmark on Memory Capability for Video World Models</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">CV / 计算机视觉</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">MBench 是一个专门评估视频世界模型记忆能力的基准测试，衡量模型在长时间跨度内保持内部状态一致性的能力，弥补了现有基准只关注视觉质量的不足。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章提出了一个叫 MBench 的测试，专门检查 AI 视频模型有没有“记性”。比如看一段长视频，AI 能不能记住前面发生了什么，而不是只看画面漂不漂亮。这对未来 AI 理解电影或游戏场景很重要。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Agent / 智能体,Policy / 政策与伦理">
+            <h2><a href="https://huggingface.co/papers/2606.10813" target="_blank" rel="noopener">RedAct: Redacting Agent Capability Traces for Procedural Skill Protection</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">Agent / 智能体</span>
+                
+                <span class="tag">Policy / 政策与伦理</span>
+                
+            </div>
+            <div class="cn-summary">RedAct 提出了一种保护智能体执行轨迹中私有技能的方法，通过定位关键信息并重写轨迹，防止下游方法从轨迹中恢复出核心算法和策略。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章讲的是怎么保护 AI 的“独门秘籍”。当 AI 执行任务时，会留下操作记录，别人可能从中偷学它的技巧。RedAct 就像给记录打码，只保留必要信息，防止技术泄露。这对保护公司或个人的 AI 技能很重要。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="CV / 计算机视觉,Research / 学术前沿">
+            <h2><a href="https://huggingface.co/papers/2606.06309" target="_blank" rel="noopener">RhymeFlow: Training-Free Acceleration for Video Generation with Asynchronous Denoising Flow Scheduling</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">CV / 计算机视觉</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">RhymeFlow 提出了一种无需训练的加速方法，通过异步去噪流调度，在视频生成中跳过中间帧的完整去噪过程，显著降低推理延迟和计算成本。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章介绍了一个叫 RhymeFlow 的方法，能让 AI 生成视频更快。它发现相邻画面有很多重复，所以只对关键帧做完整处理，中间帧简单处理就行。以后你让 AI 生成视频，可能几秒钟就能搞定，不用等很久。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Agent / 智能体,Research / 学术前沿">
+            <h2><a href="https://huggingface.co/papers/2606.12384" target="_blank" rel="noopener">APPO: Agentic Procedural Policy Optimization</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">Agent / 智能体</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">APPO 提出了一种新的智能体强化学习方法，通过分析决策点分布和信用分配，更精细地识别哪些中间决策影响最终结果，从而提升多轮工具使用的性能。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章讲的是怎么让 AI 助手在多次操作中学会“复盘”。比如 AI 帮你订机票，它需要知道哪一步做对了、哪一步做错了。APPO 方法能更精准地找到关键决策点，让 AI 学得更快。未来 AI 助手会更靠谱，少犯错误。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Agent / 智能体,Research / 学术前沿">
+            <h2><a href="https://huggingface.co/papers/2606.12736" target="_blank" rel="noopener">Benchmarking AI Agents for Addressing Scientific Challenges Across Scales</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">Agent / 智能体</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">本文提出了SciAgentArena基准测试，用于评估AI代理在真实科学研究场景中的能力。该基准包含约200个任务，支持逐步验证和交互式评估，旨在弥补现有基准在复杂性和交互性上的不足。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章说的是，科学家们想用AI助手来帮忙做研究，但不知道它们到底好不好用。现在有了一个叫SciAgentArena的考试系统，可以测试AI助手在真实科研场景中的表现，比如做实验、分析数据。未来，这个系统能帮我们选出更靠谱的AI科研助手。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
+            <h2><a href="https://huggingface.co/papers/2605.30789" target="_blank" rel="noopener">Smaller Models are Natural Explorers for Policy-Level Diversity in GRPO</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">LLM / 大语言模型</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">研究发现，在GRPO强化学习框架中，较小的模型反而能提供更自然、更连贯的探索多样性。基于此，提出了S2L-PO方法，利用固定的小模型来指导大模型训练，提升策略多样性。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章发现，在训练AI模型时，小模型比大模型更会“探索”，能想出更多样化的解决方案。他们提出了一种新方法，让小模型当“老师”来教大模型，这样大模型就能学得更好。未来，这可能让AI训练更高效，不用总依赖超大模型。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Robotics / 机器人,Research / 学术前沿">
+            <h2><a href="https://huggingface.co/papers/2606.02641" target="_blank" rel="noopener">CARVE: Certified Affordable Repair of Vetoed Maneuvers via Envelopes for Interactive Driving</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">Robotics / 机器人</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">论文提出了CARVE框架，用于自动驾驶中交互式驾驶场景的“可修复性认证”。它能判断一个被否决的驾驶操作是否可以通过其他车辆的微小调整变得可行，并明确责任归属和备用方案。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章解决自动驾驶的一个难题：当AI决定不能超车时，其实可能只要旁边车稍微让一下就能成功。CARVE系统能分析这种情况，告诉AI“如果对方让一点，你就能过”，并规划好备用方案。未来，这能让自动驾驶更灵活、更安全，像老司机一样懂得协商。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="NLP / 自然语言处理,CV / 计算机视觉">
+            <h2><a href="https://huggingface.co/papers/2606.13141" target="_blank" rel="noopener">Rethinking RAG in Long Videos: What to Retrieve and How to Use It?</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">NLP / 自然语言处理</span>
+                
+                <span class="tag">CV / 计算机视觉</span>
+                
+            </div>
+            <div class="cn-summary">本文针对长视频中的检索增强生成（RAG）问题，提出了V-RAGBench基准和CARVE方法。V-RAGBench能更准确地评估视频检索和生成，而CARVE通过多模态并行检索和自适应重排序，提升了视频问答的准确性。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章讲的是如何让AI更好地理解长视频，比如从一部电影里找到你问的问题的答案。他们做了一个新的测试系统，能更准确地判断AI找得对不对，还发明了一种方法让AI同时从画面和声音里找线索。未来，这能让AI帮你快速从视频里找到关键信息，比如在监控录像里找人。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="LLM / 大语言模型,Policy / 政策与伦理">
+            <h2><a href="https://huggingface.co/papers/2606.12291" target="_blank" rel="noopener">Measuring Epistemic Resilience of LLMs Under Misleading Medical Context</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">LLM / 大语言模型</span>
+                
+                <span class="tag">Policy / 政策与伦理</span>
+                
+            </div>
+            <div class="cn-summary">研究发现，LLM在医学考试中表现优秀，但很容易被误导性上下文干扰，导致错误判断。为此，提出了MedMisBench基准来评估模型的“认知韧性”，结果显示模型在误导下准确率从71.1%骤降至38.0%。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章警告说，虽然AI在医学考试中能考高分，但如果你在问题里加一点误导信息，它就会答错。比如，你问“感冒该吃什么药”，但故意说“有人说吃糖有用”，AI可能就信了。这提醒我们，不能盲目相信AI的医疗建议，未来需要让AI学会抵抗误导。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
+            <h2><a href="https://huggingface.co/papers/2606.14694" target="_blank" rel="noopener">AdaSR: Adaptive Streaming Reasoning with Hierarchical Relative Policy Optimization</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">LLM / 大语言模型</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">论文提出AdaSR框架，让大模型能边接收流式输入（如音频、视频）边推理，并动态决定何时思考、分配多少计算资源。这突破了传统“读完再想”的模式，提升了在动态场景中的适应能力。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章让AI学会“边看边想”，而不是等所有信息都看完再思考。比如，你在看直播时问AI“现在发生了什么”，它能一边看一边回答，而不是等直播结束。未来，这能让AI更实时地处理视频、音频流，比如实时翻译或监控。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="CV / 计算机视觉,Research / 学术前沿">
+            <h2><a href="https://huggingface.co/papers/2606.11152" target="_blank" rel="noopener">P3D-Bench: Benchmarking MLLMs for Parametric 3D Generation and Structural Reasoning</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">CV / 计算机视觉</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">本文提出了P3D-Bench基准，用于评估多模态大模型通过代码生成参数化3D模型的能力。该基准不仅关注外观，还检验模型是否理解几何结构、语义和装配关系。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章测试AI能不能用代码来设计3D物体，比如一个椅子。它不光看AI画得像不像，还检查AI是否知道椅子的尺寸、零件怎么组装。未来，这能让AI帮你自动设计家具或零件，你只要说“我想要一个圆桌”，AI就能生成精确的3D模型。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="CV / 计算机视觉,Research / 学术前沿">
+            <h2><a href="https://huggingface.co/papers/2606.08670" target="_blank" rel="noopener">WaveDiT: Distribution-Aware Wavelet Flow Matching for Efficient 3D Brain MRI Synthesis</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">CV / 计算机视觉</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">论文提出WaveDiT，一种基于小波变换的3D脑部MRI图像生成方法。它通过在小波系数空间进行流匹配，实现了高效、高保真的全分辨率3D脑部图像合成，可用于数据增强。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章教AI如何生成3D的脑部扫描图像，就像给大脑拍3D照片。他们用了一种叫小波变换的技巧，让生成过程又快又清晰，细节不丢失。未来，这能帮助医生用AI生成更多样化的脑部图像，用于训练诊断模型，比如更早发现脑瘤。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Robotics / 机器人,CV / 计算机视觉">
+            <h2><a href="https://huggingface.co/papers/2606.06194" target="_blank" rel="noopener">ActiveMimic: Egocentric Video Pretraining with Active Perception</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">Robotics / 机器人</span>
+                
+                <span class="tag">CV / 计算机视觉</span>
+                
+            </div>
+            <div class="cn-summary">本文提出ActiveMimic框架，从第一人称视频中提取人的主动感知行为（如调整视角），并用于机器人预训练。实验证明，学习这种“主动感知”能显著提升机器人在操作任务中的表现。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章教机器人从人类的第一人称视频里学习，比如你戴着头戴相机做菜的视频。他们发现，人类在做事时会不断调整视角，这种“主动看”的行为对机器人很有用。未来，机器人可以通过看大量人类视频，学会像人一样灵活地操作物体，比如抓杯子或拧瓶盖。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="CV / 计算机视觉,Agent / 智能体">
+            <h2><a href="https://huggingface.co/papers/2606.08952" target="_blank" rel="noopener">AlloSpatial: Agentic Harness Framework for Spatial Reasoning in Foundation Models</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">CV / 计算机视觉</span>
+                
+                <span class="tag">Agent / 智能体</span>
+                
+            </div>
+            <div class="cn-summary">论文提出AlloSpatial框架，帮助多模态基础模型将第一人称视角的观察转换为全局空间认知。通过World2Mind模块和Spatial Belief Tracker，模型能更好地理解物体位置、路径和空间关系。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章让AI学会“换位思考”，从自己的视角（比如摄像头看到的）转换成全局地图视角。比如，你告诉AI“我面前有一张桌子”，它能知道桌子在房间的哪个位置。未来，这能让机器人或自动驾驶汽车更好地理解周围环境，比如知道“左边有堵墙，右边是门”。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="LLM / 大语言模型,Robotics / 机器人">
+            <h2><a href="https://huggingface.co/papers/2606.12366" target="_blank" rel="noopener">APT: Action Expert Pretraining Improves Instruction Generalization of Vision-Language-Action Policies</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">LLM / 大语言模型</span>
+                
+                <span class="tag">Robotics / 机器人</span>
+                
+            </div>
+            <div class="cn-summary">本文指出视觉-语言-动作（VLA）模型在泛化到未见过的语言指令时表现不佳，原因是训练数据中语言多样性远低于视觉和动作，导致模型依赖视觉捷径。作者从贝叶斯角度提出一种新方法，通过分解策略来缓解数据不平衡问题，从而提升模型对语言指令的泛化能力。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章讲的是机器人怎么听懂人话。现在的机器人模型虽然能看懂东西、听懂指令，但如果指令是它没见过的说法，就容易出错。原因是训练数据里“动作”和“图像”很多，但“语言”花样太少，模型就偷懒只看图像。作者想了个新办法，让模型更重视语言，这样以后机器人就能更好地理解各种不同的指令了。
             </div>
             
         </div>
         
         <div class="article" data-tags="Other / 其他">
-            <h2><a href="https://www.theverge.com/business/948996/spacex-ipo-elon-musk" target="_blank" rel="noopener">SpaceX’s massive IPO: all the latest news</a></h2>
+            <h2><a href="https://huggingface.co/papers/2606.10747" target="_blank" rel="noopener">The Arbiter Agent: Continually Monitoring Multi-Agent Conversations to Detect Emergent Misalignment</a></h2>
             <div class="meta">
-                <span class="source-badge source-theverge">The Verge</span>
-                <span>2026-06-14 11:10 UT</span>
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-06-15 18:13 UT</span>
                 <span class="score">★★☆☆☆</span>
                 
                 <span class="tag">Other / 其他</span>
                 
             </div>
-            <div class="cn-summary">SpaceX&amp;#8217;s IPO on Friday allows the public to buy shares of the combined rocket, AI, and social media company for the first time, and raised enough money to make Elon Musk the first trillionaire. </div>
+            <div class="cn-summary">As AI systems built from multiple language-model agents become more common, they are increasingly used to make decisions together: discussing, negotiating, and acting on shared tasks. While individual</div>
             
         </div>
         
-        <div class="article" data-tags="Product / 产品与商业,Other / 其他">
-            <h2><a href="https://www.theverge.com/ai-artificial-intelligence/948409/elon-musk-trillionaire-spacex-ipo" target="_blank" rel="noopener">Elon Musk is the world&amp;#8217;s first trillionaire</a></h2>
+        <div class="article" data-tags="Other / 其他">
+            <h2><a href="https://huggingface.co/papers/2606.14346" target="_blank" rel="noopener">Squeeze-Release: Iterative Pruning with Exact Structural Minimization</a></h2>
             <div class="meta">
-                <span class="source-badge source-theverge">The Verge</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">Product / 产品与商业</span>
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★☆☆☆</span>
                 
                 <span class="tag">Other / 其他</span>
                 
             </div>
-            <div class="cn-summary">随着SpaceX的IPO，埃隆·马斯克的净资产突破万亿美元大关，成为全球首位万亿富翁。他的财富主要来自SpaceX和特斯拉等公司的股份。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                马斯克因为SpaceX上市，成了全世界第一个身家超过一万亿美元的人。对普通人来说，这新闻就是看个热闹，但说明科技公司能创造巨大财富。未来可能会有更多科技大佬变成超级富豪。
-            </div>
+            <div class="cn-summary">Unstructured pruning produces sparse weight tensors, but the standard implementation keeps tensor shapes unchanged so the deployed model is no smaller than before pruning. We present an exact structur</div>
             
         </div>
         
-        <div class="article" data-tags="Product / 产品与商业,NLP / 自然语言处理">
+        <div class="article" data-tags="Other / 其他">
+            <h2><a href="https://huggingface.co/papers/2606.14600" target="_blank" rel="noopener">LoSoNA: A Benchmark for Local Social Norm Adaptation in Group Conversations</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★☆☆☆</span>
+                
+                <span class="tag">Other / 其他</span>
+                
+            </div>
+            <div class="cn-summary">Online group chats are social spaces with local conversational norms that are rarely stated explicitly. The ability and willingness of LLM-based agents to recognize and adapt to these norms remains mo</div>
+            
+        </div>
+        
+        <div class="article" data-tags="Other / 其他">
+            <h2><a href="https://huggingface.co/papers/2606.09813" target="_blank" rel="noopener">iMaC: Translating Actions into Motion and Contact Images for Embodied World Models</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★☆☆☆</span>
+                
+                <span class="tag">Other / 其他</span>
+                
+            </div>
+            <div class="cn-summary">Embodied world models have emerged as a pivotal paradigm for visual robotic decision-making and interactive environment simulation. However, conventional embodied frameworks rely on low-dimensional st</div>
+            
+        </div>
+        
+        <div class="article" data-tags="Other / 其他">
+            <h2><a href="https://huggingface.co/papers/2606.12476" target="_blank" rel="noopener">Quickest Detection of Hallucination Onset: Delay Bounds and Learned CUSUM Statistics</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★☆☆☆</span>
+                
+                <span class="tag">Other / 其他</span>
+                
+            </div>
+            <div class="cn-summary">Token-level hallucination detectors are evaluated as classifiers, by AUC over all tokens, yet a streaming monitor is judged by its reaction time: the number of tokens that pass between the onset of a </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Other / 其他">
+            <h2><a href="https://huggingface.co/papers/2606.13652" target="_blank" rel="noopener">World Tracing: Generative Pixel-Aligned Geometry Beyond the Visible</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★☆☆☆</span>
+                
+                <span class="tag">Other / 其他</span>
+                
+            </div>
+            <div class="cn-summary">Image-to-3D methods often trade off faithfulness and completeness: depth estimators are anchored to input pixels but stop at the visible surface, while image-to-3D models generate complete shapes that</div>
+            
+        </div>
+        
+        <div class="article" data-tags="Other / 其他">
+            <h2><a href="https://huggingface.co/papers/2606.01008" target="_blank" rel="noopener">FVSpec: Real-World Property-Based Tests as Lean Challenges</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★☆☆☆</span>
+                
+                <span class="tag">Other / 其他</span>
+                
+            </div>
+            <div class="cn-summary">We present a benchmark for evaluating AI models and agents on real-world formal software verification tasks. We first scrape 11,039 property-based tests (PBTs) from real-world Python repositories, the</div>
+            
+        </div>
+        
+        <div class="article" data-tags="Other / 其他">
+            <h2><a href="https://huggingface.co/papers/2606.01462" target="_blank" rel="noopener">An Enigma of Artificial Reason: Investigating the Production-Evaluation Gap in Large Reasoning Models</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★☆☆☆</span>
+                
+                <span class="tag">Other / 其他</span>
+                
+            </div>
+            <div class="cn-summary">Studies of human reasoning have shown that people are typically stronger at evaluating reasoning than producing it from scratch. In contrast, large reasoning models (LRMs) are trained to excel at prod</div>
+            
+        </div>
+        
+        <div class="article" data-tags="Other / 其他">
+            <h2><a href="https://huggingface.co/papers/2606.12594" target="_blank" rel="noopener">Pythagoras-Prover: Advancing Efficient Formal Proving via Augmented Lean Formalisation</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★☆☆☆</span>
+                
+                <span class="tag">Other / 其他</span>
+                
+            </div>
+            <div class="cn-summary">Modern Lean theorem provers achieve strong performance only with substantial training and inference compute, driven in part by scarce verified proof data and the long reasoning traces of formal proof </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Product / 产品与商业">
             <h2><a href="https://www.theverge.com/podcast/949079/siri-ai-good-vergecast" target="_blank" rel="noopener">Siri is good now??</a></h2>
             <div class="meta">
                 <span class="source-badge source-theverge">The Verge</span>
-                <span>2026-06-14 11:10 UT</span>
+                <span>2026-06-15 18:13 UT</span>
                 <span class="score">★★★★☆</span>
                 
                 <span class="tag">Product / 产品与商业</span>
                 
-                <span class="tag">NLP / 自然语言处理</span>
-                
             </div>
-            <div class="cn-summary">苹果发布了新版Siri，其性能大幅提升，从过去“有点用”或“完全灾难”的状态，变得出乎意料的好用。这标志着Siri在经历了十多年的尴尬后，终于迎来了重大改进。</div>
+            <div class="cn-summary">苹果发布了新版Siri，性能大幅提升，从过去“偶尔有用”甚至“连定时器都设不好”的糟糕体验，变得真正好用。这标志着Siri在诞生15年后终于迎来重大改进。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                苹果的新Siri终于变好用了，不再是以前那个连定时器都设不好的笨蛋了。对普通人来说，这意味着以后用iPhone、iPad时，语音助手会更靠谱，能帮你做更多事。未来Siri可能会成为更强大的个人助理。
+                这篇文章说苹果的语音助手Siri终于变聪明了，以前它经常犯傻，连设个闹钟都搞不定，现在新版Siri好用多了。对普通人来说，以后用iPhone喊Siri帮忙会更靠谱，比如让它查天气、设提醒，不会再被气到。未来Siri可能会更智能，能处理更复杂的任务。
             </div>
             
         </div>
         
-        <div class="article" data-tags="CV / 计算机视觉,Product / 产品与商业">
+        <div class="article" data-tags="Research / 学术前沿">
             <h2><a href="https://www.theverge.com/ai-artificial-intelligence/948425/tribeca-2026-dear-upstairs-neighbors-google-deepmind-openai" target="_blank" rel="noopener">The future of Hollywood isn’t feeding prompts into vanilla gen AI models</a></h2>
             <div class="meta">
                 <span class="source-badge source-theverge">The Verge</span>
-                <span>2026-06-14 11:10 UT</span>
+                <span>2026-06-15 18:13 UT</span>
                 <span class="score">★★★☆☆</span>
                 
-                <span class="tag">CV / 计算机视觉</span>
-                
-                <span class="tag">Product / 产品与商业</span>
+                <span class="tag">Research / 学术前沿</span>
                 
             </div>
-            <div class="cn-summary">文章认为，生成式AI目前还无法制作出人们愿意付费观看的电影，其输出仍局限于短视频片段。好莱坞的未来不在于直接使用现成的AI模型，而在于更精细的整合与创新。</div>
+            <div class="cn-summary">尽管生成式AI被大肆宣传将颠覆电影行业，但目前还没有真正值得付费观看的AI电影作品。大多数AI视频模型只能生成短视频片段，距离好莱坞级别的长片制作还很遥远。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                这篇文章说，现在的AI还拍不出能卖票的电影，只能做点短视频。对普通人来说，短期内不用担心看到全是AI拍的烂片。未来AI可能会成为电影制作的辅助工具，而不是完全取代人类导演。
+                这篇文章说，虽然大家都在吹AI能拍电影，但到现在也没出现一部好看的AI电影。现在的AI只能做几秒钟的小短片，离拍出《阿凡达》那种大片还差得远。对普通人来说，短期内还看不到AI拍的电影，但未来AI可能会帮电影人做特效或辅助创作。
             </div>
             
         </div>
         
-        <div class="article" data-tags="CV / 计算机视觉,Product / 产品与商业">
+        <div class="article" data-tags="Product / 产品与商业,CV / 计算机视觉">
             <h2><a href="https://www.theverge.com/tech/949360/apple-ai-photo-edit-reframe-extend-clean-up-hands-on" target="_blank" rel="noopener">Apple’s new AI photo editing tools mostly work, for better and worse</a></h2>
             <div class="meta">
                 <span class="source-badge source-theverge">The Verge</span>
-                <span>2026-06-14 11:10 UT</span>
+                <span>2026-06-15 18:13 UT</span>
                 <span class="score">★★★☆☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
                 
                 <span class="tag">Product / 产品与商业</span>
                 
+                <span class="tag">CV / 计算机视觉</span>
+                
             </div>
-            <div class="cn-summary">苹果为iPhone推出了首批AI照片编辑功能，虽然相比谷歌Pixel等手机仍显保守，但效果尚可。这些功能在带来便利的同时，也引发了关于AI篡改照片真实性的担忧。</div>
+            <div class="cn-summary">苹果在iOS 27中首次加入了AI照片编辑功能，虽然相比谷歌Pixel手机上的功能还算保守，但整体效果不错。这些功能既有好处也有坏处，可能会改变人们拍照和修图的习惯。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                苹果手机现在有了AI修图功能，虽然没其他手机那么强大，但用起来还不错。对普通人来说，以后拍照片可以轻松修掉瑕疵，但也要小心照片可能被AI改得不像真的。未来手机修图会越来越智能，真假难辨。
+                这篇文章说苹果手机终于有了AI修图功能，比如可以自动去掉照片里的路人或调整光线。虽然不如谷歌手机那么强大，但用起来还行。对普通人来说，以后拍照修图会更方便，一键就能让照片更好看。但也要小心，AI修图可能会让照片变得不真实。
             </div>
             
         </div>
         
-        <div class="article" data-tags="Policy / 政策与伦理,LLM / 大语言模型">
+        <div class="article" data-tags="Policy / 政策与伦理">
             <h2><a href="https://www.theverge.com/ai-artificial-intelligence/949553/anthropic-fable-5-mythos-5-government-national-security" target="_blank" rel="noopener">Anthropic cuts off Fable 5 and Mythos 5 access following government order</a></h2>
             <div class="meta">
                 <span class="source-badge source-theverge">The Verge</span>
-                <span>2026-06-14 11:10 UT</span>
+                <span>2026-06-15 18:13 UT</span>
                 <span class="score">★★★★★</span>
                 
                 <span class="tag">Policy / 政策与伦理</span>
                 
-                <span class="tag">LLM / 大语言模型</span>
-                
             </div>
-            <div class="cn-summary">由于政府以国家安全为由发布指令，Anthropic公司被迫切断了对Fable 5和Mythos 5这两个AI模型的访问权限，包括其自身员工在内。这显示了AI模型在国家安全问题上面临的严格管控。</div>
+            <div class="cn-summary">美国政府以国家安全为由，命令AI公司Anthropic切断其最先进的模型Fable 5和Mythos 5对所有外国用户（包括公司内部的外籍员工）的访问。Anthropic已完全关闭这些模型的访问权限。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                美国政府因为国家安全，命令一家AI公司关掉两个很厉害的AI模型，连公司自己人都用不了。对普通人来说，这说明AI技术太强大，政府会出手管。未来AI的发展可能会受到更多法规限制。
+                这篇文章说美国政府担心AI技术被外国利用，所以强制一家美国AI公司关掉它最厉害的AI模型，连公司里的外国员工都不能用。对普通人来说，这说明AI技术已经成了国家间的敏感话题。未来可能会有更多国家限制AI技术的出口和使用。
             </div>
             
         </div>
         
-        <div class="article" data-tags="Agent / 智能体,Product / 产品与商业">
+        <div class="article" data-tags="Product / 产品与商业">
             <h2><a href="https://www.theverge.com/ai-artificial-intelligence/942119/vibecoding-backyard-app-gardening-organizing" target="_blank" rel="noopener">My yard is dying, so I made an app for that</a></h2>
             <div class="meta">
                 <span class="source-badge source-theverge">The Verge</span>
-                <span>2026-06-14 11:10 UT</span>
-                <span class="score">★★☆☆☆</span>
-                
-                <span class="tag">Agent / 智能体</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★★☆☆</span>
                 
                 <span class="tag">Product / 产品与商业</span>
                 
             </div>
-            <div class="cn-summary">作者分享了自己使用AI工具Gemini快速开发一个浇花应用的过程，尽管遇到了“通道损坏”的bug，但AI能自动提供修复按钮。这展示了AI在辅助编程方面的潜力。</div>
+            <div class="cn-summary">作者用AI工具Gemini快速开发了一个帮助打理庭院的应用程序，尽管过程中出现了bug，但AI能自动修复。这展示了AI辅助编程的便捷性，让非专业人士也能快速创建实用工具。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                一个人用AI帮他写了个浇花提醒的App，虽然出了点小毛病，但AI还能自己修。对普通人来说，这意味着以后不懂编程也能做自己的小软件。未来AI可能会让软件开发变得像聊天一样简单。
+                这篇文章说有人用AI聊天机器人几分钟就做出了一个手机App，用来解决自家院子花草枯萎的问题。虽然程序出了点小毛病，但AI自己就能修好。对普通人来说，这意味着以后不懂编程也能自己开发小工具，比如做个记账App或提醒软件。未来AI会让编程变得更简单。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Policy / 政策与伦理">
+            <h2><a href="https://www.theverge.com/ai-artificial-intelligence/949601/amazon-anthropic-fablemythos-government-ban" target="_blank" rel="noopener">Amazon security research reportedly led to the White House’s Anthropic Fable ban</a></h2>
+            <div class="meta">
+                <span class="source-badge source-theverge">The Verge</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">Policy / 政策与伦理</span>
+                
+            </div>
+            <div class="cn-summary">据报道，亚马逊的网络安全研究是导致美国政府下令Anthropic切断Fable 5和Mythos 5访问权限的关键因素之一。亚马逊的研究发现这些模型存在安全漏洞，可能被外国利用。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章说，亚马逊的安全专家发现Anthropic的AI模型有漏洞，可能被外国黑客利用，于是报告给白宫，导致政府下令关掉这些模型。对普通人来说，这说明大公司之间的竞争也会影响AI技术的使用。未来AI安全会越来越受重视。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Policy / 政策与伦理">
+            <h2><a href="https://www.theverge.com/ai-artificial-intelligence/949644/china-white-house-anthropic-mythos" target="_blank" rel="noopener">China may have accessed Mythos</a></h2>
+            <div class="meta">
+                <span class="source-badge source-theverge">The Verge</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">Policy / 政策与伦理</span>
+                
+            </div>
+            <div class="cn-summary">有报道称，美国政府限制Anthropic的Mythos模型出口，部分原因是担心与中国有关的组织已经访问了该模型。如果中国真的获取了这些先进AI模型，将构成严重国家安全威胁。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章说，美国政府担心中国的黑客或组织已经偷偷用上了美国最先进的AI模型，所以赶紧下令封杀。对普通人来说，这说明AI技术已经成了大国博弈的焦点。未来AI的竞争可能会更加激烈，甚至引发技术冷战。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Robotics / 机器人,Policy / 政策与伦理">
+            <h2><a href="https://www.theverge.com/podcast/949195/skydio-ceo-adam-bry-autonmous-drones-china-red-lines-military" target="_blank" rel="noopener">Skydio CEO Adam Bry on why Silicon Valley shouldn’t draw red lines for drone use</a></h2>
+            <div class="meta">
+                <span class="source-badge source-theverge">The Verge</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">Robotics / 机器人</span>
+                
+                <span class="tag">Policy / 政策与伦理</span>
+                
+            </div>
+            <div class="cn-summary">Skydio CEO亚当·布里在采访中讨论了无人机技术的应用和伦理问题，认为硅谷不应为无人机使用划定红线。他展示了远程操控无人机的能力，并强调了无人机在商业和军事领域的潜力。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章采访了一家美国无人机公司的老板，他说不应该给无人机使用设太多限制，因为无人机有很多好处，比如送货、救援。他还现场演示了从纽约远程操控加州的一架无人机。对普通人来说，未来无人机可能会更普及，但也要注意隐私和安全问题。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Policy / 政策与伦理">
+            <h2><a href="https://www.theverge.com/policy/949970/ai-regulation-child-safety-kosa-congress" target="_blank" rel="noopener">Big Tech’s desperate last push at AI regulation</a></h2>
+            <div class="meta">
+                <span class="source-badge source-theverge">The Verge</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">Policy / 政策与伦理</span>
+                
+            </div>
+            <div class="cn-summary">大型科技公司正在华盛顿积极游说，推动通过一部统一的联邦AI法律，以取代各州各自为政的混乱监管局面。他们希望这部法律能优先于州法，为AI发展提供更清晰、更宽松的环境。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章说，大科技公司正在拼命游说美国政府，希望出台一部全国统一的AI法律，而不是让每个州自己定规矩。因为现在各州法律不一样，公司很难做。对普通人来说，统一的法规可能让AI产品更规范，但也可能让公司钻空子。未来AI的监管会越来越重要。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Policy / 政策与伦理">
+            <h2><a href="https://www.theverge.com/ai-artificial-intelligence/949986/anthropic-fable-mythos-shutdown-sovereign-ai" target="_blank" rel="noopener">Trump’s Anthropic shutdown just made the case for non-American AI</a></h2>
+            <div class="meta">
+                <span class="source-badge source-theverge">The Verge</span>
+                <span>2026-06-15 18:13 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">Policy / 政策与伦理</span>
+                
+            </div>
+            <div class="cn-summary">美国政府要求Anthropic关闭其最先进AI模型的事件，向世界展示了美国对前沿AI技术的控制力。这反而可能促使其他国家加速发展自己的AI技术，以减少对美国依赖。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章说，美国说关就关掉一家AI公司的模型，让其他国家意识到不能全靠美国的技术，得自己搞研发。对普通人来说，这意味着未来可能会有更多国家推出自己的AI产品，比如中国的、欧洲的。AI技术可能会变得更加分散和多样化。
             </div>
             
         </div>
         
         <div class="article" data-tags="Policy / 政策与伦理,LLM / 大语言模型">
-            <h2><a href="https://www.theverge.com/ai-artificial-intelligence/949601/amazon-anthropic-fablemythos-government-ban" target="_blank" rel="noopener">Amazon security research reportedly led to the White House’s Anthropic Fable ban</a></h2>
+            <h2><a href="https://techcrunch.com/2026/06/15/cybersecurity-vets-protest-dangerous-us-government-ban-on-anthropics-most-powerful-models/" target="_blank" rel="noopener">Cybersecurity vets protest ‘dangerous’ US government ban on Anthropic’s most powerful models</a></h2>
             <div class="meta">
-                <span class="source-badge source-theverge">The Verge</span>
-                <span>2026-06-14 11:10 UT</span>
+                <span class="source-badge source-techcrunch">TechCrunch</span>
+                <span>2026-06-15 15:29 UT</span>
                 <span class="score">★★★★☆</span>
                 
                 <span class="tag">Policy / 政策与伦理</span>
@@ -957,75 +928,96 @@
                 <span class="tag">LLM / 大语言模型</span>
                 
             </div>
-            <div class="cn-summary">据报道，亚马逊的网络安全研究是导致美国政府下令Anthropic限制AI模型访问的关键因素。该研究指出，通过一系列技术手段，这些模型可能被用于恶意目的。</div>
+            <div class="cn-summary">数十名网络安全专家联名抗议美国政府禁止出口Anthropic最强大模型Fable和Mythos，认为这限制了安全防御者保护软件和产品的能力。专家们呼吁白宫撤销这一出口管制，称其“危险”且会削弱网络安全。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                亚马逊的安全研究让美国政府觉得一个AI模型太危险，所以下令封了它。对普通人来说，这说明大公司之间也在互相盯着，防止AI被滥用。未来AI的安全问题会成为各国政府关注的重点。
+                这篇文章说，一群网络安全专家反对美国政府不让Anthropic公司的最强AI模型出口到国外。他们认为这些模型能帮助好人保护电脑安全，禁止出口反而会让坏人更容易攻击。对普通人来说，这意味着未来网络安全可能会变弱，你的个人信息可能更不安全。以后可能会在安全需求和贸易管制之间找到平衡。
             </div>
             
         </div>
         
-        <div class="article" data-tags="Policy / 政策与伦理,Product / 产品与商业">
-            <h2><a href="https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future/" target="_blank" rel="noopener">As Anthropic suspends access to new models, India debates its AI future</a></h2>
+        <div class="article" data-tags="Product / 产品与商业,Agent / 智能体">
+            <h2><a href="https://techcrunch.com/2026/06/15/salesforce-acquires-ai-customer-service-platform-fin-for-3-6b/" target="_blank" rel="noopener">Salesforce acquires AI customer service platform Fin for $3.6 billion</a></h2>
             <div class="meta">
                 <span class="source-badge source-techcrunch">TechCrunch</span>
-                <span>2026-06-14 03:00 UT</span>
+                <span>2026-06-15 14:34 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">Product / 产品与商业</span>
+                
+                <span class="tag">Agent / 智能体</span>
+                
+            </div>
+            <div class="cn-summary">Salesforce以36亿美元收购AI客服平台Fin，旨在利用其团队和技术增强Agentforce平台，帮助企业构建定制AI代理来自动化任务。这笔交易凸显了企业AI客服市场的快速增长。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章说，Salesforce花36亿美元买下了一家叫Fin的AI客服公司，想用它来升级自己的AI助手平台。对普通人来说，这意味着以后你打电话或在线咨询客服时，可能更多是AI在帮你解决问题，更快更方便。未来企业会越来越多地用AI代替人工客服，节省成本。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Product / 产品与商业,LLM / 大语言模型">
+            <h2><a href="https://techcrunch.com/2026/06/15/sarvam-becomes-indias-newest-ai-unicorn-with-234-million-funding-round-led-by-hcltech/" target="_blank" rel="noopener">Sarvam becomes India’s newest AI unicorn with $234 million funding round led by HCLTech</a></h2>
+            <div class="meta">
+                <span class="source-badge source-techcrunch">TechCrunch</span>
+                <span>2026-06-15 13:46 UT</span>
                 <span class="score">★★★☆☆</span>
                 
-                <span class="tag">Policy / 政策与伦理</span>
+                <span class="tag">Product / 产品与商业</span>
+                
+                <span class="tag">LLM / 大语言模型</span>
+                
+            </div>
+            <div class="cn-summary">印度AI初创公司Sarvam获得2.34亿美元融资，由HCLTech领投1.5亿美元，成为印度最新AI独角兽。这笔资金将用于扩展其AI技术和服务。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章说，印度一家叫Sarvam的AI公司拿到了2.34亿美元投资，变成了独角兽（估值超10亿美元）。对普通人来说，这说明AI行业在全球都很火，印度也在追赶。未来可能会有更多印度AI产品和服务进入市场，影响我们用的软件。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Agent / 智能体,Product / 产品与商业">
+            <h2><a href="https://techcrunch.com/2026/06/15/ai-agents-are-becoming-employees-newcore-emerges-with-66m-to-give-them-identities/" target="_blank" rel="noopener">As AI agents become employees, NewCore emerges with $66M to give them identities</a></h2>
+            <div class="meta">
+                <span class="source-badge source-techcrunch">TechCrunch</span>
+                <span>2026-06-15 13:00 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">Agent / 智能体</span>
                 
                 <span class="tag">Product / 产品与商业</span>
                 
             </div>
-            <div class="cn-summary">Anthropic暂停新模型访问引发印度科技界热议，被视为对印度AI雄心的警钟。讨论聚焦于印度如何在全球AI竞赛中定位自身。</div>
+            <div class="cn-summary">初创公司NewCore获得6600万美元融资，专注于为AI代理创建数字身份，以解决企业安全中管理AI代理而非人类的新挑战。他们认为下一代企业安全的核心是管理AI代理的身份和权限。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                这篇文章说，一家叫Anthropic的AI公司突然不让大家用他们的新模型了，这让印度科技圈很紧张，觉得这是提醒印度要赶紧发展自己的AI技术。对普通人来说，这意味着AI技术可能越来越受国家控制，未来我们用的AI产品可能会更本地化。
+                这篇文章说，一家叫NewCore的公司拿到了6600万美元，专门给AI机器人做“身份证”。因为以后公司里会有很多AI帮你干活，但怎么确保它们不乱来、不被坏人利用是个新问题。对普通人来说，这意味着未来AI会更安全地帮你处理工作，比如自动回复邮件、管理文件，但也要防止它们出错或被黑客攻击。
             </div>
             
         </div>
         
-        <div class="article" data-tags="Other / 其他">
-            <h2><a href="https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/" target="_blank" rel="noopener">KPMG pulls report on AI usage due to apparent hallucinations</a></h2>
+        <div class="article" data-tags="Policy / 政策与伦理,Other / 其他">
+            <h2><a href="https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg/" target="_blank" rel="noopener">The AI layoff wave is becoming a powder keg</a></h2>
             <div class="meta">
                 <span class="source-badge source-techcrunch">TechCrunch</span>
-                <span>2026-06-13 20:42 UT</span>
-                <span class="score">★★☆☆☆</span>
+                <span>2026-06-15 07:25 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">Policy / 政策与伦理</span>
                 
                 <span class="tag">Other / 其他</span>
                 
             </div>
-            <div class="cn-summary">Once again, AI proves to be an unreliable source of information about AI.</div>
+            <div class="cn-summary">文章指出，在大量员工被裁的同时，少数AI内部人士却以难以想象的速度暴富，这种不平等可能引发社会矛盾。AI导致的裁员浪潮正成为一触即发的火药桶。</div>
             
-        </div>
-        
-        <div class="article" data-tags="Other / 其他">
-            <h2><a href="https://techcrunch.com/2026/06/13/amazon-ceo-reportedly-raised-anthropic-model-concerns-before-government-crackdown/" target="_blank" rel="noopener">Amazon CEO reportedly raised Anthropic model concerns before government crackdown</a></h2>
-            <div class="meta">
-                <span class="source-badge source-techcrunch">TechCrunch</span>
-                <span>2026-06-13 19:11 UT</span>
-                <span class="score">★★☆☆☆</span>
-                
-                <span class="tag">Other / 其他</span>
-                
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章说，现在很多公司因为用AI而裁员，但开发AI的那一小撮人却赚得盆满钵满，贫富差距越来越大。对普通人来说，这意味着你可能因为AI丢了工作，但那些发明AI的人却更富了，这很不公平。未来社会可能会因此出现更多抗议和矛盾，需要政府想办法平衡。
             </div>
-            <div class="cn-summary">Amazon CEO Andy Jassy may have been the source of security concerns that led Anthropic to cut off worldwide access to two models on Friday.</div>
-            
-        </div>
-        
-        <div class="article" data-tags="Other / 其他">
-            <h2><a href="https://techcrunch.com/2026/06/13/openai-faces-investigation-from-state-attorneys-general/" target="_blank" rel="noopener">OpenAI faces investigation from state attorneys general</a></h2>
-            <div class="meta">
-                <span class="source-badge source-techcrunch">TechCrunch</span>
-                <span>2026-06-13 16:47 UT</span>
-                <span class="score">★★☆☆☆</span>
-                
-                <span class="tag">Other / 其他</span>
-                
-            </div>
-            <div class="cn-summary">It&#39;s not clear which states are involved, but they&#39;re asking about everything from OpenAI&#39;s ad policies to its handling of health data.</div>
             
         </div>
         
@@ -1033,7 +1025,7 @@
     </div>
 
     <footer>
-        <p>Generated by AI Daily Digest · 2026-06-14 11:12 UTC</p>
+        <p>Generated by AI Daily Digest · 2026-06-15 18:15 UTC</p>
         <p><a href="https://github.com" style="color:#aaa;">View on GitHub</a></p>
     </footer>
 
