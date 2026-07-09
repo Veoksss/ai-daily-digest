@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Daily Digest — 2026-07-08</title>
+    <title>AI Daily Digest — 2026-07-09</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -112,10 +112,10 @@
 <body>
     <header>
         <h1>🤖 AI Daily Digest</h1>
-        <p>2026-07-08</p>
+        <p>2026-07-09</p>
         <div class="stats">
             <div class="stat">
-                <div class="num">93</div>
+                <div class="num">98</div>
                 <div class="label">📄 文章总数</div>
             </div>
             <div class="stat">
@@ -123,7 +123,7 @@
                 <div class="label">📡 数据源</div>
             </div>
             <div class="stat">
-                <div class="num">3.2</div>
+                <div class="num">3.4</div>
                 <div class="label">⭐ 平均得分</div>
             </div>
         </div>
@@ -155,608 +155,11 @@
         </div>
 
         
-        <div class="article" data-tags="CV / 计算机视觉">
-            <h2><a href="https://huggingface.co/papers/2607.05376" target="_blank" rel="noopener">MV-Forcing: Long Multi-View Video Generation via 4D-Grounded Spatio-Temporal Self-Forcing</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-            </div>
-            <div class="cn-summary">本文提出MV-Forcing框架，通过4D几何桥接实现长时多视角视频生成。该框架在单个扩散模型中组合时间和视角自回归，利用3D重建模型为下一个视角提供几何先验，再由扩散模型优化为高质量视频。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是怎么让AI生成更长的、从多个角度看的视频，而且画面要连贯。以前的技术要么只能生成一个角度的长视频，要么只能生成多个角度的短视频。这个新方法就像给AI装了个“3D地图”，让它知道从一个视角切换到另一个视角时，场景应该怎么变化，这样生成的视频就更真实、更连贯。未来可能用在电影制作、虚拟现实里，让你能自由切换视角看一个动态场景。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="LLM / 大语言模型">
-            <h2><a href="https://huggingface.co/papers/2607.05061" target="_blank" rel="noopener">KVpop -- Key-Value Cache Compression with Predictive Online Pruning</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">LLM / 大语言模型</span>
-                
-            </div>
-            <div class="cn-summary">KVpop提出一种基于学习的KV缓存剪枝策略，通过直接监督保留或丢弃决策来减少内存占用。该方法引入延迟记忆评分器，利用未来注意力目标进行训练，在数学推理任务上保留了98%的性能。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章解决的是大模型在生成长文本时内存不够用的问题。大模型需要记住之前说过的话（KV缓存），但内容越长占内存越大。这个新方法KVpop像一个聪明的“记忆管家”，它学会预测哪些信息以后还会用到，提前扔掉没用的，只保留重要的。这样模型就能处理更长的对话或文章，而不会卡死。未来你的AI助手可能就能记住更长的聊天记录了。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Agent / 智能体,NLP / 自然语言处理">
-            <h2><a href="https://huggingface.co/papers/2607.00597" target="_blank" rel="noopener">Multi-Turn Agentic Scientific Literature Search via Workflow Induction</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">Agent / 智能体</span>
-                
-                <span class="tag">NLP / 自然语言处理</span>
-                
-            </div>
-            <div class="cn-summary">PaperPilot是一个多轮科学文献搜索代理，将搜索过程建模为工作流归纳。它根据用户查询构建可执行的有向无环图，包含关键词搜索、引用扩展、过滤、评分等操作，并利用用户反馈优化搜索策略。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章介绍了一个帮科研人员找论文的AI工具。以前的搜索工具只能根据你输入的关键词一次性返回结果，但科研搜索往往需要反复调整。这个新工具像有个“研究助手”，它会根据你给的一篇论文和问题，自动设计一套搜索方案（比如先搜关键词、再看引用、再筛选），然后根据你的反馈不断改进搜索策略。未来科研人员找文献会更快、更精准。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="CV / 计算机视觉,NLP / 自然语言处理">
-            <h2><a href="https://huggingface.co/papers/2607.04410" target="_blank" rel="noopener">AI Wizards at EXIST 2026: Hierarchical Soft-Label Learning for Multimodal Sexism Identification in Memes</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★☆☆☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-                <span class="tag">NLP / 自然语言处理</span>
-                
-            </div>
-            <div class="cn-summary">AI Wizards团队在EXIST 2026多模态性别歧视识别任务中提出分层软标签学习方法。他们利用Gemini Embedding 2视觉语言表示，通过轻量级门控MLP进行条件软标签预测，在任务2.3上排名第一。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是如何用AI识别网络梗图里的性别歧视内容。梗图既有图片又有文字，识别起来很复杂。他们设计了一个分层系统，先判断图片和文字的整体意思，再逐步细化到具体歧视类型。这个系统在比赛中拿了第一名。未来可能用在社交媒体自动审核上，帮助过滤不良内容。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2607.03973" target="_blank" rel="noopener">MANCE: Manifold Aware Concept Erasure</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">MANCE提出流形感知概念擦除方法，基于自然表示集中在低维流形上的假设。该方法通过分类器信号迭代更新表示，同时约束干预在流形内，以更好地保留其他信息。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章研究的是如何从AI模型里“擦除”某个概念，比如让模型不再识别性别，但保留其他信息。以前的方法容易误伤，比如擦除性别时连年龄也丢了。新方法MANCE认为，模型内部的信息其实集中在一个低维空间（流形）里，只要在这个空间里做手术，就能精准擦除目标而不影响其他。未来可能用于保护隐私或消除AI偏见。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="CV / 计算机视觉,Other / 其他">
-            <h2><a href="https://huggingface.co/papers/2606.28393" target="_blank" rel="noopener">Transition-Aware best-of-N sampling for Longitudinal Chest X-ray Reports</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-                <span class="tag">Other / 其他</span>
-                
-            </div>
-            <div class="cn-summary">本文提出过渡感知的最佳N采样方案，用于纵向胸部X光报告生成。该方法利用患者前后检查的对比信息，通过集合到集合的距离编码变化，并利用缓存的地面真实过渡向量进行评分。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是如何让AI更准确地生成胸部X光报告。医生看X光片时，会对比病人之前的片子，看哪里变好了或变坏了。这个新方法让AI也学会“对比”，它先看病人以前的片子，再分析当前片子，然后生成描述变化的报告。未来AI辅助诊断会更像真医生，能告诉你病情是好转还是恶化。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Other / 其他">
-            <h2><a href="https://huggingface.co/papers/2607.03296" target="_blank" rel="noopener">Taste-aware music retrieval from audio embeddings</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★☆☆☆</span>
-                
-                <span class="tag">Other / 其他</span>
-                
-            </div>
-            <div class="cn-summary">本文形式化声音到味觉的跨模态预测任务，比较十种音频编码器在味觉预测上的表现。最强系统在宏观RMSE上达到0.134，在真实音乐上的误差小于单个评分者与共识的偏差。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章研究的是音乐和味觉之间的关系，比如什么样的音乐听起来像“甜”或“苦”。他们训练AI从音乐片段中预测人们会联想到什么味道，结果AI的预测比普通人更接近大家的平均意见。未来可能用在音乐推荐上，比如你想听“甜”一点的歌，AI就能帮你找。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="LLM / 大语言模型">
-            <h2><a href="https://huggingface.co/papers/2607.05196" target="_blank" rel="noopener">Unified Audio Intelligence Without Regressing on Text Intelligence</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">LLM / 大语言模型</span>
-                
-            </div>
-            <div class="cn-summary">Audex是一个统一的音频文本LLM，基于Nemotron-Cascade-2-30B-A3B构建。它采用单一Transformer解码器架构，将音频输入编码到文本嵌入空间，统一处理文本和音频令牌，通过多阶段监督训练实现强大的音频理解和生成能力。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章介绍了一个能同时处理文字和声音的AI模型。以前的模型要么只懂文字，要么只懂声音，而这个模型把两者融合在一起，既能听懂你说的话，也能用文字回复你，甚至还能生成声音。它用了一个简单的设计，就像给AI装了一个“通用翻译器”。未来你的智能音箱可能就能像真人一样和你聊天了。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="CV / 计算机视觉">
-            <h2><a href="https://huggingface.co/papers/2607.05392" target="_blank" rel="noopener">SynCity 3000: Bootstrapping Scene-Scale 3D Diffusion</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-            </div>
-            <div class="cn-summary">SynCity 3000提出一个生成全局连贯3D场景的框架，通过微调图像到3D生成器使其适用于场景级数据。它利用用户提示生成整个场景的等轴测图像，然后应用卷积生成器产生任意大小和复杂度的3D场景。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是如何用AI生成大型3D场景，比如整个城市。以前的技术只能生成单个物体，比如一个椅子或房子。这个新方法SynCity 3000像搭积木一样，先根据你的描述生成整个场景的草图，然后一步步填充细节，最终生成一个完整、连贯的3D世界。未来游戏开发、电影特效可能就能用AI快速生成大型场景了。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="NLP / 自然语言处理,Other / 其他">
-            <h2><a href="https://huggingface.co/papers/2607.02904" target="_blank" rel="noopener">Speaker-Aware Temporal Aggregation Strategies on Segment Representations for Depression Detection in Dyadic Interaction: A Benchmark Study</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★☆☆☆</span>
-                
-                <span class="tag">NLP / 自然语言处理</span>
-                
-                <span class="tag">Other / 其他</span>
-                
-            </div>
-            <div class="cn-summary">DEPOOL是一个用于语音抑郁检测的基准研究，比较六种时间聚合架构和六种语音骨干网络。研究发现三分之一的配置会崩溃为预测单一类别，这种失败与骨干网络和聚合方法都有关。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章研究的是如何用语音判断一个人是否抑郁。他们测试了多种AI模型和方法的组合，发现很多组合会“偷懒”，不管什么语音都给出同一个答案。这说明目前的技术还不够成熟，需要更好的方法来提取语音中的关键信息。未来AI心理健康诊断还需要更多研究才能可靠。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2607.03748" target="_blank" rel="noopener">Bridging Interleaved Multi-Modal Reasoning as a Unified Decision Process</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">LLM / 大语言模型</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">本文提出BRAID框架，将多模态模型中的多轮文本-图像推理统一为马尔可夫决策过程，使得强化学习能够同时优化文本和图像生成，突破了传统方法仅优化文本步骤的限制。该工作为多模态模型的强化学习优化提供了新思路。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是怎么让AI既能写文字又能画图，而且能根据对话历史不断改进。以前的方法只能优化文字部分，画图部分是单独训练的，现在这个新方法把文字和画图当成一个整体来优化，就像教一个学生同时提高写作和绘画能力，效果会更好。未来AI可能会更自然地结合文字和图像进行交流。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Robotics / 机器人,Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2607.03751" target="_blank" rel="noopener">Look Before You Leap: Distilling Tree Search into Action Evaluation for Frozen VLA Models</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">Robotics / 机器人</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">研究发现视觉-语言-动作（VLA）模型失败的主因不仅是动作生成能力不足，更是动作评估能力欠缺。通过pass@k分析发现，冻结的VLA模型输出分布中已包含足够好的动作，因此提出SVA框架，利用搜索和评估来提升模型性能。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章发现机器人AI其实已经知道该怎么做，但不会判断哪个动作更好。就像一个人明明会做菜，但尝不出自己做的菜好不好吃。新方法让AI先想很多种方案，然后挑出最好的，而不是随便选一个。未来机器人会更聪明，能自己判断并选择最佳行动方案。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Other / 其他,Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2606.23993" target="_blank" rel="noopener">Learning to Trigger: Reinforcement Learning at the Large Hadron Collider</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">Other / 其他</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">论文将大型强子对撞机中的实时事件过滤（触发）问题转化为强化学习问题，提出GFPO-F和GFPO-FR两种算法，能够动态调整触发阈值以最大化信号效率并控制背景率。这是强化学习在科学仪器控制中的创新应用。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是用AI来优化大型强子对撞机（一个巨大的粒子加速器）的数据筛选过程。以前科学家手动设定筛选规则，现在用强化学习让AI自动调整，就像智能空调根据室温自动调节温度一样。未来这种技术可以帮助科学家更高效地发现新粒子。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2606.31145" target="_blank" rel="noopener">SeKV: Resolution-Adaptive KV Cache with Hierarchical Semantic Memory for Long-Context LLM Inference</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">LLM / 大语言模型</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">SeKV提出了一种分辨率自适应的语义KV缓存方法，通过熵引导的语义跨度组织上下文，并利用GPU-CPU内存层次结构存储，在不丢弃信息的情况下实现长上下文LLM推理的高效缓存。解决了现有压缩方法在保留细节和效率之间的平衡问题。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章解决的是AI处理长文章时内存不够用的问题。就像你看一本很厚的书，不可能把每一页都记在脑子里，但又要随时能查到细节。新方法把信息按重要性分层存储，重要的放快速内存，次要的放慢速内存，既节省空间又不丢失信息。未来AI能处理更长的对话和文档。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Robotics / 机器人,Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2607.02403" target="_blank" rel="noopener">ACID: Action Consistency via Inverse Dynamics for Planning with World Models</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">Robotics / 机器人</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">ACID提出了一种基于逆动力学模型的循环动作一致性约束，用于决策时规划。通过检查预测轨迹中每个步骤的可实现性，改进了传统规划方法仅关注终点状态的不足，在多个世界模型和任务上验证了有效性。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是如何让机器人规划动作时更靠谱。以前机器人只关心最终能不能到达目标，不管中间步骤是否可行，就像只想着到终点但不管路好不好走。新方法会检查每一步是否真的能实现，确保整个计划是可行的。未来机器人做复杂任务会更可靠。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Robotics / 机器人,Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2607.05369" target="_blank" rel="noopener">GaP: A Graph-as-Policy Multi-Agent Self-Learning Harness For Variational Automation Tasks</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">Robotics / 机器人</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">GaP提出了一种基于图的多智能体编程框架，将机器人编程与模型无关策略的适应性相结合，用于处理物体几何和姿态变化较大的变体自动化任务。该框架生成包含感知、规划和控制节点的有向计算图，提高了工业应用的可靠性。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章介绍了一种让机器人更灵活工作的新方法。传统工业机器人只能做固定重复的动作，遇到形状不同的零件就容易出错。新方法像搭积木一样，把感知、规划、控制等模块组合起来，让机器人能适应各种变化。未来工厂里的机器人会更智能，能处理更多样的产品。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="CV / 计算机视觉,Agent / 智能体">
-            <h2><a href="https://huggingface.co/papers/2607.05511" target="_blank" rel="noopener">Light-Omni: Reflex over Reasoning in Agentic Video Understanding with Long-Term Memory</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-                <span class="tag">Agent / 智能体</span>
-                
-            </div>
-            <div class="cn-summary">Light-Omni提出了一种轻量级的多模态视频理解代理框架，通过双上下文状态（全局状态和局部状态）实现单次前向传播即可构建所需上下文，避免了传统方法中昂贵的迭代推理。在保持性能的同时大幅降低了计算成本和延迟。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是如何让AI快速理解长视频内容。以前AI看视频需要反复思考、来回搜索，就像侦探破案一样慢。新方法让AI一边看一边自动整理关键信息，看完就能直接回答，就像你看完一部电影就能说出大概剧情。未来视频AI会更快更省电。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2607.05722" target="_blank" rel="noopener">Nemotron-Labs-Diffusion: A Tri-Mode Language Model Unifying Autoregressive, Diffusion, and Self-Speculation Decoding</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★★★</span>
-                
-                <span class="tag">LLM / 大语言模型</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">Nemotron-Labs-Diffusion提出了一种三模式语言模型，统一了自回归、扩散和自推测解码三种模式于单一架构中。研究表明自回归和扩散目标互补，自推测模式下扩散生成草稿、自回归验证，在接受率和效率上优于多token预测方法。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章发布了一个全新的AI模型，它有三种工作模式：一种像人说话一样逐字生成，一种像画家一样整体构思再细化，还有一种结合两者优势。就像一个人既能写文章又能画画，还能把两者结合起来。这种模型在速度和效果上都比传统方法好，是AI领域的重要突破。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="CV / 计算机视觉,Product / 产品与商业">
-            <h2><a href="https://huggingface.co/papers/2607.06291" target="_blank" rel="noopener">AlayaWorld: Long-Horizon and Playable Video World Generation</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-                <span class="tag">Product / 产品与商业</span>
-                
-            </div>
-            <div class="cn-summary">AlayaWorld提出了一种全栈开放的视频世界生成框架，能够根据用户交互实时生成可玩的游戏世界。该模型在游戏录制和真实世界视频上训练，捕捉多样化的视觉外观和物理动态，为交互式应用和具身智能开辟了新可能。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是用AI实时生成游戏世界。以前做游戏需要大量人工设计场景，现在AI可以根据你的操作自动生成新的游戏画面，就像你玩游戏时AI现场画地图。未来游戏开发会更快更便宜，甚至每个人都能创造自己的游戏世界。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Agent / 智能体,Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2607.03451" target="_blank" rel="noopener">SkillOpt-Lite: Better and Faster Agent Self-evolution via One Line of Vibe</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">Agent / 智能体</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">SkillOpt-Lite将智能体技能优化形式化为零阶优化问题，并基于Claude Code哲学和PAC学习理论建立了三个原则：文件系统轨迹探索、共识属性挖掘和独立验证门控。实现了更简单、更高效的智能体自我进化方法。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是如何让AI智能体自己学会新技能，而且方法很简单。就像教一个人学做饭，不需要复杂的课程，只要让他多尝试、总结经验、验证结果就行。新方法让AI能更快地自我提升，未来AI助手会更聪明，能自己学会做更多事情。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Robotics / 机器人,Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2607.06442" target="_blank" rel="noopener">SIEVE: Structure-Aware Data Selection for Imitation Learning with VLA Models</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">Robotics / 机器人</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">本文提出SIEVE，一种面向VLA模仿学习的结构感知数据选择方法。它通过将演示数据分解为可复用的基本动作和转换接口，并优化选择预算分配，有效解决了机器人演示数据中的冗余和噪声问题，从而提升策略学习效果。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是怎么从一堆机器人演示视频里挑出最有用的部分来训练AI。就像你学做饭，不需要看100个炒鸡蛋视频，挑几个最典型的就够了。未来这能让机器人学得更快、更聪明，不用看那么多重复的示范。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2607.05339" target="_blank" rel="noopener">TREK: Distill to Explore, Reinforce to Refine</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">LLM / 大语言模型</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">Group Relative Policy Optimization (GRPO) is effective when the current policy already samples useful reasoning trajectories, but it stalls on hard prompts whose correct solution modes lie outside the</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章介绍了一种让AI模型变得更聪明的方法。就像学生做题，如果自己怎么都解不出来，就看看老师的答案先学会思路，然后再自己练习巩固。这样AI就能解决以前搞不定的难题，未来AI会更擅长处理复杂问题。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="NLP / 自然语言处理,Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2607.05803" target="_blank" rel="noopener">Quantifying and Expanding the Theoretical Capacity of Late-Interaction Retrieval Models</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">NLP / 自然语言处理</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">Late-interaction retrieval models that use the MaxSim similarity function have shown strong empirical performance, often outperforming single-vector dense and sparse retrieval models. Despite these em</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章研究了搜索引擎背后的一种数学方法，发现它比想象中更强大。就像你发现一把瑞士军刀不仅能切水果，还能开罐头、拧螺丝。这能让未来的搜索更精准，找到你真正想要的信息，而不是一堆无关结果。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="CV / 计算机视觉,NLP / 自然语言处理">
-            <h2><a href="https://huggingface.co/papers/2607.02963" target="_blank" rel="noopener">Parallelized Autoregressive Decoding for Omni-Modal Dense Video Captioning</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-                <span class="tag">NLP / 自然语言处理</span>
-                
-            </div>
-            <div class="cn-summary">Dense video captioning aims to generate temporally grounded descriptions of video events, benefiting both event-level video understanding and generation. In this domain, autoregressive video large lan</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是怎么让AI更快地给长视频写详细解说。以前AI得一个字一个字地写，很慢；现在它可以把视频分成几段同时写，就像几个人同时写一本书的不同章节。未来看视频时，AI能瞬间给你生成字幕和讲解。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="CV / 计算机视觉,Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2607.03509" target="_blank" rel="noopener">Flex-Forcing: Towards a Unified Autoregressive and Bidirectional Video Diffusion Model</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">Recent progress in large-scale generative models has substantially advanced video generation, yet existing methods remain constrained by a rigid inference paradigm. Bidirectional diffusion models exce</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章提出了一种新方法，让AI生成视频时既快又稳。以前要么生成得慢但画质好，要么快但容易出错。现在它把两种优点结合了，就像开车既能走高速快，又能走小路稳。未来AI生成电影级视频会更流畅。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="CV / 计算机视觉,Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2606.30026" target="_blank" rel="noopener">MuseBench: Benchmarking Intent-Level Audiovisual Arts Understanding in MLLMs</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">Audiovisual arts encompass diverse creative disciplines, including cinema, visual arts, stage performance, and game design, where artistic meaning arises from deliberate combinations of visual, audito</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章创建了一个新的考试，用来测试AI能不能看懂电影、绘画等艺术作品背后的意图。比如AI不仅要看出画面里有个害怕的人，还要理解导演为什么用特写镜头来表现恐惧。未来AI能像人类一样欣赏艺术，而不是只会识别物体。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2607.05147" target="_blank" rel="noopener">DSpark: Confidence-Scheduled Speculative Decoding with Semi-Autoregressive Generation</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">LLM / 大语言模型</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">Speculative decoding accelerates Large Language Model (LLM) inference by decoupling draft generation from target verification. While recent parallel drafters efficiently propose long token sequences i</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章让AI聊天机器人回答得更快。它用了一个小技巧：先快速猜出几个可能的词，再一起检查对不对，而不是一个字一个字地慢慢想。就像你猜谜语时先猜几个答案，再验证哪个正确。未来AI回复会像真人对话一样快。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
-            <h2><a href="https://huggingface.co/papers/2607.02980" target="_blank" rel="noopener">Hierarchical Sparse Attention Done Right: Toward Infinite Context Modeling</a></h2>
-            <div class="meta">
-                <span class="source-badge source-paperswithcode">Papers With Code</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">LLM / 大语言模型</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">Scaling modern large language models (LLMs) to long contexts is limited by the quadratic computation cost, and poor length extrapolation of dense attention. Chunk-wise sparse attention offers a promis</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章解决了AI处理超长文本（比如整本书）时速度慢的问题。它让AI只关注最重要的部分，而不是逐字逐句地看。就像你读一本小说，不会每个字都仔细看，而是抓住关键情节。未来AI能轻松读完并理解整部《战争与和平》。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Product / 产品与商业,Other / 其他">
-            <h2><a href="https://www.theverge.com/ai-artificial-intelligence/961265/midjourney-medical-ultrasound-scanner-behind-the-scenes-video" target="_blank" rel="noopener">A behind-the-scenes look at Midjourney’s medical scanner leaves many questions unanswered</a></h2>
-            <div class="meta">
-                <span class="source-badge source-theverge">The Verge</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★☆☆☆</span>
-                
-                <span class="tag">Product / 产品与商业</span>
-                
-                <span class="tag">Other / 其他</span>
-                
-            </div>
-            <div class="cn-summary">Midjourney has shown more of its futuristic medical scanner. It still hasn&#39;t shown much proof it works. The AI startup, best known for generating images, released a behind-the-scenes video of its dunk</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章说的是，做AI绘画的公司Midjourney搞了个医疗扫描仪，看起来很科幻，但没拿出什么真凭实据说它有用。就像有人画了个飞行汽车的图纸，但从来没飞起来过。普通人先别期待，这东西离真正能用还远着呢。
-            </div>
-            
-        </div>
-        
         <div class="article" data-tags="Product / 产品与商业,LLM / 大语言模型">
             <h2><a href="https://www.theverge.com/ai-artificial-intelligence/961311/anthropic-claude-science-ai-drug-development" target="_blank" rel="noopener">Anthropic wants to develop its own drugs</a></h2>
             <div class="meta">
                 <span class="source-badge source-theverge">The Verge</span>
-                <span>2026-07-08 03:47 UT</span>
+                <span>2026-07-09 04:15 UT</span>
                 <span class="score">★★★☆☆</span>
                 
                 <span class="tag">Product / 产品与商业</span>
@@ -764,11 +167,11 @@
                 <span class="tag">LLM / 大语言模型</span>
                 
             </div>
-            <div class="cn-summary">At the event &#34;The Briefing: AI for Science&#34; earlier this week, Anthropic announced Claude Science, a new &#34;AI workbench for scientists&#34; that pulls fragmented tools and datasets into one environment, an</div>
+            <div class="cn-summary">Anthropic 发布了 Claude Science，一个面向科学家的 AI 工作台，旨在整合分散的工具和数据。该公司希望借此从编程领域扩展到药物研发等科学领域。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                这篇文章说，开发了Claude聊天机器人的公司Anthropic，现在想用AI来研发新药。他们做了一个专门给科学家用的工具，把各种数据和软件整合到一起。就像给科学家配了一个超级助手，未来可能帮我们更快找到治疗疾病的药物。
+                Anthropic 公司想用 AI 帮科学家搞研发，他们推出了一个叫 Claude Science 的新工具，把各种零散的研究工具和数据整合到一起。对普通人来说，这意味着未来新药或新材料的研发可能会更快。以后 AI 可能不只是聊天写代码，还会成为科研助手。
             </div>
             
         </div>
@@ -777,19 +180,19 @@
             <h2><a href="https://www.theverge.com/tech/960854/ai-fanfiction-ao3-claude-detector" target="_blank" rel="noopener">The fanfiction community is at war with AI — and itself</a></h2>
             <div class="meta">
                 <span class="source-badge source-theverge">The Verge</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★☆☆</span>
+                <span>2026-07-09 04:15 UT</span>
+                <span class="score">★★☆☆☆</span>
                 
                 <span class="tag">Policy / 政策与伦理</span>
                 
                 <span class="tag">Other / 其他</span>
                 
             </div>
-            <div class="cn-summary">同人小说社区近期发起了一场针对使用生成式AI作者的运动，但检测方法存在争议，可能导致无辜作者被误伤。社区对AI工具的普遍反感与内部矛盾交织，反映了AI在创意领域的伦理冲突。</div>
+            <div class="cn-summary">同人小说社区发起了一场反对使用生成式 AI 的运动，但采用的检测方法存在争议，可能误伤普通作者。社区内部对 AI 工具的使用也存在分歧。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是同人小说圈子里，很多人讨厌用AI写故事，所以有人开始用不靠谱的方法抓“AI写手”，结果可能误伤好人。对普通人来说，这说明AI在创意领域引发了很大的争议，未来可能需要更公平的规则来区分人类和AI创作。
+                同人小说圈子里很多人讨厌用 AI 写故事，现在他们开始用工具抓“作弊者”，但这些检测工具不太靠谱，可能会冤枉好人。对普通人来说，这反映了 AI 在创作领域引发的争议：AI 写的东西算不算创作？未来可能会有更多关于 AI 创作伦理的讨论。
             </div>
             
         </div>
@@ -798,19 +201,19 @@
             <h2><a href="https://www.theverge.com/ai-artificial-intelligence/961468/google-ai-commercial-founding-fathers-declaration-of-independence" target="_blank" rel="noopener">Infuriating Google commercial imagines the founding fathers embracing AI</a></h2>
             <div class="meta">
                 <span class="source-badge source-theverge">The Verge</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★☆☆☆</span>
+                <span>2026-07-09 04:15 UT</span>
+                <span class="score">★☆☆☆☆</span>
                 
                 <span class="tag">Product / 产品与商业</span>
                 
                 <span class="tag">Other / 其他</span>
                 
             </div>
-            <div class="cn-summary">谷歌新广告虚构美国开国元勋使用Gemini和协作工具起草《独立宣言》，因创意尴尬引发广泛批评。广告试图将AI与历史人物结合，但效果适得其反。</div>
+            <div class="cn-summary">谷歌一则新广告设想美国开国元勋使用其 AI 工具起草《独立宣言》，因内容尴尬引发批评。广告试图展示 AI 协作功能，但效果适得其反。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                谷歌拍了个广告，想象美国开国元勋用AI帮忙写《独立宣言》，但拍得太尴尬，大家都不买账。对普通人来说，这提醒我们AI广告不能乱编历史，否则会让人反感。未来公司做AI宣传时会更小心，避免这种翻车。
+                谷歌拍了个广告，想象美国开国元勋们用他们的 AI 写《独立宣言》，但拍得太尴尬了，大家看了都觉得好笑。对普通人来说，这提醒我们公司宣传 AI 时容易用力过猛。未来 AI 广告可能会更谨慎，避免这种翻车。
             </div>
             
         </div>
@@ -819,19 +222,19 @@
             <h2><a href="https://www.theverge.com/ai-artificial-intelligence/961505/wealthy-ai-schools-alpha-forge-prep" target="_blank" rel="noopener">Some of the nation’s rich are letting AI teach their kids</a></h2>
             <div class="meta">
                 <span class="source-badge source-theverge">The Verge</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★★☆</span>
+                <span>2026-07-09 04:15 UT</span>
+                <span class="score">★★★☆☆</span>
                 
                 <span class="tag">Product / 产品与商业</span>
                 
                 <span class="tag">Policy / 政策与伦理</span>
                 
             </div>
-            <div class="cn-summary">美国一些富裕家庭开始用AI代替传统学校来教育孩子，尽管多数人对AI不信任。像Forge Prep和Alpha这样的公司提供AI教学服务，但AI在安全性和可靠性上仍有缺陷。</div>
+            <div class="cn-summary">一些美国富裕家庭开始用 AI 替代传统学校教育孩子，例如通过 Forge Prep 和 Alpha 等公司。这反映了 AI 在教育领域的应用趋势，但公众普遍对 AI 缺乏信任。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                美国一些有钱人开始让AI当孩子的老师，不上传统学校了。虽然大多数人觉得AI不靠谱，但这些人觉得AI能个性化教学。对普通人来说，这可能会改变未来的教育方式，但AI教孩子安全吗？未来需要更多监管和验证。
+                美国一些有钱人开始让 AI 当孩子的老师，不去传统学校了。对普通人来说，这可能会改变未来的教育方式，但也让人担心孩子会不会学不到社交技能。未来 AI 教育可能会更普及，但如何保证质量是个大问题。
             </div>
             
         </div>
@@ -840,19 +243,19 @@
             <h2><a href="https://www.theverge.com/tech/961711/solos-airgo-a6-smart-glasses-ai-assistant-privacy" target="_blank" rel="noopener">Solos debuts an even lighter version of its camera-less smart glasses</a></h2>
             <div class="meta">
                 <span class="source-badge source-theverge">The Verge</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★☆☆</span>
+                <span>2026-07-09 04:15 UT</span>
+                <span class="score">★★☆☆☆</span>
                 
                 <span class="tag">Product / 产品与商业</span>
                 
                 <span class="tag">Other / 其他</span>
                 
             </div>
-            <div class="cn-summary">Solos发布新款AirGo A6智能眼镜，取消了摄像头，重量仅19克，更轻便，依赖语音交互的AI助手。相比前代A5，重量大幅减轻，设计更简洁。</div>
+            <div class="cn-summary">Solos 发布了更轻的 AirGo A6 智能眼镜，重量仅 19 克，去掉了摄像头，依靠语音与 AI 助手交互。设计更简洁，主打轻便。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                Solos出了新款智能眼镜，没有摄像头，只有语音AI助手，而且特别轻，只有19克。对普通人来说，这意味着智能眼镜可以更日常、不吓人，未来可能像普通眼镜一样普及，但功能还比较有限。
+                Solos 公司出了新款智能眼镜，特别轻，只有 19 克，而且没有摄像头，全靠语音和 AI 对话。对普通人来说，这意味着智能眼镜可以更日常、更不显眼。未来这种眼镜可能会成为更自然的 AI 交互入口。
             </div>
             
         </div>
@@ -861,19 +264,19 @@
             <h2><a href="https://www.theverge.com/ai-artificial-intelligence/961978/anthropic-claude-cowork-mobile-web" target="_blank" rel="noopener">Anthropic is launching Claude Cowork on mobile and web</a></h2>
             <div class="meta">
                 <span class="source-badge source-theverge">The Verge</span>
-                <span>2026-07-08 03:47 UT</span>
-                <span class="score">★★★★☆</span>
+                <span>2026-07-09 04:15 UT</span>
+                <span class="score">★★★☆☆</span>
                 
                 <span class="tag">Product / 产品与商业</span>
                 
                 <span class="tag">LLM / 大语言模型</span>
                 
             </div>
-            <div class="cn-summary">Anthropic的Claude Cowork AI平台首次在移动端和网页端上线，先向Max订阅用户开放，其他用户将在数周后可用。此前仅限桌面应用。</div>
+            <div class="cn-summary">Anthropic 的 Claude Cowork AI 平台首次在移动端和网页端上线，此前仅限桌面应用。该功能将先向 Max 订阅用户开放。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                Anthropic把他们的AI助手Claude Cowork搬到了手机和网页上，之前只能在电脑上用。对普通人来说，这意味着可以随时随地用AI帮忙工作或学习，未来AI助手会越来越像随身秘书。
+                Anthropic 把他们的 AI 助手 Claude Cowork 搬到了手机和网页上，之前只能在电脑上用。对普通人来说，这意味着可以随时随地用 AI 帮忙工作或学习。未来 AI 助手会越来越像随身秘书。
             </div>
             
         </div>
@@ -882,7 +285,7 @@
             <h2><a href="https://www.theverge.com/tech/962485/meta-muse-image-ai-model-instagram" target="_blank" rel="noopener">Meta’s new Muse Image model can pull other Instagram users into AI photos</a></h2>
             <div class="meta">
                 <span class="source-badge source-theverge">The Verge</span>
-                <span>2026-07-08 03:47 UT</span>
+                <span>2026-07-09 04:15 UT</span>
                 <span class="score">★★★★☆</span>
                 
                 <span class="tag">CV / 计算机视觉</span>
@@ -890,230 +293,62 @@
                 <span class="tag">Product / 产品与商业</span>
                 
             </div>
-            <div class="cn-summary">Meta发布Muse Image模型，可在AI图片中拉入其他Instagram用户，用于Meta AI、Instagram和WhatsApp的图像生成工具。这是Meta超级智能实验室的首个AI图像模型。</div>
+            <div class="cn-summary">Meta 发布了 Muse Image 模型，能生成包含其他 Instagram 用户的 AI 图片。该模型已应用于 Meta AI、Instagram 和 WhatsApp 的图像工具。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                Meta出了个新AI画图工具，能把你Instagram好友的照片“拉”进AI生成的图片里。对普通人来说，这很有趣但也可能侵犯隐私，未来AI生成图片会越来越个性化，但也要小心滥用。
+                Meta 出了个新 AI 模型，能把你朋友的照片“拉”进 AI 生成的图片里。对普通人来说，这意味着以后在社交软件上可以更轻松地玩出创意图片。未来 AI 生成内容会和个人数据结合得更紧密。
             </div>
             
         </div>
         
-        <div class="article" data-tags="CV / 计算机视觉,Policy / 政策与伦理">
-            <h2><a href="https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator/" target="_blank" rel="noopener">Meta just launched a new AI generator, Muse Image, and users are already pushing back over use of their photos</a></h2>
+        <div class="article" data-tags="LLM / 大语言模型,Product / 产品与商业">
+            <h2><a href="https://www.theverge.com/ai-artificial-intelligence/962856/chatgpt-upgraded-voice-mode-gpt-live" target="_blank" rel="noopener">ChatGPT’s upgraded voice mode is better at shutting up</a></h2>
             <div class="meta">
-                <span class="source-badge source-techcrunch">TechCrunch</span>
-                <span>2026-07-07 22:18 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-                <span class="tag">Policy / 政策与伦理</span>
-                
-            </div>
-            <div class="cn-summary">Meta的Muse Image模型引发用户反弹，担心个人照片被用于AI训练。该模型可用于广告、装饰和创作者场景，但隐私争议持续发酵。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                Meta的新AI画图工具能用到你的照片，用户很生气，怕隐私被侵犯。对普通人来说，这意味着用AI工具时要小心自己的照片被拿去“学习”，未来公司需要更透明的隐私政策。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Research / 学术前沿,LLM / 大语言模型">
-            <h2><a href="https://techcrunch.com/2026/07/07/why-the-rise-of-open-source-ai-isnt-hurting-anthropic-yet/" target="_blank" rel="noopener">Why the rise of open source AI isn’t hurting Anthropic … yet</a></h2>
-            <div class="meta">
-                <span class="source-badge source-techcrunch">TechCrunch</span>
-                <span>2026-07-07 20:04 UT</span>
+                <span class="source-badge source-theverge">The Verge</span>
+                <span>2026-07-09 04:15 UT</span>
                 <span class="score">★★★☆☆</span>
-                
-                <span class="tag">Research / 学术前沿</span>
                 
                 <span class="tag">LLM / 大语言模型</span>
-                
-            </div>
-            <div class="cn-summary">开源AI模型的崛起并未损害Anthropic等前沿实验室，两者分别占据AI生命周期的不同阶段：开源负责普及，前沿实验室专注突破。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                开源AI模型越来越强，但并没有抢走大公司Anthropic的生意，因为两者分工不同：开源让更多人用上AI，大公司继续搞尖端研究。对普通人来说，这意味着未来AI会有免费版和高级版，各取所需。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Product / 产品与商业,LLM / 大语言模型">
-            <h2><a href="https://techcrunch.com/2026/07/07/microsoft-joins-ai-cost-cutting-trend-by-relying-more-on-its-own-models/" target="_blank" rel="noopener">Microsoft joins AI cost-cutting trend by relying more on its own models</a></h2>
-            <div class="meta">
-                <span class="source-badge source-techcrunch">TechCrunch</span>
-                <span>2026-07-07 19:58 UT</span>
-                <span class="score">★★★☆☆</span>
                 
                 <span class="tag">Product / 产品与商业</span>
                 
-                <span class="tag">LLM / 大语言模型</span>
-                
             </div>
-            <div class="cn-summary">微软加入AI成本削减趋势，更多依赖自家模型而非外部供应商。这表明大型科技公司正寻求降低对第三方AI的依赖。</div>
+            <div class="cn-summary">OpenAI 升级了 ChatGPT 的语音模式，新模型 GPT-Live-1 更少打断用户，并会在停顿后等待用户继续。旨在让对话更自然。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                微软也开始省钱，少用别人的AI，多用自己开发的模型。对普通人来说，这意味着未来AI服务可能更便宜、更整合，但也要看微软自己的模型好不好用。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Product / 产品与商业,Policy / 政策与伦理">
-            <h2><a href="https://techcrunch.com/2026/07/07/discord-admits-ai-moderation-bug-wrongfully-banned-users-over-harmless-images/" target="_blank" rel="noopener">Discord admits AI moderation bug wrongfully banned users over harmless images</a></h2>
-            <div class="meta">
-                <span class="source-badge source-techcrunch">TechCrunch</span>
-                <span>2026-07-07 19:28 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">Product / 产品与商业</span>
-                
-                <span class="tag">Policy / 政策与伦理</span>
-                
-            </div>
-            <div class="cn-summary">Discord承认其AI审核系统存在漏洞，自5月起错误封禁了200多个账号，原因是误判无害图片为违规内容。问题已修复。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                Discord的AI审核系统抽风，把很多正常图片当成违规，封了一堆无辜账号。对普通人来说，这说明AI审核还不靠谱，容易误伤，未来平台需要更小心地平衡安全和误判。
+                ChatGPT 的语音聊天升级了，现在它不会随便打断你说话，你说到一半停一下它也会等你。对普通人来说，和 AI 聊天感觉更像和人聊天了。未来 AI 语音助手会越来越自然，甚至能读懂你的语气。
             </div>
             
         </div>
         
         <div class="article" data-tags="CV / 计算机视觉,Research / 学术前沿">
-            <h2><a href="https://arxiv.org/abs/2607.06565v1" target="_blank" rel="noopener">ELSA3D: Elastic Semantic Anchoring for Unified 3D Understanding and Generation</a></h2>
+            <h2><a href="https://huggingface.co/papers/2607.06560" target="_blank" rel="noopener">Vision as Unified Multimodal Generation</a></h2>
             <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:59 UT</span>
-                <span class="score">★★★☆☆</span>
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-07-09 04:15 UT</span>
+                <span class="score">★★★★☆</span>
                 
                 <span class="tag">CV / 计算机视觉</span>
                 
                 <span class="tag">Research / 学术前沿</span>
                 
             </div>
-            <div class="cn-summary">ELSA3D 提出了一种统一的 3D 基础模型，通过弹性语义锚定技术，将文本和几何推理在匹配的抽象尺度上联合结构化。它使用尺度感知的八叉树分词器表示几何，并引入锚定令牌作为稀疏跨模态单元，以选择语义线索并将其路由到最相关的 3D 尺度。该方法旨在解决现有方法中文本与 3D 交互隐式、细节丢失的问题。</div>
+            <div class="cn-summary">SenseNova-Vision 提出将计算机视觉统一为多模态生成任务，用自然语言和视觉提示处理各种视觉任务，无需特定架构。并构建了大规模训练语料库。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                这篇文章介绍了一种新的 3D 模型，它能更好地理解文字描述和 3D 物体之间的关系。以前的方法会把文字和 3D 信息混在一起，导致细节丢失，而这个新模型能像搭积木一样，把文字和不同精细程度的 3D 结构对应起来。未来，这种技术能让 AI 更准确地根据文字描述生成或理解复杂的 3D 场景，比如在游戏、电影或虚拟现实里自动创建物体。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Robotics / 机器人,CV / 计算机视觉">
-            <h2><a href="https://arxiv.org/abs/2607.06564v1" target="_blank" rel="noopener">Lift3D-VLA: Lifting VLA Models to 3D Geometry and Dynamics-Aware Manipulation</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:59 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">Robotics / 机器人</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-            </div>
-            <div class="cn-summary">Lift3D-VLA 是一个统一的视觉-语言-动作（VLA）框架，通过显式的 3D 点云推理和时序连贯的动作生成，提升了机器人在物理环境中的操作能力。它解决了现有 VLA 模型因数据有限和几何信息丢失而无法有效捕捉 3D 几何和动态环境的问题。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是如何让机器人更好地理解三维空间并执行任务。以前机器人看东西像看照片，缺乏深度感，现在这个新方法让机器人能直接“看到”物体的 3D 点云，就像摸到一样，从而更精准地抓取或移动物体。未来，这种技术能让家庭服务机器人更可靠地帮你拿东西、整理房间。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Robotics / 机器人,Other / 其他">
-            <h2><a href="https://arxiv.org/abs/2607.06563v1" target="_blank" rel="noopener">Embodied Human-Robot Interaction via Acoustics: A MARL Approach with AcoustoBots for Spatial Data Physicalization</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:59 UT</span>
-                <span class="score">★★☆☆☆</span>
-                
-                <span class="tag">Robotics / 机器人</span>
-                
-                <span class="tag">Other / 其他</span>
-                
-            </div>
-            <div class="cn-summary">AcoustoBots 是一个移动声学数据物理化平台，利用 TurtleBot3 机器人携带超声波相控阵，通过声悬浮粒子高度来编码城市数据（如人口密度）。它采用多智能体强化学习（MADDPG）算法实现碰撞感知的导航，将抽象数据以动态、物理化的形式呈现。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章描述了一种用机器人来“展示”数据的新方法。机器人会悬浮起一个小颗粒，颗粒的高度就代表某个数据（比如城市噪音大小），机器人还能自己移动避免碰撞。这就像让数据“活”起来，未来可能在博物馆或展览中，用这种动态的物理模型来更直观地展示信息。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="CV / 计算机视觉,LLM / 大语言模型">
-            <h2><a href="https://arxiv.org/abs/2607.06560v1" target="_blank" rel="noopener">Vision as Unified Multimodal Generation</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:58 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-                <span class="tag">LLM / 大语言模型</span>
-                
-            </div>
-            <div class="cn-summary">SenseNova-Vision 将计算机视觉任务统一为多模态生成问题，在统一的模型中用自然语言指令和视觉提示来指定任务，并生成文本或图像输出。为此，他们构建了大规模的视觉指令-响应语料库，覆盖多种视觉任务，无需特定任务架构。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章提出了一种“万能”的视觉模型，它把看图、识图、画图等所有任务都当成一种“生成”任务来处理。你只需要用文字告诉它你想做什么（比如“把图片里的猫圈出来”），它就能直接输出结果。未来，这种模型能让 AI 更灵活地处理各种图像问题，比如直接根据描述修改照片或生成新图像。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Robotics / 机器人,CV / 计算机视觉">
-            <h2><a href="https://arxiv.org/abs/2607.06559v1" target="_blank" rel="noopener">RynnWorld-4D: 4D Embodied World Models for Robotic Manipulation</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:58 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">Robotics / 机器人</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-            </div>
-            <div class="cn-summary">RynnWorld-4D 是一个生成式世界模型，通过同步生成未来的 RGB 图像、深度图和光流，来预测场景在交互下的 4D 动态变化。它利用 RGB-DF 多模态表示，缩小了世界预测与机器人策略学习之间的差距，旨在提升开放世界中的机器人操作能力。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章介绍了一种能预测“未来”的机器人模型。它不仅能看现在，还能根据机器人的动作，预测下一秒场景会变成什么样，比如物体被推倒后怎么移动。这就像给机器人装了一个“预知能力”，让它能提前规划动作，未来可以让机器人更安全、更智能地处理复杂环境。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Robotics / 机器人,Research / 学术前沿">
-            <h2><a href="https://arxiv.org/abs/2607.06558v1" target="_blank" rel="noopener">RynnWorld-Teleop: An Action-Conditioned World Model for Digital Teleoperation</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:58 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">Robotics / 机器人</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">RynnWorld-Teleop 提出了“数字遥操作”范式，用生成式世界模型替代真实机器人，从单张参考图像合成高保真第一人称视频。操作者的手部姿态流作为动作标签，可迁移到任何目标机器人，从而解耦数据收集与物理硬件限制，加速机器人学习数据采集。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章提出了一种“虚拟训练”机器人的方法。以前教机器人做事需要真人拿着遥控器操作真实机器人，很慢很贵。现在，你只需要在电脑前做动作，AI 就能模拟出机器人的视角和效果，这些动作数据还能直接用在任何机器人身上。未来，这能大大降低训练机器人的成本，让更多人能“教”机器人新技能。
+                研究人员提出一个新方法，让 AI 用同一种方式处理所有图像任务，比如识别物体、生成图片等，不再需要为每个任务单独设计模型。对普通人来说，这意味着未来的 AI 看图片会更聪明、更全能。以后可能一个 AI 就能搞定所有图像相关的事。
             </div>
             
         </div>
         
         <div class="article" data-tags="CV / 计算机视觉,Research / 学术前沿">
-            <h2><a href="https://arxiv.org/abs/2607.06555v1" target="_blank" rel="noopener">ProxyPose: 6-DoF Pose Tracking via Video-to-Video Translation</a></h2>
+            <h2><a href="https://huggingface.co/papers/2607.03530" target="_blank" rel="noopener">MentalThink: Shaping Thoughts in Mental SVG World</a></h2>
             <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:56 UT</span>
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-07-09 04:15 UT</span>
                 <span class="score">★★★☆☆</span>
                 
                 <span class="tag">CV / 计算机视觉</span>
@@ -1121,165 +356,20 @@
                 <span class="tag">Research / 学术前沿</span>
                 
             </div>
-            <div class="cn-summary">ProxyPose 将 6-DoF 姿态追踪问题转化为视频到视频的翻译任务。仅需输入视频和第一帧中的一个标记像素，视频扩散模型就能生成一个彩色多面体的代理视频，该多面体与标记区域经历相同的局部刚体运动，从而实现对无纹理、透明等困难表面的追踪。</div>
+            <div class="cn-summary">We introduce MentalThink, a visual-symbolic reasoning paradigm that equips Multimodal LLMs (MLLMs) with an executable mechanism for &#34;mental&#34; visualization. The core of MentalThink is a think-with-SVG </div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                这篇文章发明了一种追踪物体运动的新方法，特别擅长追踪那些看不清纹理的物体（比如透明玻璃杯）。它只需要你在一段视频的第一帧点一下要追踪的点，AI 就能自动生成一个彩色方块，这个方块会跟着那个点一起动。未来，这项技术可以用于增强现实（AR）中，让虚拟物体更稳定地附着在真实物体上。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="CV / 计算机视觉,Research / 学术前沿">
-            <h2><a href="https://arxiv.org/abs/2607.06553v1" target="_blank" rel="noopener">From RGB Generation to Dense Field Readout: Pixel-Space Dense Prediction with Text-to-Image Models</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:54 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">本文指出，将文本到图像模型用于密集预测任务时，不应将其视为生成新 RGB 内容，而应利用其预训练的语义先验，直接在像素空间进行任务原生场（如深度、法线）的读取。他们提出一种方法，通过 DiT 的 patch-token-patch 结构，更高效地实现像素级预测。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讨论如何让 AI 更好地“看懂”图片的细节，比如判断每个像素的深度。他们发现，与其让 AI 重新画一张图，不如直接利用它已经学会的“常识”来解读图片。这就像让一个会画画的人直接告诉你画里物体的远近，而不是让他再画一遍。未来，这能让 AI 更精准地分析医学影像或自动驾驶场景。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="CV / 计算机视觉,NLP / 自然语言处理">
-            <h2><a href="https://arxiv.org/abs/2607.06552v1" target="_blank" rel="noopener">MonoIR-RS: Infrared Remote Sensing Vision-Language Learning with CLIP and VLM Adaptation</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:53 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-                <span class="tag">NLP / 自然语言处理</span>
-                
-            </div>
-            <div class="cn-summary">MonoIR-RS 是一个大规模红外遥感视觉-语言数据集和基准，通过 CLIP 风格对比学习和 VLM 指令微调，推动红外遥感图像的语言理解。它包含 60 万张合成红外图像和 5.9 万条红外感知描述，填补了红外遥感视觉-语言研究的空白。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章创建了一个专门用于红外遥感图像的数据集和模型。红外图像能看到普通照片看不到的东西（比如温度差异），但之前 AI 很难理解它。现在，这个新数据集让 AI 学会了“看懂”红外图像并描述它。未来，这能帮助 AI 在夜间监控、火灾预警或农业监测中更准确地分析红外影像。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="CV / 计算机视觉,Other / 其他">
-            <h2><a href="https://arxiv.org/abs/2607.06549v1" target="_blank" rel="noopener">Unsupervised Domain Adaptation for Calcification Classification in Mammography Across Multi-Site Datasets</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:53 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-                <span class="tag">Other / 其他</span>
-                
-            </div>
-            <div class="cn-summary">本文提出一个无监督域适应框架，用于跨多站点乳腺 X 光图像的钙化分类。该框架使用风格迁移（AdaIN 和 CycleGAN）生成特定设备和技术的训练样本，无需额外标注，并以 Swin Transformer V2 作为分类骨干，提升了模型在不同域间的泛化能力。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章解决了一个医疗 AI 的常见问题：不同医院的 X 光机拍出来的照片风格不同，导致 AI 模型“水土不服”。他们发明了一种方法，能自动把照片“翻译”成统一风格，让 AI 模型在不同医院都能准确判断钙化点是良性还是恶性。未来，这能让 AI 辅助诊断系统更可靠地应用于各种医疗机构。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Research / 学术前沿">
-            <h2><a href="https://arxiv.org/abs/2607.06546v1" target="_blank" rel="noopener">Graph Convolutional Attention: A Spectral Perspective on Graph Denoising and Diffusion</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:52 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">本文揭示了在去噪任务中，线性注意力机制存在局限性，只能学习平均的谱去噪滤波器，无法适应不同图的结构差异。为此，作者提出了“谱注意力”机制，直接利用输入图的频谱信息，理论上能显著提升去噪性能。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是怎么更好地给图数据“去噪”，比如社交网络或分子结构。以前的方法像“平均滤镜”，对所有图都用同一套规则，效果不好。新方法像“智能滤镜”，能根据每张图的特点来调整，所以去噪更干净。未来可能让图数据的分析更精准，比如在药物发现或推荐系统里用上。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="NLP / 自然语言处理,Policy / 政策与伦理">
-            <h2><a href="https://arxiv.org/abs/2607.06544v1" target="_blank" rel="noopener">Rethinking Indic AI from a Lens of Cultural Heritage Preservation</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:51 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">NLP / 自然语言处理</span>
-                
-                <span class="tag">Policy / 政策与伦理</span>
-                
-            </div>
-            <div class="cn-summary">论文探讨了AI在印度次大陆应用时对语言和文化多样性的双重影响，既可能促进包容性，也可能导致同质化。作者通过纵向调研印度自然语言处理技术的发展，强调了保护文化遗产的重要性。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章说的是AI在印度这样的多语言地区，就像一把双刃剑。一方面，AI可以帮助更多人用上科技，比如翻译各种方言；但另一方面，它也可能让主流语言更强大，导致小众语言和文化消失。未来我们需要开发更尊重文化多样性的AI，而不是一刀切的方案。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="NLP / 自然语言处理,Research / 学术前沿">
-            <h2><a href="https://arxiv.org/abs/2607.06542v1" target="_blank" rel="noopener">On the feasibility of dependency parsing of non-human sequences without a gold standard. Is evaluation possible in other species?</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:47 UT</span>
-                <span class="score">★★☆☆☆</span>
-                
-                <span class="tag">NLP / 自然语言处理</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">针对非人类物种（如灵长类）的叫声序列，由于缺乏标准答案，传统依赖标注的依存句法分析无法评估。本文利用网络科学的最新进展，论证了即使没有标准答案，也能通过序列长度衰减等特性判断解析器的准确性。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章想解决一个难题：怎么判断AI分析动物叫声的语法对不对？因为动物没有“标准语法书”可以参考。作者发现，通过观察叫声序列的长度规律，就能间接判断AI的分析是否靠谱。这未来可能帮我们更好地理解动物交流，比如猴子或海豚的“语言”。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="NLP / 自然语言处理,Research / 学术前沿">
-            <h2><a href="https://arxiv.org/abs/2607.06540v1" target="_blank" rel="noopener">Hierarchical Acoustic-Semantic Modeling: Modality Separation and Semantic Coherence for Full-Duplex SLMs</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:43 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">NLP / 自然语言处理</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">全双工语音语言模型（SLM）面临严重的模态干扰问题，导致知识退化。本文通过分析模型优化动态，发现根本原因是声学建模和语义建模在共享参数时产生梯度冲突，并提出了层次化声学-语义建模方法来解决。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是怎么让AI像人一样“边说边听”，实现真正的对话。以前AI在处理语音和语义时，两者会互相干扰，就像一个人同时听和说会混乱。新方法让它们分工合作，各干各的，效果更好。未来我们和AI聊天会更自然，不再有“等我说完你再听”的尴尬。
+                研究人员教 AI 像人一样在脑子里“画图”来思考问题，它先画个简单的草图，然后分析这张图来推理。对普通人来说，这能让 AI 更好地理解空间关系，比如规划路线或拼图。未来 AI 可能会用这种“脑内小剧场”来解决更复杂的问题。
             </div>
             
         </div>
         
         <div class="article" data-tags="Robotics / 机器人,CV / 计算机视觉">
-            <h2><a href="https://arxiv.org/abs/2607.06537v1" target="_blank" rel="noopener">UniLM-Nav: A Unified Framework for Zero-Shot Last-Mile Navigation</a></h2>
+            <h2><a href="https://huggingface.co/papers/2606.31329" target="_blank" rel="noopener">3D HAMSTER: Bridging Planning and Control in Hierarchical Vision Language Action Models through 3D Trajectory Guidance</a></h2>
             <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:42 UT</span>
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-07-09 04:15 UT</span>
                 <span class="score">★★★★☆</span>
                 
                 <span class="tag">Robotics / 机器人</span>
@@ -1287,146 +377,62 @@
                 <span class="tag">CV / 计算机视觉</span>
                 
             </div>
-            <div class="cn-summary">针对机器人“最后一米导航”难题（到达目标附近但无法调整到可操作姿态），本文提出UniLM-Nav框架，利用多模态大语言模型统一处理视角选择、任务条件化可操作性定位和几何感知基座姿态推理，实现零样本开放词汇导航。</div>
+            <div class="cn-summary">提出3D HAMSTER框架，通过让视觉语言模型直接输出3D轨迹，解决了传统分层VLA模型中2D引导导致几何失真的问题。该方法在机器人操作任务中提升了规划与控制的协调性。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                这篇文章解决了一个机器人难题：它走到桌子旁边了，但不知道怎么调整位置才能伸手拿到杯子。新方法让机器人用大语言模型“看”和“想”，自动找到最佳站位。未来家里的服务机器人会更聪明，比如帮你拿药时，不用你指挥它怎么站。
+                这篇文章讲的是让机器人更聪明地抓东西。以前机器人看2D图片规划动作，但实际抓取需要3D信息，容易出错。现在这个新方法让机器人直接理解3D空间，规划出更准确的抓取路径，未来机器人做家务、工厂干活会更靠谱。
             </div>
             
         </div>
         
-        <div class="article" data-tags="Robotics / 机器人,Research / 学术前沿">
-            <h2><a href="https://arxiv.org/abs/2607.06535v1" target="_blank" rel="noopener">Neural-ESO: A Dual-Pathway Architecture for Provably Robust Learning-Based Control</a></h2>
+        <div class="article" data-tags="Agent / 智能体,LLM / 大语言模型">
+            <h2><a href="https://huggingface.co/papers/2607.05804" target="_blank" rel="noopener">TurnOPD: Making On-Policy Distillation Turn-Aware for Efficient Long-Horizon Agent Training</a></h2>
             <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:41 UT</span>
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-07-09 04:15 UT</span>
                 <span class="score">★★★☆☆</span>
                 
-                <span class="tag">Robotics / 机器人</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">本文提出一种基于神经扩展状态观测器（Neural-ESO）的双路径控制框架，结合神经网络的前馈预测和传统观测器的误差补偿，通过李雅普诺夫理论保证闭环误差有界。在四旋翼飞行器着陆任务中验证了其鲁棒性。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是怎么让机器人（比如无人机）在遇到风等干扰时还能稳定飞行。新方法像给机器人装了两个“大脑”：一个用AI快速预测干扰，另一个用传统方法兜底，防止AI出错。未来无人机送货会更稳，不怕突然刮大风。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="CV / 计算机视觉,LLM / 大语言模型">
-            <h2><a href="https://arxiv.org/abs/2607.06534v1" target="_blank" rel="noopener">CAIRN: Cross-Room 3D Scene Understanding with Topology-Aware Large Multimodal Models</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:39 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
+                <span class="tag">Agent / 智能体</span>
                 
                 <span class="tag">LLM / 大语言模型</span>
                 
             </div>
-            <div class="cn-summary">现有3D场景理解模型局限于单房间，无法处理多房间互联的复杂家庭环境。本文提出CAIRN，一种拓扑感知的3D大语言模型，通过层次化注意力机制显式建模物体关系和房间连通性，并在新数据集上验证了其有效性。</div>
+            <div class="cn-summary">提出TurnOPD策略，通过按回合分配预算优化长周期智能体训练中的知识蒸馏效率，解决了全轨迹训练中尾部回合监督弱和深层决策回合训练不足的问题。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                这篇文章让AI能理解整个房子的布局，而不仅仅是一个房间。比如你问“厨房的勺子在哪”，AI能知道厨房和客厅是连着的，并找到勺子。未来智能家居助手会更懂你，比如根据房间关系帮你规划路线。
+                这篇文章教AI助手怎么更高效地学习复杂任务。以前AI学一个长任务要一步步从头到尾练，很浪费时间。新方法只挑关键步骤重点学，就像学生复习时专攻难题，省时又效果好，未来AI助手能更快学会订机票、写报告这类多步骤任务。
             </div>
             
         </div>
         
-        <div class="article" data-tags="Other / 其他,Research / 学术前沿">
-            <h2><a href="https://arxiv.org/abs/2607.06532v1" target="_blank" rel="noopener">GraphBU: MILP Instance Generation with Graph-Native Block Units</a></h2>
+        <div class="article" data-tags="CV / 计算机视觉,Research / 学术前沿">
+            <h2><a href="https://huggingface.co/papers/2607.02515" target="_blank" rel="noopener">PointDiT: Pixel-Space Diffusion for Monocular Geometry Estimation</a></h2>
             <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:39 UT</span>
-                <span class="score">★★☆☆☆</span>
-                
-                <span class="tag">Other / 其他</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">混合整数线性规划（MILP）实例生成困难，现有方法无法保持局部耦合结构。本文提出GraphBU，以局部子问题及其接口为基本单元，通过兼容性检查进行替换，生成保持结构特性的实例。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是怎么自动生成数学优化问题，用来测试求解器的性能。以前的方法像拼积木，但拼出来的结构不对。新方法像用“乐高模块”，每个模块自带接口，能保证拼出来的问题结构合理。未来能帮助开发更好的优化算法，比如用于物流调度。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Other / 其他,Research / 学术前沿">
-            <h2><a href="https://arxiv.org/abs/2607.06531v1" target="_blank" rel="noopener">The Large Cancer Assistant (LCA): A Model-Agnostic Orchestration Framework for Scalable Clinical Decision Support in Oncology</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:38 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">Other / 其他</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">针对肿瘤学中多模态深度学习模型架构僵化的问题，本文提出大型癌症助手（LCA），一种模型无关的编排框架，通过算法不可渗透性原则分离编排逻辑与AI模型，实现可扩展的临床决策支持。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章介绍了一个AI系统，能帮助医生诊断癌症。它像一个“智能调度员”，把病人的各种检查报告（CT、病理等）分发给不同的AI模型处理，然后汇总结果。未来医生看病会更高效，AI能辅助分析更多数据，但决策权还在医生手里。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="CV / 计算机视觉,Other / 其他">
-            <h2><a href="https://arxiv.org/abs/2607.06529v1" target="_blank" rel="noopener">Life Style Levels: Neighborhood Delineation using Geospatial Data</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:37 UT</span>
-                <span class="score">★★★☆☆</span>
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-07-09 04:15 UT</span>
+                <span class="score">★★★★☆</span>
                 
                 <span class="tag">CV / 计算机视觉</span>
                 
-                <span class="tag">Other / 其他</span>
-                
-            </div>
-            <div class="cn-summary">针对发展中国家缺乏精细社会经济数据的问题，本文提出一种基于卫星图像建筑形态的可扩展网格划分框架，用于描绘城市内部的贫富差异。在59个印度城市验证，并通过街景图像确认了分类的准确性。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章用卫星照片分析城市里哪些区域富裕、哪些贫困。比如看房子的密度、大小等特征，就能推断出社区的经济水平。未来可以帮助政府更精准地分配资源，比如在贫困区域多建学校和医院，而不需要挨家挨户调查。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="NLP / 自然语言处理,Research / 学术前沿">
-            <h2><a href="https://arxiv.org/abs/2607.06527v1" target="_blank" rel="noopener">RSF-GLLM: Bridging the Semantic Gap in Multi-Hop Knowledge Graph QA via Recurrent Soft-Flow and Decoupled LLM Generation</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:32 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">NLP / 自然语言处理</span>
-                
                 <span class="tag">Research / 学术前沿</span>
                 
             </div>
-            <div class="cn-summary">针对知识图谱多跳问答中检索器无法学习语义鸿沟的问题，提出RSF-GLLM框架，通过解耦可微图推理与答案生成。其核心模块采用GRU引导的查询更新器和动态门控机制，利用结构线索遍历语义不相似的桥接节点，并通过流稀疏正则化保证从软概率收敛到离散推理路径。</div>
+            <div class="cn-summary">State-of-the-art single-image 3D reconstruction methods often rely on complex hybrid architectures and loss functions, or compress geometry into latent spaces in order to leverage pre-trained latent d</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是怎么让AI更好地回答需要绕几个弯子才能找到答案的问题。比如问“谁演了那部拿奖的电影？”，AI需要先找到电影，再找到演员。这个方法让AI在找答案的过程中，即使中间步骤和问题看起来不相关，也能通过逻辑关系找到正确路径。对普通人来说，以后问复杂问题AI会更靠谱。
+                这篇文章发明了一种新方法，让电脑看一张照片就能猜出物体的3D形状。以前的方法很复杂，像搭积木一样要好多步骤。新方法更简单直接，效果还更好，未来手机拍照就能生成3D模型，做游戏、设计家具会更方便。
             </div>
             
         </div>
         
         <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
-            <h2><a href="https://arxiv.org/abs/2607.06523v1" target="_blank" rel="noopener">DepthWeave-KV: Token-Adaptive Cross-Layer Residual Factorization for Long-Context KV Cache Compression</a></h2>
+            <h2><a href="https://huggingface.co/papers/2607.00394" target="_blank" rel="noopener">When Classic Cache Policies Fail: Learning-Augmented Replacement for Semantic Retrieval Buffers</a></h2>
             <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:29 UT</span>
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-07-09 04:15 UT</span>
                 <span class="score">★★★☆☆</span>
                 
                 <span class="tag">LLM / 大语言模型</span>
@@ -1434,104 +440,41 @@
                 <span class="tag">Research / 学术前沿</span>
                 
             </div>
-            <div class="cn-summary">针对长上下文语言模型推理中KV缓存的内存瓶颈，提出DepthWeave-KV方法。该方法通过跨层残差分解和token自适应深度路由器，为指令承载和检索关键token分配更高的重建秩，在保持压缩率的同时保留关键信息。</div>
+            <div class="cn-summary">LLM agents increasingly rely on retrieval buffers to store and reuse past experience, yet the cache management policies governing these buffers remain largely ad-hoc. We formalize this as an online se</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                这篇文章解决的是AI处理长文章时内存不够用的问题。它用一种聪明的方法压缩AI的“记忆”，只保留最重要的信息，就像你记笔记时只记关键词。这样AI就能处理更长的文章，比如整本书，而不会卡顿。
+                这篇文章研究AI怎么记住以前学过的知识。发现常用的“最近最少用”策略在AI记忆里不好使，反而最简单的“先进先出”更管用。他们发明了新方法让AI自己学会什么时候该忘、什么时候该记，未来AI聊天机器人能更聪明地回忆对话历史。
             </div>
             
         </div>
         
-        <div class="article" data-tags="CV / 计算机视觉,Robotics / 机器人">
-            <h2><a href="https://arxiv.org/abs/2607.06522v1" target="_blank" rel="noopener">Bridging Physical Reasoning and Task Generalization via Visual Action Outcome Reasoning Alignment</a></h2>
+        <div class="article" data-tags="LLM / 大语言模型,Product / 产品与商业">
+            <h2><a href="https://huggingface.co/papers/2607.02770" target="_blank" rel="noopener">Gemma 4 Technical Report</a></h2>
             <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:27 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-                <span class="tag">Robotics / 机器人</span>
-                
-            </div>
-            <div class="cn-summary">针对视觉语言模型在物理推理任务中泛化能力差的问题，提出VAORA方法。通过引入视觉对齐奖励和视觉-动作对齐奖励，抑制模型产生与物理现实矛盾的推理链，并缩小推理与动作之间的差距，提升模型在未知环境中的表现。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是怎么让AI在真实世界里做事情更靠谱。比如让AI看图片然后去移动物体，以前AI可能会“瞎想”出不符合物理规律的动作。这个方法让AI根据实际看到的画面来调整自己的行动，就像人一样先看再动。未来机器人会更聪明。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
-            <h2><a href="https://arxiv.org/abs/2607.06519v1" target="_blank" rel="noopener">FreqDepthKV: Frequency-Guided Depth Sharing for Robust KV Cache Compression in Long-Context LLM Inference</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:26 UT</span>
-                <span class="score">★★★☆☆</span>
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-07-09 04:15 UT</span>
+                <span class="score">★★★★★</span>
                 
                 <span class="tag">LLM / 大语言模型</span>
                 
-                <span class="tag">Research / 学术前沿</span>
+                <span class="tag">Product / 产品与商业</span>
                 
             </div>
-            <div class="cn-summary">提出FreqDepthKV，一种推理时KV缓存压缩方法。通过将相邻层的KV状态分解为共享低频深度分量和稀疏高频残差，并利用轻量级在线探针自适应分配压缩策略，在长上下文问答、检索等任务中保持性能的同时大幅降低内存开销。</div>
+            <div class="cn-summary">We introduce Gemma 4, a new generation of open-weight, natively multimodal language models in the Gemma model family. Designed to advance compute efficiency and reasoning, the Gemma 4 model suite feat</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                这篇文章和上一篇类似，也是解决AI处理长文本时内存不够的问题。它把AI的“记忆”分成“重要的大致内容”和“细节补充”，只保留关键部分。这样AI就能更快地处理长文档，而且不会忘记重要信息。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="CV / 计算机视觉,Robotics / 机器人">
-            <h2><a href="https://arxiv.org/abs/2607.06516v1" target="_blank" rel="noopener">Point as Skeleton: Accumulated Point Cloud Enhanced Autoregressive Generation for Closed-Loop Autonomous Driving Simulation</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:20 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-                <span class="tag">Robotics / 机器人</span>
-                
-            </div>
-            <div class="cn-summary">提出Point as Skeleton框架，用于闭环自动驾驶仿真中的生成式传感器模拟。通过自回归生成器结合点云骨架条件合成视觉观测，并引入Reset-and-Roll机制防止未来条件潜状态在仿真步骤间传播，稳定自回归生成中的误差累积。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是怎么让自动驾驶的模拟训练更真实。以前模拟要么不够逼真，要么不能和人互动。这个方法用AI生成逼真的驾驶场景视频，并且能根据AI的驾驶操作实时更新画面。这样训练出来的自动驾驶系统会更安全。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Research / 学术前沿,Other / 其他">
-            <h2><a href="https://arxiv.org/abs/2607.06514v1" target="_blank" rel="noopener">FootsiesGym: A Fighting Game Benchmark for Two-Player Zero-Sum Imperfect-Information Games</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:18 UT</span>
-                <span class="score">★★☆☆☆</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-                <span class="tag">Other / 其他</span>
-                
-            </div>
-            <div class="cn-summary">发布FootsiesGym，一个基于格斗游戏Footsies的开源环境，用于研究两人零和不完美信息博弈。该环境简化了格斗游戏的策略交互，同时保持足够的复杂度，并提供了向量化模拟器以支持高效训练和基准测试。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章发布了一个新的AI训练游戏平台，基于一个简单的格斗游戏。这个平台让研究者可以更容易地训练AI玩需要猜测对手心思的游戏，比如石头剪刀布。对普通人来说，这能帮助开发出更聪明的游戏AI。
+                谷歌发布了新一代开源AI模型Gemma 4，有不同大小版本，能看图片、听声音、读长文章。它还能先思考再回答，就像人一样。这个模型免费开放，未来小公司和个人开发者也能用上强大的AI能力做各种应用。
             </div>
             
         </div>
         
         <div class="article" data-tags="NLP / 自然语言处理,Research / 学术前沿">
-            <h2><a href="https://arxiv.org/abs/2607.06507v1" target="_blank" rel="noopener">DynaKRAG: A Unified Framework for Learnable Evidence Control in Multi-Hop Retrieval-Augmented Generation</a></h2>
+            <h2><a href="https://huggingface.co/papers/2607.05992" target="_blank" rel="noopener">PluraMath: Extending Mathematical Reasoning Evaluation Beyond High-Resource Languages</a></h2>
             <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:09 UT</span>
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-07-09 04:15 UT</span>
                 <span class="score">★★★☆☆</span>
                 
                 <span class="tag">NLP / 自然语言处理</span>
@@ -1539,352 +482,335 @@
                 <span class="tag">Research / 学术前沿</span>
                 
             </div>
-            <div class="cn-summary">提出DynaKRAG框架，将多跳证据获取形式化为基于状态的条件控制。通过可学习的控制器在每一步选择有效的证据操作（如检索、查询改写、证据评判），实现更灵活和高效的检索增强生成。</div>
+            <div class="cn-summary">Mathematical reasoning has become a central task for evaluating and tuning reasoning Large Language Models (LLMs), yet existing benchmarks remain heavily biased toward high-resource languages, with En</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是怎么让AI在回答问题时，像侦探一样一步步找证据。以前AI找证据的步骤是固定的，不够灵活。这个方法让AI能根据已经找到的信息，自己决定下一步该查什么，比如是改写问题还是找新资料。这样回答会更准确。
+                这篇文章让AI数学考试不再只考英语和中文。他们收集了18种小语种的数学题，比如斯瓦希里语、越南语等，请母语者验证翻译质量。这样就能测试AI是不是真的懂数学，而不是只会背答案，未来AI能更好地服务全球不同语言的人。
             </div>
             
         </div>
         
-        <div class="article" data-tags="Other / 其他,Research / 学术前沿">
-            <h2><a href="https://arxiv.org/abs/2607.06505v1" target="_blank" rel="noopener">Industry Classification of GitHub Repositories Using the North American Industry Classification System (NAICS)</a></h2>
+        <div class="article" data-tags="Robotics / 机器人,CV / 计算机视觉">
+            <h2><a href="https://huggingface.co/papers/2607.05765" target="_blank" rel="noopener">Image2Sim: Scaling Embodied Navigation via Generative Neural Simulator</a></h2>
             <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:06 UT</span>
-                <span class="score">★★☆☆☆</span>
-                
-                <span class="tag">Other / 其他</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">发布NAICS-GH数据集，包含6588个GitHub仓库的行业分类标签（基于NAICS 2022）。通过结合嵌入检索和GPT-4.1评分的流水线，将约137万个源仓库分类到20个行业部门，为研究开源软件的经济影响提供数据基础。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章做了一个“地图”，把GitHub上的软件项目按照它们所属的行业（比如金融、医疗）分类。这样研究者就能知道哪些行业在用哪些开源软件，以及开源软件如何影响经济。对普通人来说，这能帮助了解技术发展的趋势。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Research / 学术前沿,Other / 其他">
-            <h2><a href="https://arxiv.org/abs/2607.06504v1" target="_blank" rel="noopener">RMISC: A Large-scale Real-world Multivariate Corpus for Time Series Foundation Models</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:04 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-                <span class="tag">Other / 其他</span>
-                
-            </div>
-            <div class="cn-summary">建立RMISC语料库，包含约200个数据集和1420亿个时间点的大规模真实世界多元时间序列数据。旨在回答“基于真实数据的时序基础模型是否优于合成数据训练的模型”这一关键问题，为时序基础模型研究提供高质量基准。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章发布了一个大型的真实世界数据集合，包含各种传感器记录的数据，比如天气、股票价格等。以前AI训练常用人造数据，但真实数据更复杂。这个数据集让AI能学习真实世界的规律，未来在天气预报、金融预测等方面会更准。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="LLM / 大语言模型,Agent / 智能体">
-            <h2><a href="https://arxiv.org/abs/2607.06503v1" target="_blank" rel="noopener">Doomed from the Start: Early Abort of LLM Agent Episodes via a Recall-Controlled Probe Cascade</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:03 UT</span>
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-07-09 04:15 UT</span>
                 <span class="score">★★★★☆</span>
                 
-                <span class="tag">LLM / 大语言模型</span>
+                <span class="tag">Robotics / 机器人</span>
+                
+                <span class="tag">CV / 计算机视觉</span>
+                
+            </div>
+            <div class="cn-summary">Embodied navigation aims to build agents that interpret multimodal goals, reason in 3D space, and reach target destinations reliably in the real world. However, progress remains constrained by the lac</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章教机器人怎么在真实世界里认路。以前训练机器人要么用真实照片但数量少，要么用虚拟场景但太假。新方法用几张照片就能快速生成逼真的3D环境，让机器人在里面练习导航，未来扫地机器人、送货机器人会更聪明地避开障碍物。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Robotics / 机器人,Product / 产品与商业">
+            <h2><a href="https://huggingface.co/papers/2607.06403" target="_blank" rel="noopener">From Foundation to Application: Improving VLA Models in Practice</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-07-09 04:15 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">Robotics / 机器人</span>
+                
+                <span class="tag">Product / 产品与商业</span>
+                
+            </div>
+            <div class="cn-summary">Despite recent progress of VLA foundation models, the disparity between laboratory conditions and real-world applications continues to impede their practical implementation. To bridge this gap, we pre</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章升级了机器人AI大脑，让它能看、能听、能动手。新版本用6万小时机器人数据训练，还能控制机器人的头、腰、轮子和手指。未来机器人能更灵活地做家务、在工厂干活，甚至帮人做手术。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Product / 产品与商业,Other / 其他">
+            <h2><a href="https://huggingface.co/papers/2607.05435" target="_blank" rel="noopener">Bibby AI: An Editor-Native Agentic Platform for Academic Research, Writing, and Publishing</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-07-09 04:15 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">Product / 产品与商业</span>
+                
+                <span class="tag">Other / 其他</span>
+                
+            </div>
+            <div class="cn-summary">Academic output is produced across a fragmented toolchain: literature discovery in one application, reference management in another, writing in a LaTeX editor, formatting against venue templates by ha</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章介绍了一个帮学者写论文的AI工具。以前写论文要在不同软件间来回切换，很麻烦。这个工具把找文献、整理引用、写文章、排版、投稿都整合在一起，AI还能自动帮忙。未来学者可以更专注做研究，不用浪费时间在格式调整上。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="CV / 计算机视觉,Agent / 智能体">
+            <h2><a href="https://huggingface.co/papers/2607.05465" target="_blank" rel="noopener">CanvasAgent: Enabling Complex Image Creation and Editing via Visual Tool Orchestration</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-07-09 04:15 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">CV / 计算机视觉</span>
                 
                 <span class="tag">Agent / 智能体</span>
                 
             </div>
-            <div class="cn-summary">研究发现，LLM代理在多步任务中失败的迹象可以从其内部表示中早期预测。通过轻量级探针在每轮读取隐藏激活值，可在第一轮交互时就预测失败，并设计了带有召回预算的校准门控级联，在保证成功轨迹通过的同时提前终止失败轨迹。</div>
+            <div class="cn-summary">Complex image creation and editing often require more than a single generation or editing model. A user request may involve synthesizing images, localizing objects, segmenting regions, editing selecte</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                这篇文章发现，AI在做一个复杂任务时，如果注定要失败，其实很早就能看出来。就像人做数学题，一开始思路错了后面肯定错。这个方法让AI能提前“喊停”，不再浪费时间和算力。这样AI做事会更高效，比如订机票时如果一开始就选错了，它会马上重新开始。
+                这篇文章让AI学会像设计师一样处理图片。以前AI只能做单一操作，比如生成或抠图。新方法让AI能组合使用多种工具，比如先画个苹果，再抠出来放到蛋糕上，最后调颜色。未来普通人也能用一句话让AI做出专业级图片。
             </div>
             
         </div>
         
-        <div class="article" data-tags="Robotics / 机器人,Research / 学术前沿">
-            <h2><a href="https://arxiv.org/abs/2607.06501v1" target="_blank" rel="noopener">Hypothesis-driven Model Expansion under Uncertainty for Open-World Robot Planning</a></h2>
+        <div class="article" data-tags="NLP / 自然语言处理,Research / 学术前沿">
+            <h2><a href="https://huggingface.co/papers/2607.05691" target="_blank" rel="noopener">Where to cut, how deep: BPE and Unigram-LM on chemistry SMILES</a></h2>
             <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:02 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">Robotics / 机器人</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">本文提出了一种面向开放世界机器人规划的假设驱动模型扩展框架，使机器人能在未知环境中自动生成、验证和更新关于其抽象世界模型的假设。该框架利用基础模型生成初始假设，并通过显式维护不确定性感知的知识扩展，将假设验证集成到目标达成规划中。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是如何让机器人在陌生环境里自己学习和适应。以前机器人只能按预设程序做事，遇到新情况就傻眼了。这个新方法让机器人能像人一样，先猜一猜周围是什么情况，然后通过行动验证自己的猜测，不断更新对世界的理解。未来服务机器人就能更灵活地帮我们做家务、送快递了。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Robotics / 机器人,Research / 学术前沿">
-            <h2><a href="https://arxiv.org/abs/2607.06499v1" target="_blank" rel="noopener">Clustering-Embedded Model Predictive Path Integral Control: Avoiding Averaging-Induced Failure and Enabling Efficient Cluster Selection for Dynamic Obstacles</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 17:01 UT</span>
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-07-09 04:15 UT</span>
                 <span class="score">★★★☆☆</span>
-                
-                <span class="tag">Robotics / 机器人</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">本文提出聚类嵌入模型预测路径积分控制（CE-MPPI），解决了标准MPPI在杂乱环境中因平均化失败导致的犹豫或碰撞问题。CE-MPPI通过重新定义控制律，将聚类集成到采样和评估过程中，从根本上避免了非凸环境中的平均化失败。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章解决的是机器人导航时的一个难题：当机器人面前有多个障碍物时，传统方法会“平均”所有可能的路径，结果反而导致犹豫不决甚至撞上障碍物。新方法先把不同路径分类，再分别处理，就像人先判断“左边还是右边”，而不是“左右平均”。这样机器人就能更安全、更果断地避开障碍物。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Research / 学术前沿,Other / 其他">
-            <h2><a href="https://arxiv.org/abs/2607.06497v1" target="_blank" rel="noopener">EntroPath: Maximum Entropy Path Ensemble Embedding for Manifold Learning</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 16:58 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-                <span class="tag">Other / 其他</span>
-                
-            </div>
-            <div class="cn-summary">本文提出EntroPath，一种基于最大熵路径集成的流形学习方法，通过聚合点之间所有k步路径的集合来构建相异性度量，避免了局部归一化随机游走和最短路径距离的缺陷。该方法在短时间极限下收敛于测地距离平方，并能平滑插值局部和全局几何。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章介绍了一种新的数据分析方法，用来发现数据中的隐藏结构。传统方法要么只看局部关系，要么只找最短路径，容易出错。新方法像看地图一样，考虑所有可能的路线，综合判断两点之间的真实距离。这能帮助科学家更准确地分析复杂数据，比如基因表达或社交网络。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="NLP / 自然语言处理,Product / 产品与商业">
-            <h2><a href="https://arxiv.org/abs/2607.06495v1" target="_blank" rel="noopener">Pitwall: Faithful Natural-Language Race-Strategy Briefings from a Calibrated Real-Time Monte Carlo Engine</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 16:55 UT</span>
-                <span class="score">★★★★☆</span>
                 
                 <span class="tag">NLP / 自然语言处理</span>
                 
-                <span class="tag">Product / 产品与商业</span>
-                
-            </div>
-            <div class="cn-summary">本文介绍Pitwall，一个生产级系统，用于生成F1赛车策略的自然语言简报，支持英语、西班牙语和葡萄牙语。该系统将忠实性作为架构属性，每个句子都被分解为可验证的事实声明，并实时与概率性比赛状态进行核对，确保生成内容的准确性。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是如何让AI自动生成F1赛车比赛的实时解说和策略分析。以前AI生成内容容易出错，这个系统特别牛的地方是，它每说一句话都会跟实际比赛数据核对，确保信息准确无误。未来这种技术可以用在体育直播、金融新闻等需要实时准确信息的场景，让AI当靠谱的解说员。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Other / 其他,Research / 学术前沿">
-            <h2><a href="https://arxiv.org/abs/2607.06489v1" target="_blank" rel="noopener">Multi-Agent Deep Reinforcement Learning for Multi Objective Battery Management in Dairy Farms</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 16:48 UT</span>
-                <span class="score">★★☆☆☆</span>
-                
-                <span class="tag">Other / 其他</span>
-                
                 <span class="tag">Research / 学术前沿</span>
                 
             </div>
-            <div class="cn-summary">本文提出一种基于差分进化和多智能体深度强化学习的多目标优化控制系统，用于爱尔兰奶牛场的电池管理。系统分为两层：上层使用动态定价，下层基于多智能体强化学习进行电池管理，旨在促进可再生能源整合和减少碳排放。</div>
+            <div class="cn-summary">该研究对比了化学SMILES序列中两种分词方法（BPE和Unigram-LM）的效果，发现它们在22种条件下构建的词汇表几乎不重叠，Jaccard相似度最高仅0.161。这表明化学语言模型不能直接套用自然语言处理的分词方法，需要针对化学领域进行专门设计。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是如何用AI帮爱尔兰的奶牛场更聪明地用电。农场装了太阳能板，但发电时间跟用电时间不匹配。这个系统用AI来管理电池，在电价低的时候充电，电价高的时候放电，既省钱又环保。未来农场也能像智能家居一样，自动管理能源。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="CV / 计算机视觉,Research / 学术前沿">
-            <h2><a href="https://arxiv.org/abs/2607.06485v1" target="_blank" rel="noopener">AirflowAttack: Thermal-Airflow Adversarial Perturbations against Infrared Remote-Sensing Vision-Language Models</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 16:46 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">本文提出AirflowAttack，首个针对红外遥感视觉语言模型的对抗攻击方法，利用热气流湍流作为扰动先验。该方法通过轻量级生成器合成与输入无关的扰动，在多个CLIP骨干模型上实现了48.5%的平均零样本场景分类攻击成功率，远超现有物理基线。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章揭示了一个安全隐患：红外遥感AI系统可能被“热气流”欺骗。作者发现，通过模拟热空气流动产生的微小干扰，就能让AI把军事目标识别成别的东西。这提醒我们，在安全领域使用AI时，要考虑这种物理层面的攻击。未来需要开发更鲁棒的模型来防御这类攻击。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="CV / 计算机视觉,Research / 学术前沿">
-            <h2><a href="https://arxiv.org/abs/2607.06484v1" target="_blank" rel="noopener">Assessing the Operational Impact of Poisoning Attacks over Augmented 3D Point Cloud Public Datasets for Connected and Autonomous Vehicles</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 16:46 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">本文评估了针对增强3D点云公共数据集的投毒攻击对自动驾驶系统的操作影响。研究发现，数据增强虽然能降低投毒攻击的成功率，但投毒仍能规避数据增强的净化作用，并可能增加后门注入的风险。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章研究的是自动驾驶汽车的数据安全问题。有人可能会故意往公开数据集中“投毒”，让自动驾驶AI学坏。作者发现，即使对数据做增强处理（比如旋转、缩放），也很难完全清除这些“毒药”。这意味着自动驾驶系统需要更严格的数据安全措施，否则可能被恶意操控。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="CV / 计算机视觉,Research / 学术前沿">
-            <h2><a href="https://arxiv.org/abs/2607.06483v1" target="_blank" rel="noopener">Mitigating Domain Shift in Conditioned Floor Plan Generation: Synthetic Pre-training for Data-Efficient Adaptation</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 16:45 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">本文研究了条件化户型图生成模型对域迁移的鲁棒性，发现现有模型在不同数据集间迁移时性能会下降一个数量级。为此，提出了一种合成预训练策略，用少量真实数据微调即可有效缓解域迁移问题。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是AI画户型图的问题。不同国家的房子风格差异很大，AI在一个国家学到的画图方法，到另一个国家就不灵了。作者发现，先用大量虚拟户型图训练AI，再用少量真实户型图微调，就能让AI适应不同地区的风格。未来装修公司可以用这个技术快速生成符合当地习惯的户型方案。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
-            <h2><a href="https://arxiv.org/abs/2607.06482v1" target="_blank" rel="noopener">Data Analysis in the Wild: Benchmarking Large Language Models Against Real-World Data Complexities</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 16:43 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">LLM / 大语言模型</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">本文提出DataGovBench，一个基于政府开放数据的基准测试，用于评估大语言模型在真实数据分析场景中的能力。该基准包含表格问答和表格洞察两个任务，要求模型处理多表格数据集、整合外部知识并进行探索性数据分析。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章给大语言模型（比如ChatGPT）出了个新考题：用真实政府数据做分析。以前的考题太简单，只是查查小表格。新考题要求AI处理多个大表格、找规律、画图表，就像真正的数据分析师一样。这能帮助我们判断哪些AI模型真的能帮我们分析复杂数据，而不是只会背答案。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="CV / 计算机视觉,Research / 学术前沿">
-            <h2><a href="https://arxiv.org/abs/2607.06481v1" target="_blank" rel="noopener">Prompt-Adapter Context Routing for Parameter-Efficient Multi-Shot Long Video Extrapolation</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 16:41 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">CV / 计算机视觉</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">本文提出PACR-Video，一个参数高效的框架，用于多镜头长视频外推，能保持重复出现的实体、场景结构和因果进展，而无需完全微调生成器。该框架通过冻结文本到视频扩散变换器，并添加低秩时间适配器和递归提示库来实现长程连贯性。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是如何让AI生成更长的连贯视频。以前AI只能生成几秒的短视频，而且容易忘记前面出现的人物和场景。这个新方法像拍电影一样，给每个角色和场景都贴上“标签”，生成下一段时先看看之前的标签，确保故事连贯。未来AI可以帮你生成更长的视频故事，比如动画短片。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Research / 学术前沿">
-            <h2><a href="https://arxiv.org/abs/2607.06479v1" target="_blank" rel="noopener">A Physics-Informed Neural Network Framework for Elastodynamic Wave Propagation in Bimaterial Systems</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 16:34 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">本研究提出了一种基于物理信息神经网络（PINN）的框架，用于模拟双材料系统中的瞬态弹性波传播。该框架将控制方程和边界条件直接嵌入网络损失函数，并通过ANSYS有限元仿真进行了验证。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是用AI来模拟材料中波的传播，就像用电脑预测地震波在岩石和钢铁里怎么走。对普通人来说，这能帮工程师设计更安全的建筑和桥梁，未来可能让AI直接帮我们做材料测试，不用做那么多实物实验。
+                这篇文章研究了AI处理化学分子式时用的两种“分词”方法，发现它们切出来的词完全不一样。就像两个人切蛋糕，一个横着切一个竖着切，切出来的块完全不同。这意味着AI在处理化学问题时，不能简单照搬处理人类语言的方法，需要专门设计。
             </div>
             
         </div>
         
         <div class="article" data-tags="CV / 计算机视觉,Product / 产品与商业">
-            <h2><a href="https://arxiv.org/abs/2607.06478v1" target="_blank" rel="noopener">A VLM-Enhanced Framework for Comprehensive Traffic Sign Condition Assessment Integrating Daytime Visual Performance and Nighttime Retroreflectivity Evaluation</a></h2>
+            <h2><a href="https://huggingface.co/papers/2607.04884" target="_blank" rel="noopener">HunyuanOCR-1.5: Making Lightweight OCR VLMs Faster and Better</a></h2>
             <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 16:33 UT</span>
-                <span class="score">★★★☆☆</span>
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-07-09 04:15 UT</span>
+                <span class="score">★★★★☆</span>
                 
                 <span class="tag">CV / 计算机视觉</span>
                 
                 <span class="tag">Product / 产品与商业</span>
                 
             </div>
-            <div class="cn-summary">该研究开发了一个结合白天视觉性能和夜间反光性能的交通标志综合评估框架。它利用视觉语言模型（VLM）自动分析标志的可读性和反光性，克服了传统人工检查主观、昂贵且危险的问题。</div>
+            <div class="cn-summary">腾讯推出HunyuanOCR-1.5，一个轻量级OCR视觉语言模型，能统一处理文档解析、文字识别、信息提取等多项任务。通过引入DFlash技术，该模型在推理速度上实现了6.37倍的Transformer加速和2.14倍的vLLM加速，成为目前最快的轻量级OCR模型。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                这篇文章说的是用AI自动检查路牌好不好用，比如白天字清不清楚、晚上反光够不够亮。对普通人来说，这能让路牌更安全，减少因为看不清路牌出的事故。未来可能手机拍一下就能知道路牌该不该修了。
-            </div>
-            
-        </div>
-        
-        <div class="article" data-tags="Research / 学术前沿">
-            <h2><a href="https://arxiv.org/abs/2607.06472v1" target="_blank" rel="noopener">Provable learning separation for predicting time-evolution of quantum many-body systems</a></h2>
-            <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 16:30 UT</span>
-                <span class="score">★★★★☆</span>
-                
-                <span class="tag">Research / 学术前沿</span>
-                
-            </div>
-            <div class="cn-summary">该研究从理论上证明了量子机器学习在预测量子多体系统时间演化方面具有可证明的学习优势。他们设计了一个监督学习任务，并提供了高效的量子算法，展示了量子计算机在此类问题上的潜力。</div>
-            
-            <div class="plain-explanation">
-                <span class="plain-label">💡 通俗解读</span>
-                这篇文章证明了量子计算机在预测微观粒子行为上比普通电脑有绝对优势。对普通人来说，这为未来量子计算机能解决药物设计、新材料开发等复杂问题提供了理论依据。未来可能让量子AI成为科学发现的新工具。
+                腾讯发布了新版OCR模型，能同时识别图片里的文字、表格、公式等，而且速度飞快。就像给手机装了个超快的扫描仪，拍张照片就能瞬间提取所有文字信息。未来这种技术会让文档处理、发票识别等场景变得更快更准。
             </div>
             
         </div>
         
         <div class="article" data-tags="CV / 计算机视觉,Research / 学术前沿">
-            <h2><a href="https://arxiv.org/abs/2607.06468v1" target="_blank" rel="noopener">EgoPolice: A Benchmark for Egocentric Video Understanding in High-Stakes Police Body-Worn Camera Footage</a></h2>
+            <h2><a href="https://huggingface.co/papers/2607.04044" target="_blank" rel="noopener">SiamJEPA: On the Role of Siamese Student Encoders in JEPA</a></h2>
             <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 16:28 UT</span>
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-07-09 04:15 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">CV / 计算机视觉</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">该论文研究了在JEPA自监督学习框架中使用孪生编码器（Siamese encoders）的效果，发现这种结构更符合大脑启发式学习原理。与传统的单编码器JEPA方法不同，孪生编码器能更好地学习图像表征，但此前其作用未被充分探索。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章研究了一种让AI学习图像特征的新方法，就像给AI装了两个“眼睛”同时看图片，比只用一只眼睛学得更好。这种方法模仿了人脑的学习方式，未来可能让AI更聪明地理解图像内容。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Robotics / 机器人,CV / 计算机视觉">
+            <h2><a href="https://huggingface.co/papers/2607.01897" target="_blank" rel="noopener">Rank-Then-Act: Reward-Free Control from Frame-Order Progress</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-07-09 04:15 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">Robotics / 机器人</span>
+                
+                <span class="tag">CV / 计算机视觉</span>
+                
+            </div>
+            <div class="cn-summary">提出Rank-Then-Act (RTA)框架，通过专家视频演示学习控制策略，无需环境奖励。该方法利用视觉语言模型对视频帧进行时序排序，并基于排序相关性设计奖励函数，实现了从视觉语义中学习任务进度。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这个研究让AI通过看专家做事的视频来学习，不需要告诉它“做对了给奖励”。就像看别人做菜视频，自己就能学会炒菜。未来机器人可以通过看人类演示视频来学习新技能，比如看一遍视频就能学会叠衣服。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Agent / 智能体,Product / 产品与商业">
+            <h2><a href="https://huggingface.co/papers/2607.06065" target="_blank" rel="noopener">SWE-Review: Closing the Loop on Issue Resolution with Agentic Code Review</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-07-09 04:15 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">Agent / 智能体</span>
+                
+                <span class="tag">Product / 产品与商业</span>
+                
+            </div>
+            <div class="cn-summary">提出SWE-Review框架，让AI代码审查代理能自动检查AI生成的代码修改（PR），提供结构化反馈并迭代改进。实验表明，这种闭环审查机制能持续提升代码质量，填补了开源审查训练数据的空白。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这个系统让AI不仅能写代码，还能自己检查代码质量。就像写作文后有个AI老师帮你批改，指出哪里写得好哪里需要改。未来AI程序员可以自我纠错，写出更可靠的代码。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
+            <h2><a href="https://huggingface.co/papers/2607.03738" target="_blank" rel="noopener">Attending to Multimodal Generation One Token at a Time</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-07-09 04:15 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">LLM / 大语言模型</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">该研究分析了多模态大模型在生成回复时，注意力如何在不同模态（图像、文本、指令）之间动态切换。发现模型在生成需要视觉信息的token时，对图像的注意力达到峰值，揭示了多模态生成过程中的token级注意力模式。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章研究了AI在同时看图和读文字时，大脑注意力如何切换。就像你一边看说明书一边看实物，注意力会在两者之间跳来跳去。这有助于理解AI如何融合不同信息，未来能做出更自然的图文对话系统。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="NLP / 自然语言处理,Research / 学术前沿">
+            <h2><a href="https://huggingface.co/papers/2607.01293" target="_blank" rel="noopener">RuleChef: Grounding LLM Task Knowledge in Human-Editable Rules</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-07-09 04:15 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">NLP / 自然语言处理</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">提出RuleChef框架，利用大语言模型自动生成可执行的自然语言处理规则，支持人类编辑和迭代优化。该框架将LLM用于学习阶段，最终产出快速、确定且可解释的规则系统，在文本分类和命名实体识别任务上进行了初步评估。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这个工具让AI自动生成处理文本的规则，就像给AI一本“规则手册”，它学会后就能快速执行，而且人类可以随时修改规则。未来企业可以用它来自动处理客户邮件分类、提取关键信息等任务，既快又透明。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="CV / 计算机视觉,Research / 学术前沿">
+            <h2><a href="https://huggingface.co/papers/2607.04540" target="_blank" rel="noopener">SceneFrom3D: Geometry-Conditioned Outdoor 3D Scene Generation via View Scheduling with Object-Level Control</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-07-09 04:15 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">CV / 计算机视觉</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">提出SceneFrom3D框架，能自动从用户提供的3D几何体生成室外3D场景。该方法解决了室外场景中视图调度困难的问题，通过自动规划视图路径，生成多视角图像并重建3D场景，支持对象级别的控制。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这个技术能根据你画的简单3D形状，自动生成完整的室外3D场景。就像你搭了个积木房子，AI自动帮你配上街道、树木和天空。未来游戏设计师和建筑师可以快速创建虚拟环境。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Policy / 政策与伦理,Research / 学术前沿">
+            <h2><a href="https://huggingface.co/papers/2604.17248" target="_blank" rel="noopener">VIBE: Voice-Induced open-ended Bias Evaluation for Large Audio-Language Models via Real-World Speech</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-07-09 04:15 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">Policy / 政策与伦理</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">提出VIBE框架，评估大型音频语言模型在真实语音中的生成偏见。通过开放式任务（如个性化推荐）发现，模型在性别和口音线索下表现出系统性偏见，且偏见程度与任务类型强相关。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这个研究测试了AI语音助手是否存在偏见，比如对不同口音或性别的人给出不同推荐。结果发现AI确实会“看人下菜碟”，比如对男性推荐工具，对女性推荐化妆品。这提醒我们在使用AI时要警惕其潜在的歧视问题。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
+            <h2><a href="https://huggingface.co/papers/2607.01232" target="_blank" rel="noopener">Is One Layer Enough? Training A Single Transformer Layer Can Match Full-Parameter RL Training</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-07-09 04:15 UT</span>
+                <span class="score">★★★★★</span>
+                
+                <span class="tag">LLM / 大语言模型</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">研究发现，在强化学习微调大语言模型时，只训练单个Transformer层就能恢复全参数训练的大部分收益，有时甚至更好。这表明RL的适应能力高度集中在少数关键层，挑战了均匀更新所有参数的常规做法。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这个发现很惊人：训练AI大模型时，不用动全身，只改一个“脑区”就能达到同样效果。就像给电脑升级，只换一个关键芯片就能让整台电脑变快。未来训练AI会更省电、更快，普通人也能更容易地定制自己的AI助手。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
+            <h2><a href="https://huggingface.co/papers/2607.04412" target="_blank" rel="noopener">LLM-as-a-Tutor: Policy-Aware Prompt Adaptation for Non-Verifiable RL</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-07-09 04:15 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">LLM / 大语言模型</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">提出LLM-as-a-Tutor框架，将LLM从评判者升级为导师角色，通过成对比较策略轨迹来检测非挑战性提示，并动态生成适配当前策略能力的提示，解决强化学习中提示难度与策略能力不匹配的问题。该方法在非可验证指令跟随任务中显著提升了奖励信号的有效性。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章讲的是怎么让AI当老师，而不是只当考官。以前AI只会根据固定题目打分，但题目太难或太简单时，分数就没意义了。现在这个新方法让AI能自己判断题目合不合适，并动态调整题目难度，就像老师根据学生水平出题一样。对普通人来说，这意味着未来的AI助手会更聪明地适应你的能力，比如学习软件能根据你的水平自动调整练习题。未来这种技术可能会让AI教育工具变得更个性化。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="CV / 计算机视觉,Research / 学术前沿">
+            <h2><a href="https://huggingface.co/papers/2606.32020" target="_blank" rel="noopener">Cross-Space Distillation: Teaching One-Step Students with Modern Diffusion Teachers</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-07-09 04:15 UT</span>
                 <span class="score">★★★★☆</span>
                 
                 <span class="tag">CV / 计算机视觉</span>
@@ -1892,20 +818,146 @@
                 <span class="tag">Research / 学术前沿</span>
                 
             </div>
-            <div class="cn-summary">该研究发布了EgoPolice数据集，包含真实的警察随身摄像头视频，用于评估AI在高压场景下的理解能力。他们发现，即使是Gemini 2.5 Pro等顶级模型，在预测“武器出鞘”等高危动作时仍表现不佳。</div>
+            <div class="cn-summary">提出跨空间蒸馏（Cross-Space Distillation）方法，解决现代扩散模型教师（如SD 3.5）与学生模型（如SD 1.5）因潜在空间不同而无法知识迁移的问题。通过引入轻量级潜在接口Bridge，在不修改学生模型主干的情况下实现跨空间蒸馏，使紧凑模型也能受益于高性能教师模型。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                这篇文章创建了一个警察执法视频的AI测试集，想看看AI能不能看懂警察和市民的互动。对普通人来说，这能帮助未来AI辅助执法，比如自动识别危险动作，但现在的AI还远不够聪明。未来可能让执法过程更透明、更安全。
+                这篇文章解决了AI图像生成模型的一个技术难题：如何让一个“大老师”模型教一个“小学生”模型，但它们的“语言”不同。以前这行不通，现在他们发明了一个翻译器，让不同版本的模型能互相学习。对普通人来说，这意味着未来手机上也能运行更高质量的图像生成应用，因为小模型可以学到大家伙的本事。未来我们可能会看到更轻便、更强大的AI图像工具普及。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="LLM / 大语言模型,Product / 产品与商业">
+            <h2><a href="https://huggingface.co/papers/2606.28070" target="_blank" rel="noopener">JD Oxygen AI Item Center (Oxygen AIIC) V1: An Industrial-Scale LLM/VLM-Centric Solution for Item Understanding, Management, and Applications</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-07-09 04:15 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">LLM / 大语言模型</span>
+                
+                <span class="tag">Product / 产品与商业</span>
+                
+            </div>
+            <div class="cn-summary">京东发布Oxygen AIIC工业级平台，基于LLM/VLM解决电商领域海量SKU的知识生产与管理挑战。平台围绕本体工程、人机协作、知识生产和服务四大支柱，实现了从概念快速涌现到多样化下游需求的全链路支持，显著提升了商品知识质量和运营效率。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章讲的是京东如何用AI管理海量商品信息。京东有几十亿种商品，以前人工管理很费劲，现在他们用大模型自动生成和整理商品知识，比如规格、用途等。对普通人来说，这意味着你在京东搜东西会更准，商品描述更靠谱，退货可能更少。未来这种技术会让所有电商平台都变得更智能，购物体验更好。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="CV / 计算机视觉,Research / 学术前沿">
+            <h2><a href="https://huggingface.co/papers/2607.06838" target="_blank" rel="noopener">WildCity: A Real-World City-Scale Testbed for Rendering, Simulation, and Spatial Intelligence</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-07-09 04:15 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">CV / 计算机视觉</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">发布WildCity数据集，包含18条平均83.7公里长的城市级多模态轨迹数据，用于推动城市级空间智能研究。该数据集保留了真实世界中的动态物体、光照变化等挑战，并建立了面向城市的重建基线，为AI构建大规模空间表征提供了关键资源。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章发布了一个大型城市数据集合，包含汽车在城市里跑了几十公里的视频和传感器数据。目的是让AI学会像人一样理解整个城市的地图和空间关系。对普通人来说，这有助于未来自动驾驶汽车和送货机器人更好地认路。未来AI可能能像人一样，去过一次陌生城市就能记住路。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Robotics / 机器人,Research / 学术前沿">
+            <h2><a href="https://huggingface.co/papers/2607.04434" target="_blank" rel="noopener">RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies</a></h2>
+            <div class="meta">
+                <span class="source-badge source-paperswithcode">Papers With Code</span>
+                <span>2026-07-09 04:15 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">Robotics / 机器人</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">提出RoboDojo统一仿真与真实世界基准，包含42个仿真任务和18个真实世界任务，用于全面评估通用机器人操作策略。该基准覆盖泛化、记忆、鲁棒性、物理推理和长时任务五个维度，弥补了现有评估仅限仿真或仅限真实世界的不足。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章建立了一个机器人操作能力的考试标准，既有电脑模拟考试，也有真实世界实操。以前测试机器人要么只在电脑里，要么只在现实中，都不全面。现在这个新标准能全面评估机器人会不会适应新环境、记不记得步骤、够不够结实。对普通人来说，这意味着未来家用机器人会更靠谱，因为它们在出厂前经过了更严格的测试。未来机器人会更快地从实验室走进家庭。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Policy / 政策与伦理,Product / 产品与商业">
+            <h2><a href="https://techcrunch.com/2026/07/08/googles-deepfake-detector-system-used-to-debunk-mcconnell-hoax-pic/" target="_blank" rel="noopener">Google’s deepfake detector system used to debunk McConnell hoax pic</a></h2>
+            <div class="meta">
+                <span class="source-badge source-techcrunch">TechCrunch</span>
+                <span>2026-07-08 20:37 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">Policy / 政策与伦理</span>
+                
+                <span class="tag">Product / 产品与商业</span>
+                
+            </div>
+            <div class="cn-summary">谷歌的深度伪造检测系统成功识别并揭穿了关于参议员麦康奈尔的一张AI生成假照片，该照片显示其病危状态。这一事件展示了AI检测工具在打击虚假信息方面的实际应用价值。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章说谷歌的AI假图检测工具成功识破了一张关于美国政客的假照片。这张照片是AI生成的，看起来像真的一样，但被谷歌的工具揪出来了。对普通人来说，这意味着以后在网上看到可疑图片，有工具能帮你辨别真假。未来这类工具可能会成为浏览器或社交媒体的标配，帮大家防骗。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="LLM / 大语言模型,Product / 产品与商业">
+            <h2><a href="https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/" target="_blank" rel="noopener">SpaceXAI releases Grok 4.5, which Elon describes as an ‘Opus-class model’</a></h2>
+            <div class="meta">
+                <span class="source-badge source-techcrunch">TechCrunch</span>
+                <span>2026-07-08 19:30 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">LLM / 大语言模型</span>
+                
+                <span class="tag">Product / 产品与商业</span>
+                
+            </div>
+            <div class="cn-summary">马斯克的xAI公司发布Grok 4.5模型，马斯克称其为“Opus级模型”，强调其更便宜、更高效，是其他强大AI模型的替代方案。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章说马斯克的公司发布了新AI模型Grok 4.5，号称性能很强但更便宜。这就像又一家公司推出了新款手机，想跟苹果、三星竞争。对普通人来说，这意味着AI聊天工具的选择更多了，价格可能更便宜。未来AI模型之间的竞争会更激烈，用户能用更少的钱获得更好的服务。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Robotics / 机器人,Agent / 智能体">
+            <h2><a href="https://techcrunch.com/2026/07/08/this-startup-thinks-robotics-is-about-to-have-its-chatgpt-moment/" target="_blank" rel="noopener">This startup thinks robotics is about to have its ChatGPT moment</a></h2>
+            <div class="meta">
+                <span class="source-badge source-techcrunch">TechCrunch</span>
+                <span>2026-07-08 19:19 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">Robotics / 机器人</span>
+                
+                <span class="tag">Agent / 智能体</span>
+                
+            </div>
+            <div class="cn-summary">初创公司General Intuition认为机器人领域即将迎来类似ChatGPT的突破时刻，他们利用数百万小时的游戏数据训练机器人基础模型，旨在用极少的真实世界数据就能构建更智能的机器人。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章讲一家公司认为机器人很快会像ChatGPT一样爆发。他们用海量游戏数据训练机器人，让机器人学会在虚拟世界里做各种事，这样在现实世界里只需要很少的训练就能干活。对普通人来说，这意味着未来机器人可能更便宜、更聪明，比如扫地机器人能学会更多家务。未来机器人可能会像手机一样普及。
             </div>
             
         </div>
         
         <div class="article" data-tags="CV / 计算机视觉,Product / 产品与商业">
-            <h2><a href="https://arxiv.org/abs/2607.06466v1" target="_blank" rel="noopener">Verification of Dynamic Holographic Behavior in Identity Documents</a></h2>
+            <h2><a href="https://techcrunch.com/2026/07/08/google-photos-adds-a-new-ai-video-remix-tool/" target="_blank" rel="noopener">Google Photos adds a new AI ‘Video Remix’ tool</a></h2>
             <div class="meta">
-                <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 16:27 UT</span>
+                <span class="source-badge source-techcrunch">TechCrunch</span>
+                <span>2026-07-08 18:30 UT</span>
                 <span class="score">★★★☆☆</span>
                 
                 <span class="tag">CV / 计算机视觉</span>
@@ -1913,146 +965,512 @@
                 <span class="tag">Product / 产品与商业</span>
                 
             </div>
-            <div class="cn-summary">该研究解决了身份证件上全息图（动态全息）的远程验证问题。他们发布了新数据集MIDV-，并提出了一种能检测未知伪造类型的方法，超越了仅能识别静态伪造的现有技术。</div>
+            <div class="cn-summary">谷歌相册推出新的AI“视频混剪”工具，能够对视频进行智能重照明、更换背景、添加艺术风格等操作，让用户轻松制作创意视频。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是用AI远程检查身份证上的全息防伪标志是不是真的。对普通人来说，这能防止身份被盗用，比如网上办业务时自动识别假证件。未来可能让手机扫一下就能验证任何证件的真伪。
+                这篇文章说谷歌相册新增了一个AI视频编辑功能，可以自动给视频调亮、换背景、加滤镜，就像给照片加特效一样简单。对普通人来说，这意味着不用学专业软件，就能把普通视频变得很酷。未来这种AI编辑功能会越来越强大，人人都能当视频剪辑师。
             </div>
             
         </div>
         
-        <div class="article" data-tags="Product / 产品与商业,Agent / 智能体">
-            <h2><a href="https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/" target="_blank" rel="noopener">Claude Cowork expands to mobile and web</a></h2>
+        <div class="article" data-tags="Research / 学术前沿,Other / 其他">
+            <h2><a href="https://arxiv.org/abs/2607.07708v1" target="_blank" rel="noopener">Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning</a></h2>
             <div class="meta">
-                <span class="source-badge source-techcrunch">TechCrunch</span>
-                <span>2026-07-07 16:27 UT</span>
-                <span class="score">★★★☆☆</span>
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 17:59 UT</span>
+                <span class="score">★★★★☆</span>
                 
-                <span class="tag">Product / 产品与商业</span>
+                <span class="tag">Research / 学术前沿</span>
+                
+                <span class="tag">Other / 其他</span>
+                
+            </div>
+            <div class="cn-summary">提出SciReasoner多模态科学基础模型，用于蛋白质等生物、化学和材料科学中的结构-性质关系推理。该模型能够保留领域原生结构信息，并基于科学原理和物理约束解释预测依据，实现准确、跨学科且透明的结构理解。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章介绍了一个能理解蛋白质等分子结构的AI模型。它不光能预测分子的性质，还能解释为什么这么预测，就像科学家一样讲道理。对普通人来说，这意味着未来药物研发可能更快，因为AI能帮科学家看懂分子结构。未来这种AI可能会成为科学家的得力助手，加速新药和新材料的发现。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="LLM / 大语言模型">
+            <h2><a href="https://arxiv.org/abs/2607.07707v1" target="_blank" rel="noopener">Co-LMLM: Continuous-Query Limited Memory Language Models</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 17:59 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">LLM / 大语言模型</span>
+                
+            </div>
+            <div class="cn-summary">提出连续查询有限记忆语言模型（CO-LMLM），将知识存储在外部知识库中，通过连续向量查询获取文本知识，从而在生成时实现知识控制，摆脱传统LLM对参数记忆的依赖。该模型支持可读、可归因的检索知识整合，并配套了自由形式事实跨度标注流程。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章介绍了一种新的大语言模型方法，它不把所有知识都记在脑子里，而是像查字典一样，需要时从外部知识库找答案。这样模型更灵活，也能知道答案来源，对普通人来说，未来AI可能更少‘胡编乱造’，回答更可靠。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
+            <h2><a href="https://arxiv.org/abs/2607.07706v1" target="_blank" rel="noopener">The Key to Going Linear: Analysis-Driven Transformer Linearization</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 17:59 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">LLM / 大语言模型</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">针对长上下文Transformer推理中自注意力二次复杂度问题，提出分析驱动的线性化方法。通过隔离状态更新设计的影响，发现softmax依赖关键依赖的秩1正交投影，并引入sink tokens、短卷积等结构干预，在LLaMA和Qwen模型上（最高32B参数）显著缩小了与原始模型的差距。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章解决了大模型处理长文本时计算量太大的问题。他们找到了一种方法，让模型在保持效果的同时，计算更快、更省资源。对普通人来说，未来AI能更流畅地处理超长文章或对话，比如一次性读完一本小说。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Agent / 智能体">
+            <h2><a href="https://arxiv.org/abs/2607.07702v1" target="_blank" rel="noopener">From Noisy Traces to Root Causes: Structural Trajectory Analysis and Causal Extraction for Agent Optimization</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 17:57 UT</span>
+                <span class="score">★★★☆☆</span>
                 
                 <span class="tag">Agent / 智能体</span>
                 
             </div>
-            <div class="cn-summary">Anthropic的Claude Cowork功能扩展到了移动端和网页端。用户现在可以在电脑上开始任务，在手机上查看进度，即使关闭电脑也能继续完成工作。</div>
+            <div class="cn-summary">提出STRACE框架，用于优化长周期智能体的反思机制。通过结构轨迹分析和因果提取，从冗余、异构的执行轨迹中筛选高价值失败案例，避免过拟合和因果证据丢失，提升优化效率。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                这篇文章说Claude AI助手现在可以在手机和电脑上无缝切换工作了。对普通人来说，这意味着你可以让AI在电脑上开始写报告，然后出门用手机检查进度，不用一直守着电脑。未来AI助手会像真正的同事一样随时待命。
+                这篇文章教AI智能体如何从自己的错误中学习。它帮AI从大量操作记录里找出真正重要的失败原因，而不是盲目乱改。对普通人来说，这意味着未来AI助手（比如自动客服）会更聪明，犯错后能更快改进。
             </div>
             
         </div>
         
-        <div class="article" data-tags="CV / 计算机视觉,Robotics / 机器人">
-            <h2><a href="https://arxiv.org/abs/2607.06464v1" target="_blank" rel="noopener">Hilti-Trimble-Oxford Dataset: 360 Visual-Inertial Benchmark with Floor Plan Priors for SLAM and Localization</a></h2>
+        <div class="article" data-tags="LLM / 大语言模型,Product / 产品与商业">
+            <h2><a href="https://arxiv.org/abs/2607.07696v1" target="_blank" rel="noopener">Breaking Database Lock-in: Agentic Regeneration of High Performance Storage Readers for Database Bypass</a></h2>
             <div class="meta">
                 <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 16:25 UT</span>
+                <span>2026-07-08 17:55 UT</span>
                 <span class="score">★★★☆☆</span>
                 
-                <span class="tag">CV / 计算机视觉</span>
+                <span class="tag">LLM / 大语言模型</span>
                 
-                <span class="tag">Robotics / 机器人</span>
+                <span class="tag">Product / 产品与商业</span>
                 
             </div>
-            <div class="cn-summary">该研究发布了一个在真实建筑工地采集的高质量数据集，用于评估基于360度相机和惯性测量单元的SLAM（同步定位与地图构建）系统。该数据集包含了光照变化等现实挑战。</div>
+            <div class="cn-summary">提出Jailbreak方法，通过LLM辅助代码合成，直接读取数据库存储文件并生成内存列式缓冲区，绕过传统数据库驱动（如JDBC/ODBC）的查询执行层，实现高性能分析。该方法利用LLM理解数据库文件格式规范，无需人工编写解析逻辑。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                这篇文章发布了一个建筑工地的视频和传感器数据集，用来训练机器人或手机在工地里认路。对普通人来说，这能让建筑机器人更便宜、更准确地自动巡检工地。未来可能用手机就能给室内做3D地图。
+                这篇文章让AI直接读取数据库的原始文件，而不是通过慢吞吞的查询接口，从而大幅提升数据分析速度。对普通人来说，未来用AI分析大量数据（比如公司财务报表）会快很多，不用等很久。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Agent / 智能体,Policy / 政策与伦理">
+            <h2><a href="https://arxiv.org/abs/2607.07695v1" target="_blank" rel="noopener">Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 17:53 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">Agent / 智能体</span>
+                
+                <span class="tag">Policy / 政策与伦理</span>
+                
+            </div>
+            <div class="cn-summary">提出机构红队测试方法，用于评估多智能体AI系统中部署规则对集体安全的影响。通过IABench-CA基准测试发现，仅改变后果分配规则就能使平均死亡率变动22-58个百分点，且没有安全的默认规则，但目标危害具有普遍性。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章研究如何让多个AI一起工作时更安全。他们发现，改变AI之间的‘游戏规则’（比如谁为错误负责）会极大影响整体安全性。对普通人来说，这意味着未来AI系统（比如自动驾驶车队）需要精心设计规则，否则可能出大问题。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
+            <h2><a href="https://arxiv.org/abs/2607.07693v1" target="_blank" rel="noopener">Selective Timestep Weighting and Advantage-Based Replay for Sample-Efficient Diffusion RLHF</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 17:49 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">LLM / 大语言模型</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">提出两种互补策略提升扩散模型RLHF的反馈效率：选择性时间步加权和基于优势的重放。通过利用奖励信息在扩散轨迹中分布不均的特点，显著减少对人类反馈或奖励模型评估的需求，同时保持对未见提示的泛化能力。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章让AI从人类反馈中学习时更高效，不需要大量人工打分。他们发现AI在生成图片或文字时，不同步骤的重要性不同，所以只关注关键步骤。对普通人来说，未来AI能更快学会你的喜好，比如生成更符合你口味的图片。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
+            <h2><a href="https://arxiv.org/abs/2607.07690v1" target="_blank" rel="noopener">Agon: Competitive Cross-Model RL with Implicit Rival Grading of Reasoning</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 17:49 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">LLM / 大语言模型</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">提出Agon框架，通过两个竞争模型互相评分来训练推理能力。模型在交替角色中，一个起草解决方案，另一个阅读并解决同一问题，奖励基于谁更胜出，从而隐式地训练推理过程，无需过程标签或奖励模型。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章让两个AI互相‘考试’来提升推理能力。一个AI写答案，另一个AI看答案后自己再解一遍，谁解得好谁赢。这样AI学会的不是死记硬背，而是真正的思考。对普通人来说，未来AI在数学、逻辑问题上会更聪明。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Agent / 智能体,Product / 产品与商业">
+            <h2><a href="https://arxiv.org/abs/2607.07689v1" target="_blank" rel="noopener">Agent Delivery Engineering Predictive Reliability Framework</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 17:49 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">Agent / 智能体</span>
+                
+                <span class="tag">Product / 产品与商业</span>
+                
+            </div>
+            <div class="cn-summary">提出ADE预测可靠性框架（ADE-PRF），用于预测长周期LLM多智能体系统的健康轨迹。通过聚合20个异构信号生成信任裕度指标，实现8小时预测，在15天生产验证中达到高精度，并发现‘虚假繁荣’现象（表面正常但实际退化）。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章教我们如何预测AI系统什么时候会‘生病’。他们收集了20种信号，像体检一样提前8小时发现隐患。对普通人来说，未来AI服务（比如智能客服）会更稳定，不会突然出故障。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Research / 学术前沿,Product / 产品与商业">
+            <h2><a href="https://techcrunch.com/video/why-this-ceo-thinks-video-games-make-better-training-data-than-the-internet/" target="_blank" rel="noopener">Why this CEO thinks video games make better training data than the internet</a></h2>
+            <div class="meta">
+                <span class="source-badge source-techcrunch">TechCrunch</span>
+                <span>2026-07-08 17:47 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+                <span class="tag">Product / 产品与商业</span>
+                
+            </div>
+            <div class="cn-summary">一家名为General Intuition的创业公司认为，视频游戏数据比互联网文本更适合训练通用人工智能（AGI），因为游戏数据包含空间和时间运动信息，而LLM缺乏对物理世界动态的理解。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章说，想让AI真正聪明，光看文字不够，还得让它‘玩游戏’。因为游戏里有动作、空间和因果关系，这些是现实世界的基础。对普通人来说，未来AI可能通过玩游戏学会开车、做家务等实际技能。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="CV / 计算机视觉,Product / 产品与商业">
+            <h2><a href="https://arxiv.org/abs/2607.07683v1" target="_blank" rel="noopener">ECGLight: Compute-Light Framework For Paper ECG Digitization and Myocardial Infarction Screening</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 17:42 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">CV / 计算机视觉</span>
+                
+                <span class="tag">Product / 产品与商业</span>
+                
+            </div>
+            <div class="cn-summary">提出ECGLight框架，用于在计算资源有限的设备上对纸质心电图进行数字化和心肌梗死筛查。该框架无需高速互联网或高算力，可在本地完成，解决偏远地区纸质心电图无法被AI分析的问题。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章让手机或小设备能直接扫描纸质心电图并分析心脏病，不需要联网或超级计算机。对普通人来说，偏远地区的诊所也能用AI快速诊断心脏病，挽救生命。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Research / 学术前沿">
+            <h2><a href="https://arxiv.org/abs/2607.07682v1" target="_blank" rel="noopener">Neural Operator-enabled Topology-informed Evolutionary Strategy for PDE-Constrained Optimization</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 17:41 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">本文提出了一种名为NOTES的新方法，用于解决偏微分方程约束下的物理系统逆向设计问题。该方法结合了神经算子与进化策略，通过在紧凑的潜在空间中进行全局优化，提高了设计的效率和可迁移性。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章介绍了一种新方法，能更高效地设计物理系统，比如飞机机翼或桥梁。它把复杂的设计问题简化了，让计算机能更快找到最佳方案。未来可能帮助工程师更快地设计出更好的产品。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Research / 学术前沿">
+            <h2><a href="https://arxiv.org/abs/2607.07680v1" target="_blank" rel="noopener">Any-Dimensional Learning by Sampling</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 17:38 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">本文提出了一种统一的方法，通过随机采样来比较和近似不同大小的输入数据，例如点云、序列或图。该方法旨在解决机器学习模型在训练时未见过的更大输入上的泛化问题，并降低评估大输入的计算成本。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章研究的是，如何让AI模型处理不同大小的数据，比如不同长度的句子或不同点数的3D模型。它提出了一种通过随机采样来简化大数据的办法，让模型能更好地处理没见过的更大数据。这能让AI应用更灵活，比如处理更长的文章或更复杂的3D场景。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
+            <h2><a href="https://arxiv.org/abs/2607.07678v1" target="_blank" rel="noopener">How Data Shapes RoPE Frequency Usage: From Positional Scale Matching to Length Generalization</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 17:38 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">LLM / 大语言模型</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">本文研究了旋转位置嵌入（RoPE）中频率的使用模式，并提出了一种数据驱动的解释：模型会根据训练数据中相对距离的结构来选择频率。这一发现有助于理解语言模型中的频率分布，并可能改进模型的长度泛化能力。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章解释了AI模型（比如ChatGPT）是如何理解词语在句子中的位置的。它发现模型会根据训练数据的特点，自动选择不同的“位置感知”方式。这有助于让模型更好地处理长句子或长文章，未来可能让AI的阅读理解能力更强。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Agent / 智能体,Product / 产品与商业">
+            <h2><a href="https://arxiv.org/abs/2607.07676v1" target="_blank" rel="noopener">SkillCenter: A Large-Scale Source-Grounded Skill Library for Autonomous AI Agents</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 17:34 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">Agent / 智能体</span>
+                
+                <span class="tag">Product / 产品与商业</span>
+                
+            </div>
+            <div class="cn-summary">本文介绍了SkillCenter，据称是最大的开源智能体技能库，包含超过21万个结构化技能。该库通过多源获取和LLM质量门控构建，旨在为自主AI智能体提供正确、安全且可维护的操作知识。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章介绍了一个巨大的“技能库”，里面存了超过21万个AI智能体可以用的技能，比如如何安全地操作软件或处理数据。这就像给AI一个超级详细的说明书，让它能更可靠地完成复杂任务。未来，AI助手可能会变得更聪明、更可靠，能帮你做更多事情。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Robotics / 机器人,CV / 计算机视觉">
+            <h2><a href="https://arxiv.org/abs/2607.07675v1" target="_blank" rel="noopener">Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 17:33 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">Robotics / 机器人</span>
+                
+                <span class="tag">CV / 计算机视觉</span>
+                
+            </div>
+            <div class="cn-summary">本文提出了LingBot-Video，一种专为具身智能设计的视频预训练范式。它采用混合专家（MoE）架构来平衡建模能力和推理效率，并通过数据引擎增强机器人相关视频数据，以解决视频生成模型在机器人控制中的领域不匹配问题。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章介绍了一种专门为机器人设计的视频AI模型。它能让机器人通过看视频学习如何操作物体，比如抓取或移动东西。这比传统的机器人编程更灵活，未来可能让机器人更快地学会做家务或工厂里的精细工作。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
+            <h2><a href="https://arxiv.org/abs/2607.07674v1" target="_blank" rel="noopener">Max Out GRPO Signal: Adaptive Trace Prefix Control for Hard Reasoning Problems</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 17:32 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">LLM / 大语言模型</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">本文提出了AdaPrefix-GRPO，一种改进的强化学习方法，用于解决大模型在困难推理问题上的训练困境。该方法通过动态调整提示前缀的长度，使模型始终处于最佳学习状态，从而在数学推理等任务上显著提升性能。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章提出了一种新方法，让AI模型能更好地学习解决难题。它像老师一样，先给模型一些提示，然后慢慢减少帮助，直到模型能独立解题。这能让AI在数学、逻辑等复杂问题上表现更好，未来可能让AI助手变得更聪明。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Research / 学术前沿,Other / 其他">
+            <h2><a href="https://arxiv.org/abs/2607.07673v1" target="_blank" rel="noopener">MedPMC: A Systematic Framework for Scaling High-Fidelity Medical Multimodal Data for Foundation Models</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 17:26 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+                <span class="tag">Other / 其他</span>
+                
+            </div>
+            <div class="cn-summary">本文介绍了MedPMC，一个自动化框架，用于从PubMed Central文献中构建高质量的医学多模态数据。该框架处理了610万篇文章，生成了1100万对医学图像-文本对，为医学多模态基础模型提供了高保真数据基础设施。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章介绍了一个系统，能自动从医学论文中提取图片和文字说明，生成大量高质量的训练数据。这就像给AI医生准备了一本巨大的、带插图的医学教科书。未来，这能帮助AI更好地理解医学影像和报告，辅助医生诊断疾病。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Research / 学术前沿">
+            <h2><a href="https://arxiv.org/abs/2607.07671v1" target="_blank" rel="noopener">PeTeR: Post-Training Robustification of Probabilistic Circuits</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 17:25 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">本文提出了PeTeR，一种无需数据的后训练框架，用于增强概率电路（PCs）对数据噪声和分布偏移的鲁棒性。该方法无需从头训练，即可有效提升预训练PCs的泛化能力。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章提出了一种方法，能让概率模型（一种AI模型）变得更“抗造”，即使遇到没见过的数据也能表现良好。它不需要重新训练模型，而是直接给模型“打补丁”。这能让AI系统更稳定可靠，比如在医疗或金融等关键领域。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
+            <h2><a href="https://arxiv.org/abs/2607.07670v1" target="_blank" rel="noopener">Does Bielik Know What It Doesn&#39;t Know? Activation Dispersion Separates Entity Familiarity from Factual Reliability Across Model Scale</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 17:24 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">LLM / 大语言模型</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">本文研究了大型语言模型在回答关于不同实体的问题时，其内部激活模式是否能反映对实体的熟悉程度。实验发现，通过分析模型激活的分散程度，可以高精度地区分模型熟悉的实体和虚构的实体，并预测答案的可靠性。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章发现，AI模型在回答问题时，它的“大脑”活动模式能暴露出它是否真的“认识”这个事物。比如，问它一个虚构的人物，它的反应会明显不同。这就像能看出AI在“胡编乱造”之前就发现它不对劲。未来，这可以用来检测AI的“幻觉”，让它的回答更可信。
             </div>
             
         </div>
         
         <div class="article" data-tags="LLM / 大语言模型,NLP / 自然语言处理">
-            <h2><a href="https://arxiv.org/abs/2607.06461v1" target="_blank" rel="noopener">WordVoice: Explicit and Decoupled Multi-Dimensional Word-Level Control for LLM-Based TTS</a></h2>
+            <h2><a href="https://arxiv.org/abs/2607.07669v1" target="_blank" rel="noopener">DiaLLM: An Investigation into the Robustness-Generation Gap in English Dialect Adaptation</a></h2>
             <div class="meta">
                 <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 16:22 UT</span>
-                <span class="score">★★★★☆</span>
+                <span>2026-07-08 17:24 UT</span>
+                <span class="score">★★★☆☆</span>
                 
                 <span class="tag">LLM / 大语言模型</span>
                 
                 <span class="tag">NLP / 自然语言处理</span>
                 
             </div>
-            <div class="cn-summary">该研究提出了WordVoice框架，实现了对语音合成中每个单词的精确控制，包括语气、时长和音调。他们构建了大规模标注数据集WordVoice-5A，解决了现有大模型语音合成控制粒度粗的问题。</div>
+            <div class="cn-summary">本文通过DiaLLM框架研究了大型语言模型在英语方言适应中的鲁棒性与生成能力之间的差距。研究发现，模型虽然能理解方言，但生成时仍偏向标准美式英语，且鲁棒性和生成能力是分离的，需要不同的训练策略来改善。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                这篇文章让AI朗读时能精确控制每个字的语气和速度，比如让“不”字读得特别重。对普通人来说，这能让有声书和视频配音更自然、更有感情。未来AI配音可以像真人演员一样细腻地表演。
+                这篇文章研究了AI模型是否能理解和使用不同的英语方言，比如澳大利亚英语或印度英语。结果发现，模型能听懂方言，但自己说话时还是用标准美式英语。这就像一个人能听懂各种口音，但自己说话还是带家乡口音。未来，AI可能需要专门训练才能自然地使用不同方言交流。
             </div>
             
         </div>
         
-        <div class="article" data-tags="NLP / 自然语言处理,Other / 其他">
-            <h2><a href="https://arxiv.org/abs/2607.06457v1" target="_blank" rel="noopener">Andha-Dhun: A First Look at Audio Descriptions in Hindi</a></h2>
+        <div class="article" data-tags="LLM / 大语言模型,Agent / 智能体">
+            <h2><a href="https://arxiv.org/abs/2607.07666v1" target="_blank" rel="noopener">A hierarchical memory architecture overcomes context limits in long-horizon multi-agent computational modeling</a></h2>
             <div class="meta">
                 <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 16:15 UT</span>
-                <span class="score">★★★☆☆</span>
+                <span>2026-07-08 17:22 UT</span>
+                <span class="score">★★★★☆</span>
                 
-                <span class="tag">NLP / 自然语言处理</span>
+                <span class="tag">LLM / 大语言模型</span>
                 
-                <span class="tag">Other / 其他</span>
+                <span class="tag">Agent / 智能体</span>
                 
             </div>
-            <div class="cn-summary">该研究首次系统性地研究了印地语音频描述（为盲人描述画面内容）。他们创建了首个印地语音频描述数据集Andha-Dhun，并探索了从英文描述生成印地语描述的方法。</div>
+            <div class="cn-summary">本文提出了一种名为Ensemble QSP的多智能体框架，通过三层分层记忆架构解决大语言模型在长期任务中的上下文限制问题。该架构通过限制每类状态的大小并驱逐已完成工作，使上下文保持恒定，从而支持连续自主运行。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                这篇文章研究怎么用AI给电影里的盲人观众用印地语描述画面。对普通人来说，这能让更多非英语国家的视障人士也能“看”电影。未来AI可以自动为任何语言的视频生成语音描述。
+                这篇文章讲的是如何让AI在长时间、多步骤的任务中不‘失忆’。就像人做项目会记笔记、归档旧文件一样，这个新系统给AI设计了一个分层的记忆系统，让它能一直记住重要信息，不会因为对话太长而忘记前面说了什么。未来这能让AI更好地完成像科研、项目管理这种需要持续跟踪的复杂工作。
             </div>
             
         </div>
         
-        <div class="article" data-tags="Research / 学术前沿,Other / 其他">
-            <h2><a href="https://arxiv.org/abs/2607.06456v1" target="_blank" rel="noopener">A Hardware-Aware Open-Source Framework for Design Space Exploration of Mixed-Signal Spiking Neural Networks</a></h2>
+        <div class="article" data-tags="Research / 学术前沿">
+            <h2><a href="https://arxiv.org/abs/2607.07665v1" target="_blank" rel="noopener">Guidance Breaks the Fitted Operator: A Terminal-Fitted Repair for Classifier-Free Guidance</a></h2>
             <div class="meta">
                 <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 16:15 UT</span>
+                <span>2026-07-08 17:21 UT</span>
                 <span class="score">★★★☆☆</span>
                 
                 <span class="tag">Research / 学术前沿</span>
                 
-                <span class="tag">Other / 其他</span>
-                
             </div>
-            <div class="cn-summary">该研究发布了一个开源硬件感知仿真框架，用于设计混合信号脉冲神经网络（SNN）芯片。该框架支持多种神经元模型和非易失性模拟突触，能优化物理参数而非理想参数。</div>
+            <div class="cn-summary">本文分析了无分类器引导（CFG）在扩散模型中的数值不稳定性问题，指出当引导强度过大时，DDIM步骤不再适用，导致过饱和和失稳。作者提出了一个引导时钟屏障和有序步长阈值，以修复这一问题。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                这篇文章发布了一个开源工具，帮工程师设计更省电的AI芯片，这种芯片模仿人脑的工作方式。对普通人来说，这能让智能手表、耳机等小设备运行AI更省电。未来可能让所有设备都拥有低功耗的本地AI。
+                这篇文章研究的是AI画图时的一个技术问题。现在很多AI画图工具用‘引导’来让图片更符合要求，但引导太强图片会变得奇怪、颜色过浓。这篇文章用数学方法解释了为什么会这样，并提出了解决办法。对普通人来说，这意味着未来AI画图会更稳定，不会出现那种‘用力过猛’的怪异效果。
             </div>
             
         </div>
         
-        <div class="article" data-tags="NLP / 自然语言处理,Research / 学术前沿">
-            <h2><a href="https://arxiv.org/abs/2607.06452v1" target="_blank" rel="noopener">From Voting to Agent Collaboration: Answer-Type-Aware LLM Pipelines for BioASQ 14b</a></h2>
+        <div class="article" data-tags="Research / 学术前沿,LLM / 大语言模型">
+            <h2><a href="https://arxiv.org/abs/2607.07663v1" target="_blank" rel="noopener">Recursive Self-Improvement in AI: From Bounded Self-Refinement to Autonomous Research Loops</a></h2>
             <div class="meta">
                 <span class="source-badge source-arxiv">ArXiv</span>
-                <span>2026-07-07 16:12 UT</span>
-                <span class="score">★★★☆☆</span>
-                
-                <span class="tag">NLP / 自然语言处理</span>
+                <span>2026-07-08 17:19 UT</span>
+                <span class="score">★★★★☆</span>
                 
                 <span class="tag">Research / 学术前沿</span>
                 
+                <span class="tag">LLM / 大语言模型</span>
+                
             </div>
-            <div class="cn-summary">针对生物医学问答任务，提出了一种按问题类型（是非、事实、列表）选择不同推理流程的LLM框架，通过片段打乱、自反思等策略提升答案鲁棒性和证据可靠性。该方法在BioASQ 14b任务中有效减少了证据顺序敏感性问题。</div>
+            <div class="cn-summary">本文综述了AI自我改进的文献，区分了‘有界自我优化’（如自我修正、自我奖励）和‘开放式递归自我改进’（RSI）。作者调查了1250篇论文，指出有界自我优化已是工业实践，而RSI仍面临挑战。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                这篇文章讲的是怎么让AI更聪明地回答医学问题。比如医生问“这个药有用吗？”，AI不能只靠猜，得从很多论文里找证据。这个新方法会根据问题类型（比如是/否、具体答案、列举）用不同方式处理，让答案更靠谱。对普通人来说，未来看病时AI辅助诊断会更准确。
+                这篇文章梳理了AI‘自己教自己’的各种方式。有些AI只是小修小补，比如自己检查答案并改正；而有些AI试图完全自主地改进自己，甚至自己设计新AI。文章指出，前一种已经用在很多产品里了，但后一种还很遥远。对普通人来说，这解释了为什么AI进步这么快，但也说明完全自主的‘超级AI’还没出现。
             </div>
             
         </div>
         
         <div class="article" data-tags="Product / 产品与商业,Policy / 政策与伦理">
-            <h2><a href="https://techcrunch.com/2026/07/07/savis-app-aims-to-protect-consumers-from-realistic-ai-scams-like-kidnappers-demanding-ransom/" target="_blank" rel="noopener">Savi’s app aims to protect consumers from realistic AI scams like kidnappers demanding ransom</a></h2>
+            <h2><a href="https://techcrunch.com/2026/07/08/meta-wants-its-ai-glasses-to-seem-less-creepy-its-ai-strategy-says-otherwise/" target="_blank" rel="noopener">Meta wants its AI glasses to seem less creepy. Its AI strategy says otherwise.</a></h2>
             <div class="meta">
                 <span class="source-badge source-techcrunch">TechCrunch</span>
-                <span>2026-07-07 12:00 UT</span>
+                <span>2026-07-08 17:11 UT</span>
                 <span class="score">★★★☆☆</span>
                 
                 <span class="tag">Product / 产品与商业</span>
@@ -2060,32 +1478,711 @@
                 <span class="tag">Policy / 政策与伦理</span>
                 
             </div>
-            <div class="cn-summary">Savi推出了一款防AI诈骗的App，能识别并拦截类似“绑架勒索”等逼真诈骗电话和消息。该公司已获700万美元种子轮融资，App于周二在iOS和安卓上线。</div>
+            <div class="cn-summary">Meta为其AI眼镜增加了防止秘密录制的保护措施，但与此同时，该公司仍在扩大其AI产品收集和使用个人数据的范围，引发了隐私担忧。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                现在AI能模仿亲人声音打电话骗钱，比如假装你被绑架了。这个新App能帮你识别这种骗局，保护你和家人。它刚拿到700万美元投资，已经上线了。以后这类防骗工具可能会像杀毒软件一样普及。
+                这篇文章说的是Meta的AI眼镜。一方面，Meta加了个功能防止别人偷偷用眼镜录像，听起来是在保护隐私。但另一方面，Meta的AI产品却在收集更多用户数据。这就像一边说‘我不会偷看你’，一边在屋里装更多摄像头。对普通人来说，这意味着使用这类产品时要更注意自己的隐私设置。
             </div>
             
         </div>
         
-        <div class="article" data-tags="Robotics / 机器人,Other / 其他">
-            <h2><a href="https://techcrunch.com/2026/07/07/the-first-american-autonomous-ground-vehicles-are-fighting-in-ukraine/" target="_blank" rel="noopener">The first American autonomous ground vehicles are fighting in Ukraine</a></h2>
+        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
+            <h2><a href="https://arxiv.org/abs/2607.07646v1" target="_blank" rel="noopener">RL Post-Training Builds Compositional Reasoning Strategies</a></h2>
             <div class="meta">
-                <span class="source-badge source-techcrunch">TechCrunch</span>
-                <span>2026-07-07 09:00 UT</span>
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 17:04 UT</span>
                 <span class="score">★★★★☆</span>
                 
-                <span class="tag">Robotics / 机器人</span>
+                <span class="tag">LLM / 大语言模型</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">本文研究了强化学习后训练是否能将基础模型中的原始技能组合成新的高级策略。实验表明，RL后训练确实能通过分阶段组合机制重组原始能力，解决基础模型难以解决的问题，而拒绝微调则效果有限。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章想搞清楚：AI通过强化学习‘练习’后，是只会把以前学过的技能用得更熟练，还是能学会全新的、更高级的技能？实验发现，AI真的能学会‘组合拳’，把几个简单技能组合成新策略。这对普通人意味着，AI的学习能力可能比我们想的更强，不只是死记硬背，还能‘举一反三’。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Product / 产品与商业,LLM / 大语言模型">
+            <h2><a href="https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations/" target="_blank" rel="noopener">OpenAI releases new voice models for more natural live conversations</a></h2>
+            <div class="meta">
+                <span class="source-badge source-techcrunch">TechCrunch</span>
+                <span>2026-07-08 17:00 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">Product / 产品与商业</span>
+                
+                <span class="tag">LLM / 大语言模型</span>
+                
+            </div>
+            <div class="cn-summary">OpenAI发布了新的语音模型，支持同时说话和聆听，这是实现实时翻译的关键能力，使对话更加自然。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                OpenAI推出了新的语音模型，最大的亮点是它能一边听你说话一边回应，不用等你把话说完。这就像真人对话一样自然，特别适合实时翻译。对普通人来说，这意味着以后和AI语音聊天会更流畅，不会再有那种‘说完等半天’的尴尬，打电话或开会时用AI翻译也会更方便。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Research / 学术前沿">
+            <h2><a href="https://arxiv.org/abs/2607.07640v1" target="_blank" rel="noopener">ALER-TI: Aligned Latent Embedding Retrieval for Time Series Imputation</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 16:59 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">本文提出ALER-TI，一种检索增强的时间序列插补框架，通过利用历史模式来补充局部上下文，解决传统方法在非平稳动态和弱时间相关性下的局限性。核心是潜在嵌入对齐（LEA）技术。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章讲的是如何更准确地‘填空’时间序列数据，比如传感器数据丢失了几个点。传统方法只看附近的数据，但如果数据变化很大或者不规律，就不准了。这个新方法会去‘翻旧账’，找历史上相似的模式来补全。对普通人来说，这意味着智能手表、天气预报等依赖时间序列数据的应用会更准确。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Research / 学术前沿">
+            <h2><a href="https://arxiv.org/abs/2607.07637v1" target="_blank" rel="noopener">An optimal control approach for neural network architecture adaptation with a posteriori error estimation</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 16:55 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">本文提出了一种基于后验误差估计的神经网络深度自适应方法，通过将训练视为最优控制问题，量化误差在层间的分布，从而在误差最大的位置插入新层，高效捕捉复杂非线性变化。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章介绍了一种让神经网络‘自动长胖’的方法。就像盖楼时发现哪层承重不够就加固哪层一样，这个新方法能找出网络里哪些层‘学得不好’，然后在那些地方增加新的层。这样网络就能更高效地学习复杂问题，而不需要盲目地增加整体规模。对普通人来说，这意味着未来AI模型可能更小、更快、更聪明。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Research / 学术前沿,Other / 其他">
+            <h2><a href="https://arxiv.org/abs/2607.07634v1" target="_blank" rel="noopener">QCNN with Rough Path Signature Kernels</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 16:50 UT</span>
+                <span class="score">★★☆☆☆</span>
+                
+                <span class="tag">Research / 学术前沿</span>
                 
                 <span class="tag">Other / 其他</span>
                 
             </div>
-            <div class="cn-summary">美国公司Forterra已向乌克兰冲突地区部署了超过100辆无人驾驶全地形车，用于执行军事任务。这是美国自主地面车辆首次投入实战。</div>
+            <div class="cn-summary">本文提出了一种混合量子-经典架构，结合量子神经网络和路径签名核，用于时间序列分类。该架构通过计算参考路径和目标路径之间的签名核，缓解了时间重参数化不变性问题。</div>
             
             <div class="plain-explanation">
                 <span class="plain-label">💡 通俗解读</span>
-                美国造的无人车已经跑到乌克兰战场上干活了，数量超过100辆。这些车不用人开，能自己跑，用来运送物资或侦察。对普通人来说，这说明自动驾驶技术正在从民用扩展到军事，未来战争形态可能会因此改变。
+                这篇文章尝试用量子计算来给时间序列数据分类，比如识别股票走势或心电图。它把量子计算和一种叫‘路径签名’的数学工具结合起来，解决了数据‘时间快慢’不同带来的问题。对普通人来说，这还比较前沿，但未来量子计算机成熟后，可能会让这类分析更快更准。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
+            <h2><a href="https://arxiv.org/abs/2607.07626v1" target="_blank" rel="noopener">Future Confidence Distillation in Large Language Models</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 16:43 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">LLM / 大语言模型</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">本文研究了大型语言模型中的置信度估计，发现回答后的置信度比回答前的‘预感’更准确。作者提出了一种基于未来置信度蒸馏的方法，以提升模型在检索、工具使用等下游决策中的可靠性。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章研究AI‘知不知道自己在说什么’。它发现，AI在给出答案后对自己的信心判断，比在回答问题前的‘直觉’要准得多。这就像你做完题后检查一遍，比刚看到题时更清楚自己会不会做。对普通人来说，这意味着未来AI助手会更诚实地告诉你它有多确定，比如‘我有90%的把握这是正确答案’，让你更放心地使用它。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Research / 学术前沿">
+            <h2><a href="https://arxiv.org/abs/2607.07623v1" target="_blank" rel="noopener">Higher-Order Geometric Updates for Levenberg-Marquardt Method via Riemann Normal Coordinates</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 16:39 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">非线性最小二乘优化在机器学习中很常见，但传统的Levenberg-Marquardt方法在处理参数效应曲率时存在局限性。本文提出了一种基于黎曼法坐标的改进方法（RNC-LM），通过几何方法提高有限步长优化的精度。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章讲的是科学家们改进了一种数学方法，让计算机在解决复杂问题时更准确。就像你在爬山时，以前的方法可能走直线但会绕远路，新方法能帮你找到更近的捷径。这对未来训练更聪明的AI模型有帮助，比如让自动驾驶汽车更精准地规划路线。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Robotics / 机器人">
+            <h2><a href="https://arxiv.org/abs/2607.07622v1" target="_blank" rel="noopener">Continuous and large-scale: ELEANOR, the soft architected arm inspired by the elephant trunk</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 16:38 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">Robotics / 机器人</span>
+                
+            </div>
+            <div class="cn-summary">受大象鼻子启发，研究人员通过3D打印制造了一款85厘米长的柔性连续体机械臂，名为ELEANOR。该设计强调结构连续性和动态特性，能够模仿大象鼻子的灵活抓取和运动能力。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章介绍了一种模仿大象鼻子做成的机器人手臂，它又软又长，能像真鼻子一样灵活地抓东西。这种设计让机器人更安全、更适应环境，未来可能用在医疗手术或家庭服务中，比如帮你拿东西或做精细操作。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Policy / 政策与伦理,Agent / 智能体">
+            <h2><a href="https://arxiv.org/abs/2607.07612v1" target="_blank" rel="noopener">Towards Agentic AI Governance: A Preliminary Assessment</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 16:29 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">Policy / 政策与伦理</span>
+                
+                <span class="tag">Agent / 智能体</span>
+                
+            </div>
+            <div class="cn-summary">2025年被广泛称为“智能体AI元年”，本文系统梳理了智能体AI与传统AI的区别及其带来的治理挑战。研究提出了针对智能体AI的治理优先级、机制和利益相关者角色，为制定负责任的发展路线图奠定基础。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章讨论了能自己计划和做事的AI（智能体AI）带来的新问题。比如，如果AI自己决定做什么，我们怎么确保它不犯错？这就像给一个能自己跑的小孩定规矩，未来我们需要制定法律和规则来管理这些AI，让它们安全地为人类服务。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Research / 学术前沿,Other / 其他">
+            <h2><a href="https://arxiv.org/abs/2607.07611v1" target="_blank" rel="noopener">Asymmetric Focal Loss Improves Graph Neural Network Prediction of Drug-Drug Interactions</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 16:28 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+                <span class="tag">Other / 其他</span>
+                
+            </div>
+            <div class="cn-summary">研究提出了一种非对称焦点损失函数，用于改进图神经网络预测药物间相互作用的效果。该方法通过强调难以分类的阳性交互作用，在保持相同实验条件下，比传统二元交叉熵训练更准确地预测了临床重要的药物副作用。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章讲的是如何让AI更准确地预测两种药一起吃会不会有副作用。以前的方法对所有情况一视同仁，新方法则更关注那些容易出问题的药物组合。这能帮助医生开更安全的药方，未来可能减少药物不良反应的风险。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Robotics / 机器人,Agent / 智能体">
+            <h2><a href="https://arxiv.org/abs/2607.07608v1" target="_blank" rel="noopener">Dual Latent Memory in Vision-Language-Action Models for Robotic Manipulation</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 16:26 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">Robotics / 机器人</span>
+                
+                <span class="tag">Agent / 智能体</span>
+                
+            </div>
+            <div class="cn-summary">现有视觉-语言-动作模型（VLA）主要依赖当前观察进行决策，难以处理长期依赖任务。本文提出LaMem-VLA框架，通过引入潜在记忆令牌，将历史经验直接融入VLA推理过程，显著提升了机器人操作的长期任务能力。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章让机器人有了“记忆”，不再只看眼前。以前机器人做复杂任务容易忘事，新方法让它们能记住之前的经验，像人一样连贯地完成任务。比如，让机器人帮你整理房间，它能记住东西放哪，一步步做完。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Product / 产品与商业,Agent / 智能体">
+            <h2><a href="https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/" target="_blank" rel="noopener">Prime Intellect raises $130M Series A to help enterprises build their own AI agents</a></h2>
+            <div class="meta">
+                <span class="source-badge source-techcrunch">TechCrunch</span>
+                <span>2026-07-08 16:22 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">Product / 产品与商业</span>
+                
+                <span class="tag">Agent / 智能体</span>
+                
+            </div>
+            <div class="cn-summary">Prime Intellect公司完成1.3亿美元A轮融资，旨在帮助企业构建自己的AI智能体系统，减少对前沿AI实验室的依赖。该公司成立于2024年，专注于提供自主训练AI的能力。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这家公司拿到了一大笔钱，专门帮企业自己造AI助手，不用再依赖大公司。就像你开餐馆，以前只能买现成的调料包，现在可以自己调配独家配方。未来更多公司能定制自己的AI，提高效率。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="CV / 计算机视觉,Robotics / 机器人">
+            <h2><a href="https://arxiv.org/abs/2607.07601v1" target="_blank" rel="noopener">CARLA-GS: Decoupling Representation, Reasoning, and Physics Simulation for Autonomous Driving Corner-Case Synthesis</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 16:20 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">CV / 计算机视觉</span>
+                
+                <span class="tag">Robotics / 机器人</span>
+                
+            </div>
+            <div class="cn-summary">自动驾驶安全评估需要模拟罕见但危险的场景。本文提出CARLA-GS框架，将视觉表示、语义推理和物理模拟解耦，模块化地生成逼真的边缘案例，解决了现有方法在时空一致性和物理真实性上的不足。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章教自动驾驶系统怎么应对“万一”的情况，比如突然窜出一个人。它用模块化方法模拟各种危险场景，让AI提前学会应对。这就像给司机做模拟考试，未来能让自动驾驶更安全。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="CV / 计算机视觉,Other / 其他">
+            <h2><a href="https://arxiv.org/abs/2607.07581v1" target="_blank" rel="noopener">Cardiac MRI Through-Plane Super-Resolution Guided by Reference and Memory</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 16:04 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">CV / 计算机视觉</span>
+                
+                <span class="tag">Other / 其他</span>
+                
+            </div>
+            <div class="cn-summary">心脏MRI通常面内分辨率高但层间分辨率低，影响三维分析。本文提出STRMSR框架，利用同一患者的参考高分辨率图像和中间结果作为记忆，通过粗到细的上下文匹配和动态特征聚合，有效重建高分辨率心脏体积。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章让心脏扫描图像更清晰。以前扫描像切面包，每片很清晰但片与片之间模糊，新方法能补全模糊的部分。这能帮助医生更准确地诊断心脏病，未来可能让检查更快、更便宜。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="CV / 计算机视觉,Other / 其他">
+            <h2><a href="https://arxiv.org/abs/2607.07580v1" target="_blank" rel="noopener">Automatic Echocardiography Segmentation via Transition Probability Correlation for Stable Semantic Extraction</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 16:04 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">CV / 计算机视觉</span>
+                
+                <span class="tag">Other / 其他</span>
+                
+            </div>
+            <div class="cn-summary">超声心动图因噪声和低信噪比导致分割困难。本文提出STLSF模块，通过局部转移概率相关性校正语义和语义引导纹理增强，有效解决了纹理不稳定和语义模糊问题，提高了深度学习模型在复杂临床案例中的分割精度。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章让AI看心脏超声图像更准。以前图像有噪点像雪花屏，新方法能自动去噪并看清心脏边界。这能帮助医生更快发现心脏问题，未来可能让超声检查更智能。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Robotics / 机器人">
+            <h2><a href="https://arxiv.org/abs/2607.07574v1" target="_blank" rel="noopener">Context-Aware Force Estimation for Deformable Tool Manipulation in Robotic Environmental Swabbing via Few-Shot Continual Adaptation</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 16:01 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">Robotics / 机器人</span>
+                
+            </div>
+            <div class="cn-summary">机器人表面擦拭需要精确估计接触力，但柔性工具的非线性迟滞效应使力估计困难。本文提出一种数据驱动框架，利用本体感觉和少量持续适应，无需物理模型或嵌入式传感器，即可准确估计变形工具操作中的接触力。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章让机器人擦东西时能感知用了多大力。就像你用手擦桌子，能感觉到轻重，但机器人用软刷子时很难。新方法让机器人通过自身感觉来调整力度，未来可用于清洁或医疗采样，避免用力过猛。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="NLP / 自然语言处理,Research / 学术前沿">
+            <h2><a href="https://arxiv.org/abs/2607.07573v1" target="_blank" rel="noopener">Multi-Class vs. Multi-Label BERT for CVE-to-CWE Mapping: How Taxonomy Structure Shapes the Errors</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 16:01 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">NLP / 自然语言处理</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">该研究比较了多类分类与多标签分类两种方法在将CVE漏洞映射到CWE弱点分类上的效果。实验发现，多类分类在所有标签空间下均取得更高的宏F1分数，但随着标签空间缩小，两者差距从21个百分点缩小到2个百分点。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章研究的是如何用AI自动给安全漏洞打标签。简单说，就是让AI判断一个漏洞属于哪种类型，比如是“内存错误”还是“权限问题”。研究发现，让AI只选一个最可能的标签比让它选多个标签更准确，但如果标签种类变少，两种方法的效果就差不多了。这对网络安全分析师来说是个好消息，能帮他们更快地分类漏洞。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
+            <h2><a href="https://arxiv.org/abs/2607.07565v1" target="_blank" rel="noopener">Collaborative Synthetic Data Generation for Knowledge Transfer in Federated Learning</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 15:56 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">LLM / 大语言模型</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">提出FedKT-CSD框架，通过协作生成合成数据实现联邦学习中的知识迁移，仅需一轮通信即可完成训练。该方法利用预训练自编码器压缩客户端数据，在保证低通信开销的同时提供严格的隐私保护。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章讲的是如何让多个设备（比如手机）一起训练AI模型，但只交换一次数据，而且保护隐私。他们想出的办法是让每个设备生成一些“假数据”传给服务器，服务器再用这些假数据训练模型。这样既省流量又保护隐私，未来可能用在医疗、金融等需要保密的领域。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
+            <h2><a href="https://arxiv.org/abs/2607.07557v1" target="_blank" rel="noopener">PALS: Percentile-Aware Layerwise Sparsity for LLM Pruning</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 15:51 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">LLM / 大语言模型</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">提出PALS方法，根据每层激活值的第99百分位数动态调整剪枝比例，而非统一剪枝。在LLaMA-2-7B模型上，50%稀疏度下困惑度从12.92降至10.96，但该方法在LLaMA-3-8B和Mistral-7B上效果不明显。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章说的是如何给大语言模型“减肥”——去掉一些不重要的参数，让模型跑得更快。以前的方法是每层都剪掉同样比例的参数，但作者发现不同层的重要性不一样，应该区别对待。他们提出的新方法在LLaMA-2模型上效果很好，但在其他模型上不太明显，说明这个方法不是万能的。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="CV / 计算机视觉,Research / 学术前沿">
+            <h2><a href="https://arxiv.org/abs/2607.07553v1" target="_blank" rel="noopener">AA-ViT: Anatomically Aware Vision Transformer with Structural and Frequency Guidance for Contrast Enhanced Brain MRI Synthesis</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 15:49 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">CV / 计算机视觉</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">提出AA-ViT，一种解剖学感知的视觉Transformer，用于从非增强MRI合成对比增强MRI。该方法结合结构信息和频率引导，旨在避免使用化学造影剂，为肾功能不全患者提供安全的影像增强方案。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章讲的是用AI给脑部MRI图像“上色”，让肿瘤更明显，但不用打造影剂。有些病人不能打造影剂（比如肾不好），这个技术就能帮他们。AI通过学习正常MRI和打了造影剂的MRI之间的对应关系，直接生成增强后的图像。未来可能让更多病人安全地获得清晰的诊断图像。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Agent / 智能体,Research / 学术前沿">
+            <h2><a href="https://arxiv.org/abs/2607.07548v1" target="_blank" rel="noopener">Think Big, Search Small: Where Capacity Matters in Hierarchical Search Agents?</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 15:46 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">Agent / 智能体</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">研究分层搜索智能体中模型容量分配问题，将搜索过程分解为委派、执行和答案生成三个角色。实验发现，角色分解始终优于单一模型方案，且委派角色需要更大容量模型，执行角色则可用较小模型。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章研究的是如何让多个AI助手合作回答复杂问题。比如一个AI负责把问题拆成小问题，另一个负责搜索资料，最后一个负责总结答案。作者发现，拆问题的AI需要更聪明（用大模型），而搜资料的AI可以用小一点的模型。这就像团队里，项目经理需要更聪明，执行者可以普通一点。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="CV / 计算机视觉,Research / 学术前沿">
+            <h2><a href="https://arxiv.org/abs/2607.07545v1" target="_blank" rel="noopener">Face-trace: Open-Set Attribution and Progressive Discovery of Synthetic Face Generators</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 15:42 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">CV / 计算机视觉</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">提出面向合成人脸的开集溯源方法，不仅能识别已知生成器，还能检测未知生成器并对其进行聚类。该方法结合已知生成器分类、能量基异常检测和渐进式聚类，解决了真实场景中生成器不断涌现的问题。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章讲的是如何识别一张假人脸是用哪个AI生成的。以前的方法只能识别训练时见过的AI，但现实中总有新AI冒出来。这个新方法不仅能认出见过的AI，还能把没见过的AI生成的脸归类到一起。这对打击深度伪造（比如假视频、假照片）很有用。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Robotics / 机器人,Research / 学术前沿">
+            <h2><a href="https://arxiv.org/abs/2607.07542v1" target="_blank" rel="noopener">SonoRank: Towards Calibration-Free Real-Time Finger Flexion Detection from Forearm Ultrasound Sequences</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 15:41 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">Robotics / 机器人</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">提出SonoRank，利用前臂超声视频实现免校准的手指弯曲检测。该方法先学习排序超声序列的相对运动幅度，再微调分类每个手指是否弯曲，无需用户个性化调整，向商业化迈出重要一步。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章讲的是用超声波来检测手指动作，用来控制假肢。以前的方法需要每个用户单独调试，很麻烦。这个新方法不用调试，直接就能用，而且能检测每根手指是否在弯曲。未来可能让假肢更智能、更便宜，让更多残疾人用上。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Product / 产品与商业">
+            <h2><a href="https://techcrunch.com/2026/07/08/these-ai-startups-are-growing-revenue-at-faster-and-faster-rates/" target="_blank" rel="noopener">These AI startups are growing  revenue at faster and faster rates</a></h2>
+            <div class="meta">
+                <span class="source-badge source-techcrunch">TechCrunch</span>
+                <span>2026-07-08 15:41 UT</span>
+                <span class="score">★★☆☆☆</span>
+                
+                <span class="tag">Product / 产品与商业</span>
+                
+            </div>
+            <div class="cn-summary">报道了一批AI初创公司收入增长加速的现象，但未提供具体公司名称或数据细节。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章说有些AI创业公司赚钱越来越快，但没说是哪些公司。简单说就是AI行业很火，很多公司都在赚钱，而且增长速度在加快。对普通人来说，这意味着AI技术正在快速商业化，未来会有更多AI产品和服务出现。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Research / 学术前沿,Other / 其他">
+            <h2><a href="https://arxiv.org/abs/2607.07538v1" target="_blank" rel="noopener">Avoiding unsafe sets when training with Langevin Dynamics</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 15:36 UT</span>
+                <span class="score">★★☆☆☆</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+                <span class="tag">Other / 其他</span>
+                
+            </div>
+            <div class="cn-summary">从理论上分析了带噪声梯度下降（朗之万动力学）训练过程中模型参数落入不安全区域的概率。在强凸损失函数下，推导出训练结束时和过程中的概率上界，为安全训练提供了理论保证。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章用数学分析了AI训练过程中会不会“跑偏”到不安全的地方。比如训练自动驾驶模型时，参数不能跑到导致危险行为的区域。他们算出了这种“跑偏”的概率有多小，给AI安全提供了理论依据。虽然很数学，但对保证AI系统安全很重要。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Agent / 智能体,Research / 学术前沿">
+            <h2><a href="https://arxiv.org/abs/2607.07534v1" target="_blank" rel="noopener">Infinite Worlds with Versatile Interactions</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 15:33 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">Agent / 智能体</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">发布LingBot-World 2.0，一个支持无限交互、实时响应（60fps 720p）的开放世界模型。新版本增加了多样化交互元素（攻击、射箭、施法等），并首次在世界模型中集成智能体控制框架。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章发布了一个AI驱动的虚拟世界，你可以和它无限互动，就像玩一个开放世界游戏。它不仅能生成画面，还能理解你的指令，比如“攻击那个敌人”或“射箭”。未来可能用在游戏、虚拟现实或机器人训练中，让AI世界更真实、更互动。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Robotics / 机器人,Research / 学术前沿">
+            <h2><a href="https://arxiv.org/abs/2607.07533v1" target="_blank" rel="noopener">Generating Personalized Lower-Limb Kinematics Across Walking Speeds Using Subject-Conditioned Diffusion</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 15:29 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">Robotics / 机器人</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">该研究提出了一种基于扩散模型的框架，仅需受试者在单一速度下的步态数据，即可生成其在其他速度下的个性化下肢运动学数据。这有望大幅降低为外骨骼等设备收集个性化步态数据的成本和时间，尤其对临床人群有益。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章讲的是如何用AI来预测人在不同走路速度下的腿部动作。以前要收集这些数据，需要人在实验室里走很多次，很麻烦。现在只要知道你在一种速度下怎么走路，AI就能猜出你在其他速度下怎么走，这样以后做智能假肢或外骨骼机器人就更方便了。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="CV / 计算机视觉,Other / 其他">
+            <h2><a href="https://arxiv.org/abs/2607.07532v1" target="_blank" rel="noopener">Context-Aware Slum Mapping in Sub-Saharan Africa Using Sentinel-1 Texture and Local Climate Zones</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 15:26 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">CV / 计算机视觉</span>
+                
+                <span class="tag">Other / 其他</span>
+                
+            </div>
+            <div class="cn-summary">该研究提出了一种结合光学和雷达卫星影像的框架，用于更准确地绘制撒哈拉以南非洲地区的贫民窟地图。该方法通过分析建筑结构特征，有效区分了贫民窟与外观相似的低层建筑区。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章说的是如何用卫星图片更准确地找到非洲城市的贫民窟。因为贫民窟和普通低矮房子在照片上看起来很像，所以很难区分。研究者用了一种新方法，结合两种卫星数据，专门分析房子的结构特点，这样就能更清楚地画出贫民窟的范围，对城市规划有帮助。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="LLM / 大语言模型,Research / 学术前沿">
+            <h2><a href="https://arxiv.org/abs/2607.07527v1" target="_blank" rel="noopener">A Unified Detection Framework for AI-Related Content and Artifacts</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 15:21 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">LLM / 大语言模型</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">研究者提出了一个统一的检测框架，能够识别AI生成的文本、幻觉、水印和对抗样本等多种AI相关内容。该方法通过马氏距离分数来区分AI产物与人类产物，为AI监管提供了一种直接且成本效益高的工具。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章介绍了一种能识别各种AI造假内容的新方法。比如，它可以判断一篇文章是不是AI写的，或者AI有没有在胡说八道。这对我们普通人来说很重要，因为以后在网上看到信息，可以用这种工具来辨别真假，防止被AI生成的假新闻或虚假信息欺骗。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Product / 产品与商业,Research / 学术前沿">
+            <h2><a href="https://arxiv.org/abs/2607.07521v1" target="_blank" rel="noopener">Creativity from Friction: Human-AI Interaction for Exploratory Structural Design</a></h2>
+            <div class="meta">
+                <span class="source-badge source-arxiv">ArXiv</span>
+                <span>2026-07-08 15:17 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">Product / 产品与商业</span>
+                
+                <span class="tag">Research / 学术前沿</span>
+                
+            </div>
+            <div class="cn-summary">该论文指出，当前生成式AI追求消除设计过程中的“摩擦”并提供最终方案，但这并不符合结构设计等创意领域的需求。作者认为，设计中的约束和“摩擦”反而能激发创造力，因此需要设计能与人类协作、支持迭代探索的交互式AI系统。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章说，现在的AI总想一步到位帮你解决问题，但这在建筑设计等创意工作中并不好。因为设计过程中的各种限制和困难，反而能激发设计师想出更好的点子。所以，未来的AI应该更像一个能和你一起讨论、不断改进想法的伙伴，而不是直接给你一个答案。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Agent / 智能体,Product / 产品与商业">
+            <h2><a href="https://techcrunch.com/podcast/your-gaming-data-could-be-the-secret-to-agi-according-to-this-bezos-backed-startup/" target="_blank" rel="noopener">Your gaming data could be the secret to AGI, according to this Bezos-backed startup</a></h2>
+            <div class="meta">
+                <span class="source-badge source-techcrunch">TechCrunch</span>
+                <span>2026-07-08 13:00 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">Agent / 智能体</span>
+                
+                <span class="tag">Product / 产品与商业</span>
+                
+            </div>
+            <div class="cn-summary">一家由贝佐斯支持的初创公司认为，游戏数据可能是实现通用人工智能（AGI）的关键。该公司指出，当前的大语言模型擅长文本，但缺乏对空间和时间中物体运动的理解，而游戏数据恰好能弥补这一缺陷。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章讲的是，有家公司认为光靠文字训练AI是不够的，因为AI不懂东西在现实中是怎么动的。他们觉得游戏里的数据（比如角色怎么跑、物体怎么飞）能教AI理解真实世界的运动规律，这可能是实现真正智能的关键。对普通人来说，这意味着你玩游戏的数据可能正在帮助训练下一代AI。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Product / 产品与商业,Other / 其他">
+            <h2><a href="https://techcrunch.com/2026/07/08/former-openai-exec-kevin-weil-is-now-on-the-board-of-stoke-space/" target="_blank" rel="noopener">Former OpenAI exec Kevin Weil is now on the board of Stoke Space</a></h2>
+            <div class="meta">
+                <span class="source-badge source-techcrunch">TechCrunch</span>
+                <span>2026-07-08 12:00 UT</span>
+                <span class="score">★★☆☆☆</span>
+                
+                <span class="tag">Product / 产品与商业</span>
+                
+                <span class="tag">Other / 其他</span>
+                
+            </div>
+            <div class="cn-summary">前OpenAI高管Kevin Weil加入了可重复使用火箭公司Stoke Space的董事会。这一人事变动表明，可重复使用火箭技术正成为硅谷的下一个热门领域。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章说的是，一个在OpenAI（做ChatGPT的公司）当过高管的牛人，现在去了一家做可回收火箭的公司当董事。这说明硅谷的科技大佬们开始觉得，造能重复使用的火箭是下一个大热点，就像之前AI一样。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="LLM / 大语言模型,Product / 产品与商业">
+            <h2><a href="https://techcrunch.com/2026/07/08/hot-french-startup-zml-releases-free-product-to-speed-inference-across-lots-of-ai-chips/" target="_blank" rel="noopener">Hot French startup ZML releases free product to speed inference across lots of AI chips</a></h2>
+            <div class="meta">
+                <span class="source-badge source-techcrunch">TechCrunch</span>
+                <span>2026-07-08 08:00 UT</span>
+                <span class="score">★★★★☆</span>
+                
+                <span class="tag">LLM / 大语言模型</span>
+                
+                <span class="tag">Product / 产品与商业</span>
+                
+            </div>
+            <div class="cn-summary">法国AI初创公司ZML发布了免费软件ZML/LLMD，该软件能加速AI模型在多个芯片上的推理过程，从而降低AI运行成本。该公司得到了图灵奖得主Yann LeCun的认可。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章介绍了一家法国公司发布了一个免费软件，能让AI跑得更快、更省钱。简单说，就是以前用多个芯片一起跑AI程序很慢很贵，这个软件能优化这个过程。对普通人来说，这意味着未来用AI服务的成本可能会降低，速度会更快。
+            </div>
+            
+        </div>
+        
+        <div class="article" data-tags="Product / 产品与商业">
+            <h2><a href="https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/" target="_blank" rel="noopener">AI chip maker SambaNova raises $1B at $11B valuation, 5 months after last mega round</a></h2>
+            <div class="meta">
+                <span class="source-badge source-techcrunch">TechCrunch</span>
+                <span>2026-07-08 07:16 UT</span>
+                <span class="score">★★★☆☆</span>
+                
+                <span class="tag">Product / 产品与商业</span>
+                
+            </div>
+            <div class="cn-summary">AI芯片制造商SambaNova在短短5个月内再次完成巨额融资，估值达到110亿美元。此前有传闻称英特尔曾试图以约16亿美元收购该公司。</div>
+            
+            <div class="plain-explanation">
+                <span class="plain-label">💡 通俗解读</span>
+                这篇文章说的是，一家做AI芯片的公司SambaNova又融了一大笔钱，现在估值高达110亿美元。之前有传闻说英特尔想用16亿美元买下它，但没成功。这说明AI芯片市场非常火热，投资者愿意花大价钱押注这个领域。
             </div>
             
         </div>
@@ -2094,7 +2191,7 @@
     </div>
 
     <footer>
-        <p>Generated by AI Daily Digest · 2026-07-08 03:50 UTC</p>
+        <p>Generated by AI Daily Digest · 2026-07-09 04:18 UTC</p>
         <p><a href="https://github.com" style="color:#aaa;">View on GitHub</a></p>
     </footer>
 
